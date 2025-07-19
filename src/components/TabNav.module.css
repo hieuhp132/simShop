@@ -1,0 +1,56 @@
+.tabNav {
+  background-color: #f8fafc;
+  padding: 0 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabList {
+  display: flex;
+  gap: 2rem;
+  padding: 0.7rem 0;
+  flex-wrap: wrap;
+}
+
+.tab {
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid transparent;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.tabActive {
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #2563eb;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .tabNav {
+    padding: 0 0.5rem;
+  }
+  .tabList {
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+  .tab, .tabActive {
+    font-size: 0.95rem;
+    padding-bottom: 0.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .tabList {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .tab, .tabActive {
+    font-size: 0.9rem;
+    padding-bottom: 0.2rem;
+  }
+} 

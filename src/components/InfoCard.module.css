@@ -1,0 +1,41 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  background-color: #f9fafb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+  outline: none;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: #2563eb;
+}
+
+.desc {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .card {
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .desc {
+    font-size: 0.95rem;
+  }
+} 

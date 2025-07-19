@@ -1,0 +1,118 @@
+.footerWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-footer-bg);
+  padding: 3.5rem 0 2.5rem;
+}
+
+.footerCard {
+  width: 100%;
+  max-width: 1100px;
+  background-color: var(--color-footer-card);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--color-text);
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 1.5rem;
+}
+
+.footerColumn {
+  min-width: 180px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sectionTitle {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  color: var(--color-primary);
+}
+
+.link {
+  display: block;
+  color: var(--color-link);
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  transition: color 0.2s;
+}
+.link:hover {
+  color: var(--color-primary);
+}
+
+.supportButton {
+  background-color: #b3e5fc;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  width: fit-content;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.7rem;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.footerBottom {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  gap: 1rem;
+}
+
+.paymentIcons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .footerCard {
+    padding: 1.2rem;
+  }
+  .footerInner {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerWrapper {
+    padding: 1rem 0 0.5rem;
+  }
+  .footerCard {
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+  }
+  .footerBottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+  .footerColumn {
+    min-width: 120px;
+  }
+} 
