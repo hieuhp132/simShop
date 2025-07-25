@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/simShop/static/css/main.cc081e7e.css",
-    "main.js": "/simShop/static/js/main.0baec71c.js",
+    "main.css": "/simShop/static/css/main.8f3a7b74.css",
+    "main.js": "/simShop/static/js/main.a36efb1d.js",
     "static/js/453.a3c1d153.chunk.js": "/simShop/static/js/453.a3c1d153.chunk.js",
     "index.html": "/simShop/index.html",
-    "main.cc081e7e.css.map": "/simShop/static/css/main.cc081e7e.css.map",
-    "main.0baec71c.js.map": "/simShop/static/js/main.0baec71c.js.map",
+    "main.8f3a7b74.css.map": "/simShop/static/css/main.8f3a7b74.css.map",
+    "main.a36efb1d.js.map": "/simShop/static/js/main.a36efb1d.js.map",
     "453.a3c1d153.chunk.js.map": "/simShop/static/js/453.a3c1d153.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc081e7e.css",
-    "static/js/main.0baec71c.js"
+    "static/css/main.8f3a7b74.css",
+    "static/js/main.a36efb1d.js"
   ]
 }
