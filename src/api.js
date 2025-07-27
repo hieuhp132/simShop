@@ -1,8 +1,7 @@
 import axios from "axios";
 
 // Thay thế bằng  thật của bạn
-const API_TOKEN =
-  "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODQ0MTg3MDQsImlhdCI6MTc1Mjg4MjcwNCwicmF5IjoiZjI1MjQwMTJmNzZmODU2MzNhNjAxYjg1NjViYzIyNjUiLCJzdWIiOjMzNzEwMjF9.jzSQ0ZPlfpt4UNB6xcP3iGBW266ckd3MZJSByG1VxcwplNS9uy0kOLRkO-4LeUGXILoxYD_SjnH7zvYHd39jM-7zhQG6lJsdnlIoRA4O8SMy2qAUOAZr-Ll-b7NDyx_71cU75HEN0KQu0lD3whGxId-MOobD0Gw7OZIIU5tln4RwWgua0fWnpnQDBI8Y1fIVfyEOSFQE8Fn1sFZnLq-I3fCg2mPFPcz9OSOePC-zfMjhYIeoEDxgbTkQq_daqF3Gi0i7NpqldOTiyqv5Xgk_XXumrYf_UNvjTNBOs22b5LUB25oPVd0teA-kNZtiUz0LGD3IlqIhBL-SA1SgIvzKWA";
+const API_TOKEN = "";
 
 // ================================== User ==================================
 async function getUserProfile() {
@@ -797,34 +796,3 @@ export async function getCountriesList() {
   const data = await response.json();
   return data;
 }
-
-export async function getProductList() {
-  try {
-    // API endpoint để lấy danh sách sản phẩm
-    const response = await axios.get("https://5sim.net/v1/user/products", {
-      headers: {
-        Authorization: `Bearer ${API_TOKEN}`,
-        Accept: "application/json",
-      },
-    });
-
-    // In ra danh sách sản phẩm
-    console.log("Danh sách sản phẩm:", response.data);
-    return response.data;
-  } catch (error) {
-    console.error(
-      "Lỗi khi lấy danh sách sản phẩm:",
-      error.response?.data || error.message
-    );
-  }
-}
-
-const testApi = async () => {
-  try {
-    const data = await getProductList();
-    console.log("API response:", data);
-  } catch (error) {
-    console.error("API error:", error);
-  }
-};
-testApi();

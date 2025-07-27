@@ -1,0 +1,750 @@
+{
+  "ecuador": {
+    "99app": {
+      "virtual4": {
+        "cost": 40.08,
+        "count": 220
+      }
+    },
+    "airbnb": {
+      "virtual4": {
+        "cost": 64.08,
+        "count": 963
+      }
+    },
+    "aitu": {
+      "virtual4": {
+        "cost": 40.08,
+        "count": 220
+      }
+    },
+    "alibaba": {
+      "virtual4": {
+        "cost": 33.6,
+        "count": 1007
+      }
+    },
+    "aliexpress": {
+      "virtual4": {
+        "cost": 19.2,
+        "count": 220
+      }
+    },
+    "alipay": {
+      "virtual4": {
+        "cost": 30.24,
+        "count": 855,
+        "rate": 0,
+        "rate168": 0,
+        "rate720": 9.52
+      }
+    },
+    "amazon": {
+      "virtual21": {
+        "cost": 21.6,
+        "count": 49,
+        "rate": 4.76
+      },
+      "virtual4": {
+        "cost": 23.76,
+        "count": 1064,
+        "rate": 31.82
+      }
+    },
+    "aol": {
+      "virtual4": {
+        "cost": 23.52,
+        "count": 886
+      }
+    },
+    "apple": {
+      "virtual21": {
+        "cost": 3.6,
+        "count": 33,
+        "rate": 47.62
+      },
+      "virtual4": {
+        "cost": 38.76,
+        "count": 894,
+        "rate": 40.91
+      }
+    },
+    "baidu": {
+      "virtual4": {
+        "cost": 21.96,
+        "count": 220
+      }
+    },
+    "bigolive": {
+      "virtual4": {
+        "cost": 19.2,
+        "count": 885
+      }
+    },
+    "bitclout": {
+      "virtual4": {
+        "cost": 24,
+        "count": 220
+      }
+    },
+    "blablacar": {
+      "virtual4": {
+        "cost": 56.04,
+        "count": 220
+      }
+    },
+    "blizzard": {
+      "virtual4": {
+        "cost": 33.6,
+        "count": 977
+      }
+    },
+    "blued": {
+      "virtual4": {
+        "cost": 27.24,
+        "count": 220,
+        "rate": 0
+      }
+    },
+    "bolt": {
+      "virtual4": {
+        "cost": 20.16,
+        "count": 903
+      }
+    },
+    "cafebazaar": {
+      "virtual4": {
+        "cost": 19.2,
+        "count": 220
+      }
+    },
+    "careem": {
+      "virtual4": {
+        "cost": 33.6,
+        "count": 231
+      }
+    },
+    "carousell": {
+      "virtual4": {
+        "cost": 24,
+        "count": 220
+      }
+    },
+    "citymobil": {
+      "virtual4": {
+        "cost": 14.4,
+        "count": 220
+      }
+    },
+    "clubhouse": {
+      "virtual4": {
+        "cost": 32.04,
+        "count": 1017
+      }
+    },
+    "craigslist": {
+      "virtual4": {
+        "cost": 33.6,
+        "count": 232
+      }
+    },
+    "cupid": {
+      "virtual4": {
+        "cost": 24,
+        "count": 220,
+        "rate": 47.62
+      }
+    },
+    "deliveroo": {
+      "virtual4": {
+        "cost": 24,
+        "count": 1033
+      }
+    },
+    "delivery": {
+      "virtual4": {
+        "cost": 14.4,
+        "count": 220
+      }
+    },
+    "didi": {
+      "virtual4": {
+        "cost": 19.2,
+        "count": 221,
+        "rate": 14.29
+      }
+    },
+    "discord": {
+      "virtual4": {
+        "cost": 23.28,
+        "count": 758,
+        "rate": 0
+      }
+    },
+    "dodopizza": {
+      "virtual4": {
+        "cost": 40.08,
+        "count": 220
+      }
+    },
+    "dominospizza": {
+      "virtual4": {
+        "cost": 25.32,
+        "count": 220
+      }
+    },
+    "dream11": {
+      "virtual4": {
+        "cost": 16.08,
+        "count": 320
+      }
+    },
+    "dundle": {
+      "virtual4": {
+        "cost": 25.68,
+        "count": 220
+      }
+    },
+    "ebay": {
+      "virtual4": {
+        "cost": 39.36,
+        "count": 1900,
+        "rate": 0
+      }
+    },
+    "facebook": {
+      "virtual4": {
+        "cost": 21.96,
+        "count": 1075,
+        "rate": 4.76,
+        "rate168": 4.76,
+        "rate720": 0
+      }
+    },
+    "faceit": {
+      "virtual4": {
+        "cost": 48,
+        "count": 220
+      }
+    },
+    "fiverr": {
+      "virtual4": {
+        "cost": 46.44,
+        "count": 220,
+        "rate": 0
+      }
+    },
+    "foodpanda": {
+      "virtual4": {
+        "cost": 33.6,
+        "count": 880
+      }
+    },
+    "getir": {
+      "virtual4": {
+        "cost": 25.32,
+        "count": 220
+      }
+    },
+    "gett": {
+      "virtual4": {
+        "cost": 22.32,
+        "count": 220
+      }
+    },
+    "globus": {
+      "virtual4": {
+        "cost": 12.84,
+        "count": 220
+      }
+    },
+    "goods": {
+      "virtual4": {
+        "cost": 19.2,
+        "count": 220
+      }
+    },
+    "google": {
+      "virtual4": {
+        "cost": 26.76,
+        "count": 234,
+        "rate": 9.52,
+        "rate720": 9.52
+      }
+    },
+    "grabtaxi": {
+      "virtual4": {
+        "cost": 24,
+        "count": 850
+      }
+    },
+    "grindr": {
+      "virtual4": {
+        "cost": 16.8,
+        "count": 893
+      }
+    },
+    "happn": {
+      "virtual4": {
+        "cost": 20.16,
+        "count": 231
+      }
+    },
+    "hepsiburadacom": {
+      "virtual4": {
+        "cost": 33.6,
+        "count": 220
+      }
+    },
+    "hily": {
+      "virtual4": {
+        "cost": 25.32,
+        "count": 231
+      }
+    },
+    "hopi": {
+      "virtual4": {
+        "cost": 19.2,
+        "count": 220
+      }
+    },
+    "imo": {
+      "virtual4": {
+        "cost": 14.4,
+        "count": 658,
+        "rate": 0
+      }
+    },
+    "instagram": {
+      "virtual4": {
+        "cost": 21.96,
+        "count": 1136,
+        "rate": 0
+      }
+    },
+    "jd": {
+      "virtual4": {
+        "cost": 25.32,
+        "count": 220
+      }
+    },
+    "justdating": {
+      "virtual4": {
+        "cost": 19.2,
+        "count": 220
+      }
+    },
+    "kaidee": {
+      "virtual4": {
+        "cost": 24,
+        "count": 220
+      }
+    },
+    "kolesakz": {
+      "virtual4": {
+        "cost": 14.4,
+        "count": 220
+      }
+    },
+    "lazada": {
+      "virtual4": {
+        "cost": 32.04,
+        "count": 220
+      }
+    },
+    "line": {
+      "virtual4": {
+        "cost": 21.96,
+        "count": 1801,
+        "rate": 0
+      }
+    },
+    "linkedin": {
+      "virtual4": {
+        "cost": 28.68,
+        "count": 770
+      }
+    },
+    "livescore": {
+      "virtual4": {
+        "cost": 14.4,
+        "count": 220
+      }
+    },
+    "mailru": {
+      "virtual4": {
+        "cost": 16.32,
+        "count": 320
+      }
+    },
+    "mamba": {
+      "virtual4": {
+        "cost": 14.4,
+        "count": 220
+      }
+    },
+    "mercado": {
+      "virtual4": {
+        "cost": 48,
+        "count": 220
+      }
+    },
+    "michat": {
+      "virtual4": {
+        "cost": 23.52,
+        "count": 1060
+      }
+    },
+    "microsoft": {
+      "virtual21": {
+        "cost": 2.4,
+        "count": 47,
+        "rate": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
+      "virtual4": {
+        "cost": 21.96,
+        "count": 971,
+        "rate": 14.29
+      }
+    },
+    "monese": {
+      "virtual4": {
+        "cost": 40.08,
+        "count": 220
+      }
+    },
+    "mpl": {
+      "virtual4": {
+        "cost": 20.88,
+        "count": 220
+      }
+    },
+    "naver": {
+      "virtual4": {
+        "cost": 14.4,
+        "count": 220,
+        "rate": 4.76,
+        "rate3": 4.76,
+        "rate24": 10.26,
+        "rate72": 8.13,
+        "rate168": 10.05,
+        "rate720": 15.86
+      }
+    },
+    "netflix": {
+      "virtual4": {
+        "cost": 26.76,
+        "count": 846,
+        "rate": 24
+      }
+    },
+    "nike": {
+      "virtual4": {
+        "cost": 14.4,
+        "count": 1012
+      }
+    },
+    "offgamers": {
+      "virtual4": {
+        "cost": 21.96,
+        "count": 972
+      }
+    },
+    "olx": {
+      "virtual4": {
+        "cost": 23.52,
+        "count": 884
+      }
+    },
+    "papara": {
+      "virtual4": {
+        "cost": 28.68,
+        "count": 857
+      }
+    },
+    "paxful": {
+      "virtual4": {
+        "cost": 27.24,
+        "count": 220
+      }
+    },
+    "payberry": {
+      "virtual4": {
+        "cost": 12.84,
+        "count": 220
+      }
+    },
+    "paypal": {
+      "virtual4": {
+        "cost": 28.8,
+        "count": 320,
+        "rate": 62.5,
+        "rate24": 62.5,
+        "rate72": 59.09,
+        "rate168": 31.82,
+        "rate720": 43.26
+      }
+    },
+    "picpay": {
+      "virtual4": {
+        "cost": 46.44,
+        "count": 220
+      }
+    },
+    "pof": {
+      "virtual4": {
+        "cost": 18.96,
+        "count": 1081
+      }
+    },
+    "pokec": {
+      "virtual4": {
+        "cost": 20.88,
+        "count": 220
+      }
+    },
+    "potato": {
+      "virtual4": {
+        "cost": 30.48,
+        "count": 220
+      }
+    },
+    "protonmail": {
+      "virtual4": {
+        "cost": 46.44,
+        "count": 220
+      }
+    },
+    "quikr": {
+      "virtual4": {
+        "cost": 24,
+        "count": 220
+      }
+    },
+    "sikayetvar": {
+      "virtual4": {
+        "cost": 19.2,
+        "count": 220
+      }
+    },
+    "skout": {
+      "virtual4": {
+        "cost": 16.8,
+        "count": 951
+      }
+    },
+    "snapchat": {
+      "virtual4": {
+        "cost": 26.88,
+        "count": 1773
+      }
+    },
+    "steam": {
+      "virtual4": {
+        "cost": 28.8,
+        "count": 962
+      }
+    },
+    "surveytime": {
+      "virtual4": {
+        "cost": 32.04,
+        "count": 220
+      }
+    },
+    "tango": {
+      "virtual4": {
+        "cost": 40.08,
+        "count": 220
+      }
+    },
+    "tantan": {
+      "virtual4": {
+        "cost": 19.2,
+        "count": 220,
+        "rate": 0
+      }
+    },
+    "taobao": {
+      "virtual4": {
+        "cost": 25.32,
+        "count": 220,
+        "rate": 0
+      }
+    },
+    "telegram": {
+      "virtual4": {
+        "cost": 14.4,
+        "count": 320,
+        "rate": 0
+      }
+    },
+    "tencentqq": {
+      "virtual4": {
+        "cost": 28.8,
+        "count": 930,
+        "rate": 0
+      }
+    },
+    "tiktok": {
+      "virtual21": {
+        "cost": 1.2,
+        "count": 46,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 6.9,
+        "rate24": 5.88,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
+      "virtual4": {
+        "cost": 24,
+        "count": 945,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 3.23,
+        "rate24": 3.33,
+        "rate72": 3.33,
+        "rate168": 3.7,
+        "rate720": 0
+      }
+    },
+    "tinder": {
+      "virtual4": {
+        "cost": 31.44,
+        "count": 992,
+        "rate": 54.55
+      }
+    },
+    "tosla": {
+      "virtual4": {
+        "cost": 48,
+        "count": 220
+      }
+    },
+    "trendyol": {
+      "virtual4": {
+        "cost": 40.08,
+        "count": 220
+      }
+    },
+    "truecaller": {
+      "virtual4": {
+        "cost": 21.96,
+        "count": 220
+      }
+    },
+    "twitter": {
+      "virtual4": {
+        "cost": 23.52,
+        "count": 1200,
+        "rate": 0,
+        "rate720": 0
+      }
+    },
+    "uber": {
+      "virtual21": {
+        "cost": 24,
+        "count": 9999
+      },
+      "virtual4": {
+        "cost": 26.76,
+        "count": 11100,
+        "rate": 52.38
+      }
+    },
+    "viber": {
+      "virtual4": {
+        "cost": 23.52,
+        "count": 1012,
+        "rate": 0
+      }
+    },
+    "vinted": {
+      "virtual4": {
+        "cost": 48,
+        "count": 824
+      }
+    },
+    "vkontakte": {
+      "virtual4": {
+        "cost": 21.96,
+        "count": 334
+      }
+    },
+    "wechat": {
+      "virtual4": {
+        "cost": 110.28,
+        "count": 2137,
+        "rate": 0
+      }
+    },
+    "weststein": {
+      "virtual4": {
+        "cost": 24,
+        "count": 220
+      }
+    },
+    "whatsapp": {
+      "virtual4": {
+        "cost": 24.72,
+        "count": 100,
+        "rate": 0,
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "wolt": {
+      "virtual4": {
+        "cost": 25.32,
+        "count": 860
+      }
+    },
+    "yahoo": {
+      "virtual4": {
+        "cost": 23.52,
+        "count": 1832
+      }
+    },
+    "yalla": {
+      "virtual4": {
+        "cost": 23.52,
+        "count": 2138
+      }
+    },
+    "yandex": {
+      "virtual4": {
+        "cost": 16.8,
+        "count": 1339
+      }
+    },
+    "yemeksepeti": {
+      "virtual4": {
+        "cost": 27.24,
+        "count": 220
+      }
+    },
+    "yubo": {
+      "virtual4": {
+        "cost": 48,
+        "count": 220
+      }
+    },
+    "zoho": {
+      "virtual4": {
+        "cost": 20.16,
+        "count": 993
+      }
+    },
+    "zomato": {
+      "virtual4": {
+        "cost": 34.56,
+        "count": 220
+      }
+    }
+  }
+}

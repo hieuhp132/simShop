@@ -1,78 +1,158 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo, useContext, useEffect } from 'react';
 import styles from './MainContent.module.css';
+import { useTranslation } from 'react-i18next';
+import { countryDataMap } from '../assets/data/adjusted/countryDataIndex';
+import { BalanceContext } from './TopNav';
+import LoginForm from './LoginForm';
+import { FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa';
+import axios from 'axios';
+import PaymentPage from './PaymentPage';
+import { API_BASE_URL } from '../apiConfig';
 
-function MainContent({ activePage }) {
-  const [priceTab, setPriceTab] = useState('price');
-
-  // State cho Price Table
+function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab, setPriceTab }) {
   const [priceSortBy, setPriceSortBy] = useState('rate');
   const [priceSortOrder, setPriceSortOrder] = useState('desc');
-  const [filterService, setFilterService] = useState('Tất cả');
-  const [filterCountry, setFilterCountry] = useState('Tất cả');
-
-  // State cho Statistics tab
+  const [filterService, setFilterService] = useState('all');
+  const [filterCountry, setFilterCountry] = useState('all');
   const [statsSortBy, setStatsSortBy] = useState('rate');
   const [statsSortOrder, setStatsSortOrder] = useState('desc');
   const [hoveredBar, setHoveredBar] = useState(null);
-
-  // State cho trang chi tiết FAQ
   const [faqDetail, setFaqDetail] = useState(null);
+  const { t } = useTranslation();
+  const { balance, currency } = useContext(BalanceContext);
+  const RUB_TO_VND = 330;
 
-  // Dữ liệu mẫu cho Price Table
-  const priceData = [
-    { service: 'Telegram', flag: '🇻🇳', country: 'Việt Nam', operator: 'Virtual4', rate: 98, pcs: 1200, price: 35 },
-    { service: 'Telegram', flag: '🇺🇸', country: 'Hoa Kỳ', operator: 'Virtual5', rate: 95, pcs: 800, price: 50 },
-    { service: 'Telegram', flag: '🇷🇺', country: 'Nga', operator: 'Virtual7', rate: 97, pcs: 2000, price: 20 },
-    { service: 'Telegram', flag: '🇯🇵', country: 'Nhật Bản', operator: 'Virtual8', rate: null, pcs: 300, price: 60 },
-    { service: 'Facebook', flag: '🇻🇳', country: 'Việt Nam', operator: 'Virtual4', rate: 90, pcs: 500, price: 40 },
-    { service: 'Facebook', flag: '🇺🇸', country: 'Hoa Kỳ', operator: 'Virtual5', rate: 85, pcs: 300, price: 55 },
-    { service: 'Facebook', flag: '🇷🇺', country: 'Nga', operator: 'Virtual7', rate: 92, pcs: 700, price: 25 },
-    { service: 'Facebook', flag: '🇯🇵', country: 'Nhật Bản', operator: 'Virtual8', rate: null, pcs: 100, price: 65 },
-  ];
+  // Mapping flag cho các quốc gia
+  const countryFlagMap = {
+    'vietnam': '🇻🇳', 'usa': '🇺🇸', 'russia': '🇷🇺', 'england': '🇬🇧', 'italy': '🇮🇹',
+    'spain': '🇪🇸', 'france': '🇫🇷', 'germany': '🇩🇪', 'china': '🇨🇳', 'japan': '🇯🇵',
+    'korea': '🇰🇷', 'india': '🇮🇳', 'brazil': '🇧🇷', 'canada': '🇨🇦', 'australia': '🇦🇺',
+    'netherlands': '🇳🇱', 'poland': '🇵🇱', 'ukraine': '🇺🇦', 'belarus': '🇧🇾',
+    'moldova': '🇲🇩', 'georgia': '🇬🇪', 'latvia': '🇱🇻', 'lithuania': '🇱🇹',
+    'croatia': '🇭🇷', 'slovenia': '🇸🇮', 'slovakia': '🇸🇰', 'greece': '🇬🇷',
+    'cyprus': '🇨🇾', 'portugal': '🇵🇹', 'ireland': '🇮🇪', 'finland': '🇫🇮',
+    'sweden': '🇸🇪', 'norway': '🇳🇴', 'denmark': '🇩🇰', 'switzerland': '🇨🇭',
+    'austria': '🇦🇹', 'belgium': '🇧🇪', 'malaysia': '🇲🇾', 'singapore': '🇸🇬',
+    'thailand': '🇹🇭', 'philippines': '🇵🇭', 'indonesia': '🇮🇩', 'cambodia': '🇰🇭',
+    'laos': '🇱🇦', 'myanmar': '🇲🇲', 'bangladesh': '🇧🇩', 'pakistan': '🇵🇰',
+    'sri_lanka': '🇱🇰', 'nepal': '🇳🇵', 'afghanistan': '🇦🇫', 'iran': '🇮🇷',
+    'iraq': '🇮🇶', 'syria': '🇸🇾', 'lebanon': '🇱🇧', 'jordan': '🇯🇴',
+    'israel': '🇮🇱', 'saudi_arabia': '🇸🇦', 'yemen': '🇾🇪', 'oman': '🇴🇲',
+    'uae': '🇦🇪', 'qatar': '🇶🇦', 'bahrain': '🇧🇭', 'kuwait': '🇰🇼',
+    'egypt': '🇪🇬', 'libya': '🇱🇾', 'tunisia': '🇹🇳', 'algeria': '🇩🇿',
+    'morocco': '🇲🇦', 'senegal': '🇸🇳', 'liberia': '🇱🇷', 'ghana': '🇬🇭',
+    'togo': '🇹🇬', 'nigeria': '🇳🇬', 'ethiopia': '🇪🇹', 'kenya': '🇰🇪',
+    'uganda': '🇺🇬', 'tanzania': '🇹🇿', 'malawi': '🇲🇼', 'angola': '🇦🇴',
+    'argentina': '🇦🇷', 'chile': '🇨🇱', 'uruguay': '🇺🇾', 'paraguay': '🇵🇾',
+    'bolivia': '🇧🇴', 'peru': '🇵🇪', 'ecuador': '🇪🇨', 'colombia': '🇨🇴',
+    'venezuela': '🇻🇪', 'mexico': '🇲🇽', 'guatemala': '🇬🇹', 'honduras': '🇭🇳',
+    'haiti': '🇭🇹', 'dominican_republic': '🇩🇴', 'cuba': '🇨🇺', 'jamaica': '🇯🇲'
+  };
 
-  // Lọc dữ liệu theo filter
-  const filteredPriceData = priceData.filter(row =>
-    (filterService === 'Tất cả' || row.service === filterService) &&
-    (filterCountry === 'Tất cả' || row.country === filterCountry)
-  );
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [tabOrders, setTabOrders] = useState('active');
+  const [purchaseTab, setPurchaseTab] = useState('active');
+  const [isLoading, setIsLoading] = useState(false);
 
-  // Sắp xếp dữ liệu bảng giá
-  const sortedPriceData = [...filteredPriceData].sort((a, b) => {
-    if (priceSortBy === 'rate') {
-      if (a.rate === null) return 1;
-      if (b.rate === null) return -1;
-      return priceSortOrder === 'desc' ? b.rate - a.rate : a.rate - b.rate;
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setError("");
+    setLoading(true);
+    try {
+      const response = await axios.post(
+        `${API_BASE_URL}/api/auth/login`,
+        { email, password },
+        { withCredentials: true }
+      );
+      if (response.data.success) {
+        onLoginSuccess && onLoginSuccess(response.data);
+      } else {
+        setError("Đăng nhập thất bại!");
+      }
+    } catch (err) {
+      setError("Sai tài khoản hoặc mật khẩu!");
     }
-    if (priceSortBy === 'price') return priceSortOrder === 'desc' ? b.price - a.price : a.price - b.price;
-    if (priceSortBy === 'country') return priceSortOrder === 'desc' ? b.country.localeCompare(a.country) : a.country.localeCompare(b.country);
-    if (priceSortBy === 'service') return priceSortOrder === 'desc' ? b.service.localeCompare(a.service) : a.service.localeCompare(b.service);
-    return 0;
-  });
+    setLoading(false);
+  };
 
-  // Dữ liệu mẫu cho Statistics (không thay đổi)
-  const statsData = [
-    { flag: '🇭🇺', country: 'Hungary', operator: 'Virtual38', rate: 90.91, price: 540 },
-    { flag: '🇨🇾', country: 'Cyprus', operator: 'Virtual4', rate: 77.27, price: 23.8 },
-    { flag: '🇦🇺', country: 'Australia', operator: 'Virtual38', rate: 54.55, price: 438.3 },
-    { flag: '🇺🇸', country: 'USA', operator: 'Virtual40', rate: 46.2, price: 60 },
-    { flag: '🇳🇱', country: 'Netherlands', operator: 'Virtual58', rate: 31.08, price: 266.7 },
-    { flag: '🇰🇿', country: 'Kazakhstan', operator: 'Virtual58', rate: 24.64, price: 133.33 },
-    { flag: '🇺🇸', country: 'USA', operator: 'Virtual28', rate: 24.39, price: 60 },
-    { flag: '🇨🇾', country: 'Cyprus', operator: 'Virtual38', rate: 24.1, price: 286.67 },
-    { flag: '🇺🇦', country: 'Ukraine', operator: 'Virtual58', rate: 19.5, price: 206.7 },
-    { flag: '🇺🇾', country: 'Uruguay', operator: 'Virtual58', rate: 15.2, price: 303 },
-  ];
-  // Sắp xếp dữ liệu Statistics
-  const sortedStatsData = [...statsData].sort((a, b) => {
-    if (statsSortBy === 'rate') return statsSortOrder === 'desc' ? b.rate - a.rate : a.rate - b.rate;
-    if (statsSortBy === 'price') return statsSortOrder === 'desc' ? b.price - a.price : a.price - b.price;
-    if (statsSortBy === 'country') return statsSortOrder === 'desc' ? b.country.localeCompare(a.country) : a.country.localeCompare(b.country);
-    return 0;
-  });
+  // Khi app khởi động, flatten countryDataMap thành flatData (chỉ build lại khi countryDataMap thay đổi)
+  const flatData = useMemo(() => {
+    if (!countryDataMap || Object.keys(countryDataMap).length === 0) return [];
+    
+    const rows = [];
+    Object.entries(countryDataMap).forEach(([countryKey, countryObj]) => {
+      if (!countryObj[countryKey]) return;
+      Object.entries(countryObj[countryKey]).forEach(([service, operators]) => {
+        Object.entries(operators).forEach(([operator, info]) => {
+          rows.push({
+            service,
+            country: countryKey.charAt(0).toUpperCase() + countryKey.slice(1),
+            operator,
+            price: info.cost,
+            count: info.count,
+            rate: info.rate ?? null,
+            flag: countryFlagMap[countryKey] || '🏳️'
+          });
+        });
+      });
+    });
 
+    return rows;
+  }, [countryDataMap]);
+
+  // Tối ưu hóa performance với useMemo
+  const priceData = useMemo(() => flatData, [flatData]);
+  const statsData = useMemo(() => flatData.filter(row => typeof row.rate === 'number' && typeof row.price === 'number'), [flatData]);
+
+  // allKey luôn là 'all'
+  const allKey = 'all';
+  
+  const serviceOptions = useMemo(() => [allKey, ...Array.from(new Set(priceData.map(row => row.service)))], [priceData]);
+  const countryOptions = useMemo(() => [allKey, ...Array.from(new Set(priceData.map(row => row.country)))], [priceData]);
+
+  const filteredPriceData = useMemo(() => priceData.filter(row =>
+    (filterService === allKey || row.service === filterService) &&
+    (filterCountry === allKey || row.country === filterCountry) &&
+    (row.rate === null || row.rate !== 100)
+  ), [priceData, filterService, filterCountry]);
+
+  const sortedPriceData = useMemo(() => {
+    const sorted = [...filteredPriceData].sort((a, b) => {
+      if (priceSortBy === 'rate') {
+        if (a.rate === null) return 1;
+        if (b.rate === null) return -1;
+        return priceSortOrder === 'desc' ? b.rate - a.rate : a.rate - b.rate;
+      }
+      if (priceSortBy === 'price') return priceSortOrder === 'desc' ? b.price - a.price : a.price - b.price;
+      if (priceSortBy === 'country') return priceSortOrder === 'desc' ? b.country.localeCompare(a.country) : a.country.localeCompare(b.country);
+      if (priceSortBy === 'service') return priceSortOrder === 'desc' ? b.service.localeCompare(a.service) : a.service.localeCompare(b.service);
+      return 0;
+    });
+
+    return sorted;
+  }, [filteredPriceData, priceSortBy, priceSortOrder]);
+
+  const sortedStatsData = useMemo(() => {
+    const sorted = [...statsData].sort((a, b) => {
+      if (statsSortBy === 'rate') return statsSortOrder === 'desc' ? b.rate - a.rate : a.rate - b.rate;
+      if (statsSortBy === 'price') return statsSortOrder === 'desc' ? b.price - a.price : a.price - b.price;
+      if (statsSortBy === 'country') return statsSortOrder === 'desc' ? b.country.localeCompare(a.country) : a.country.localeCompare(b.country);
+      return 0;
+    });
+    return sorted.slice(0, 20); // Tăng lên 20 rows để hiển thị nhiều hơn
+  }, [statsData, statsSortBy, statsSortOrder]);
   // Lấy danh sách dịch vụ và quốc gia cho dropdown
-  const serviceOptions = ['Tất cả', ...Array.from(new Set(priceData.map(row => row.service)))];
-  const countryOptions = ['Tất cả', ...Array.from(new Set(priceData.map(row => row.country)))];
+  const countryNameMap = {
+    'Việt Nam': t('country_vietnam'),
+    'Hoa Kỳ': t('country_usa'),
+    'Nga': t('country_russia'),
+    'Nhật Bản': t('country_japan'),
+    // ... bổ sung thêm nếu có ...
+  };
 
   // Danh sách câu hỏi và nội dung chi tiết
   const faqDetails = {
@@ -397,420 +477,327 @@ function MainContent({ activePage }) {
     setFaqDetail(null);
   };
 
+  const [page, setPage] = useState(1);
+  const PAGE_SIZE = 20; // Giảm từ 50 xuống 20 để tăng performance
+  const pagedPriceData = useMemo(() => {
+    const paged = sortedPriceData.slice((page-1)*PAGE_SIZE, page*PAGE_SIZE);
+
+    return paged;
+  }, [sortedPriceData, page]);
+  const totalPages = Math.ceil(sortedPriceData.length / PAGE_SIZE);
+  
+  // Loading effect khi chuyển tab
+  useEffect(() => {
+    if (activePage === 'nav_price') {
+      setIsLoading(true);
+      setTimeout(() => setIsLoading(false), 100);
+    }
+  }, [activePage, priceTab]);
+
+  if (activePage === 'login') {
+    return (
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center',minHeight:'70vh',width:'100%'}}>
+        <div style={{maxWidth:420,width:'100%',margin:'0 auto',padding:'2.5rem 2.2rem',boxShadow:'0 4px 32px #0002',borderRadius:20,background:'#fff'}}>
+          <h2 style={{textAlign:'center',marginBottom:18,fontWeight:700,fontSize:'1.7rem'}}>Log in with the help</h2>
+          <button style={{width:'100%',display:'flex',alignItems:'center',justifyContent:'center',gap:10,padding:'10px 0',background:'#fff',border:'1.5px solid #e5e7eb',borderRadius:10,fontWeight:600,fontSize:'1rem',marginBottom:18,cursor:'pointer'}}>
+            <FaGoogle style={{fontSize:20}}/> Sign in with Google
+          </button>
+          <div style={{display:'flex',alignItems:'center',gap:10,margin:'18px 0'}}>
+            <div style={{flex:1,height:1,background:'#e5e7eb'}}></div>
+            <span style={{color:'#888',fontWeight:500}}>OR</span>
+            <div style={{flex:1,height:1,background:'#e5e7eb'}}></div>
+          </div>
+          <LoginForm onLoginSuccess={onLoginSuccess} onClose={() => setActivePage('nav_home')} />
+          <div style={{marginTop:18,textAlign:'center',fontSize:'0.97rem',color:'#444'}}>
+            Do not have account? <a href="#" style={{color:'#2563eb',fontWeight:600,textDecoration:'none'}}>Registration</a>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (activePage === 'nav_payment') {
+    return <PaymentPage user={user} />;
+  }
+
+  if (activePage === 'purchase') {
+    return (
+      <div className={styles.purchaseCard}>
+        <div className={styles.purchaseTabs}>
+          <button className={purchaseTab === 'active' ? styles.purchaseTabActive : styles.purchaseTab} onClick={() => setPurchaseTab('active')}>Active orders</button>
+          <button className={purchaseTab === 'history' ? styles.purchaseTabActive : styles.purchaseTab} onClick={() => setPurchaseTab('history')}>Order history</button>
+        </div>
+        <div className={styles.purchaseContent}>
+          {purchaseTab === 'active' ? (
+            <div className={styles.purchaseEmpty}>
+              <div style={{fontWeight: 600, fontSize: 20, marginBottom: 8}}>No active orders</div>
+              <div style={{color: '#888', marginBottom: 24}}>You have not purchased any numbers yet.</div>
+              <ol style={{textAlign:'left', color:'#444', maxWidth:420}}>
+                <li><b>Top Up your Balance:</b> Add funds to your balance via any of the payment methods offered by our website.</li>
+                <li><b>Select a Service:</b> In the left panel you can choose the service you need.</li>
+                <li><b>Select a Country:</b> Choose the country and operator you need.</li>
+                <li><b>Apply the Phone Number:</b> Press the cart button to buy the number, then paste the number where required.</li>
+              </ol>
+            </div>
+          ) : (
+            <div className={styles.purchaseEmpty}>
+              <div style={{fontWeight: 600, fontSize: 20, marginBottom: 8}}>No orders found</div>
+              <div style={{color: '#888'}}>You have not purchased any numbers yet.</div>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  const statsDisplayData = sortedStatsData.slice(0, 20);
+  const statsMinPrice = statsDisplayData.length > 0 ? Math.min(...statsDisplayData.map(r => r.price)) : 0;
+  const statsMaxPrice = statsDisplayData.length > 0 ? Math.max(...statsDisplayData.map(r => r.price)) : 1;
+
   return (
     <div className={styles.homepage}>
       <div className={styles.card}>
-        {activePage === 'home' && (
+        {/* Trang chủ */}
+        {activePage === 'nav_home' && (
           <>
             {/* Giới thiệu dịch vụ */}
             <div className={styles.section}>
-              <h2 className={styles.sectionTitle}>Số điện thoại ảo nhận mã SMS và đăng ký mọi nền tảng</h2>
-              <p className={styles.descriptionText}>
-                5SIM cung cấp số điện thoại ảo để nhận mã xác thực SMS, đăng ký tài khoản, bảo vệ quyền riêng tư trên các nền tảng như Facebook, Google, Telegram, Zalo, TikTok, Shopee, v.v. Dịch vụ nhanh chóng, bảo mật, giá rẻ, hỗ trợ 24/7.
-              </p>
+              <h4 className={styles.sectionTitle}>{t('main_home_title')}</h4>
+              <p className={styles.descriptionText}>{t('main_home_desc')}</p>
             </div>
-
             {/* Lợi ích nổi bật */}
             <div className={styles.infoGrid}>
               <div className={styles.infoCard}>
                 <div className={styles.infoIcon}>📱</div>
                 <div>
-                  <div className={styles.infoTitle}>Hơn 500.000 số điện thoại</div>
-                  <div className={styles.infoDesc}>Kho số lớn, đa quốc gia, luôn có sẵn để sử dụng cho mọi nhu cầu xác thực.</div>
+                  <div className={styles.infoTitle}>{t('main_benefit_phones_title')}</div>
+                  <div className={styles.infoDesc}>{t('main_benefit_phones_desc')}</div>
                 </div>
               </div>
               <div className={styles.infoCard}>
                 <div className={styles.infoIcon}>🆕</div>
                 <div>
-                  <div className={styles.infoTitle}>Số mới cập nhật liên tục</div>
-                  <div className={styles.infoDesc}>Hệ thống tự động cập nhật số mới mỗi ngày, đảm bảo luôn có số sạch, chưa từng sử dụng.</div>
+                  <div className={styles.infoTitle}>{t('main_benefit_new_title')}</div>
+                  <div className={styles.infoDesc}>{t('main_benefit_new_desc')}</div>
                 </div>
               </div>
               <div className={styles.infoCard}>
                 <div className={styles.infoIcon}>🔄</div>
                 <div>
-                  <div className={styles.infoTitle}>Một lần hoặc nhiều lần SMS</div>
-                  <div className={styles.infoDesc}>Chọn số dùng 1 lần hoặc thuê số nhận nhiều mã SMS trong thời gian dài.</div>
+                  <div className={styles.infoTitle}>{t('main_benefit_sms_title')}</div>
+                  <div className={styles.infoDesc}>{t('main_benefit_sms_desc')}</div>
                 </div>
               </div>
               <div className={styles.infoCard}>
                 <div className={styles.infoIcon}>👨‍💻</div>
                 <div>
-                  <div className={styles.infoTitle}>Cho cá nhân & nhà phát triển</div>
-                  <div className={styles.infoDesc}>API mạnh mẽ, tài liệu chi tiết, phù hợp cả người dùng cá nhân lẫn doanh nghiệp.</div>
+                  <div className={styles.infoTitle}>{t('main_benefit_dev_title')}</div>
+                  <div className={styles.infoDesc}>{t('main_benefit_dev_desc')}</div>
                 </div>
               </div>
               <div className={styles.infoCard}>
                 <div className={styles.infoIcon}>💸</div>
                 <div>
-                  <div className={styles.infoTitle}>Phí hoa hồng thấp</div>
-                  <div className={styles.infoDesc}>Giá dịch vụ cạnh tranh, minh bạch, không phí ẩn, thanh toán linh hoạt.</div>
+                  <div className={styles.infoTitle}>{t('main_benefit_fee_title')}</div>
+                  <div className={styles.infoDesc}>{t('main_benefit_fee_desc')}</div>
                 </div>
               </div>
               <div className={styles.infoCard}>
                 <div className={styles.infoIcon}>⏰</div>
                 <div>
-                  <div className={styles.infoTitle}>Hỗ trợ 24/7</div>
-                  <div className={styles.infoDesc}>Đội ngũ hỗ trợ luôn sẵn sàng giải đáp mọi thắc mắc qua Telegram, Facebook, Email.</div>
+                  <div className={styles.infoTitle}>{t('main_benefit_support_title')}</div>
+                  <div className={styles.infoDesc}>{t('main_benefit_support_desc')}</div>
                 </div>
               </div>
             </div>
-
-            {/* Lợi ích khi dùng số ảo */}
+            {/* Ai nên dùng */}
             <div className={styles.section}>
-              <h3 className={styles.sectionSubtitle}>Bạn có thể làm gì với số điện thoại tạm thời?</h3>
-              <div className={styles.benefitGrid}>
-                <div className={styles.benefitCard}>
-                  <div className={styles.benefitTitle}>Đăng ký hàng loạt, kiếm tiền</div>
-                  <div className={styles.benefitDesc}>Tạo nhiều tài khoản, nhận mã xác thực nhanh chóng để tham gia các chương trình kiếm tiền, nhận thưởng, tiếp thị liên kết.</div>
-                </div>
-                <div className={styles.benefitCard}>
-                  <div className={styles.benefitTitle}>Ẩn danh, bảo mật</div>
-                  <div className={styles.benefitDesc}>Bảo vệ số thật, tránh spam, quảng cáo, lộ thông tin cá nhân khi đăng ký dịch vụ mới.</div>
-                </div>
-                <div className={styles.benefitCard}>
-                  <div className={styles.benefitTitle}>Nhận ưu đãi, tham gia event</div>
-                  <div className={styles.benefitDesc}>Dễ dàng nhận mã giảm giá, quà tặng, tham gia các sự kiện, minigame online.</div>
-                </div>
-                <div className={styles.benefitCard}>
-                  <div className={styles.benefitTitle}>Vượt giới hạn địa lý</div>
-                  <div className={styles.benefitDesc}>Đăng ký dịch vụ quốc tế, nhận mã xác thực từ bất kỳ đâu, không bị giới hạn vùng miền.</div>
-                </div>
-                <div className={styles.benefitCard}>
-                  <div className={styles.benefitTitle}>Chống lừa đảo</div>
-                  <div className={styles.benefitDesc}>Giảm nguy cơ bị lừa đảo, bảo vệ tài khoản chính khi thử nghiệm dịch vụ mới hoặc nghi ngờ.</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Ai hưởng lợi */}
-            <div className={styles.section}>
-              <h3 className={styles.sectionSubtitle}>Ai nên sử dụng số điện thoại ảo?</h3>
+              <h3 className={styles.sectionSubtitle}>{t('main_who_title')}</h3>
               <ul className={styles.benefitList}>
-                <li>Người muốn bảo vệ quyền riêng tư, tránh spam</li>
-                <li>Người làm MMO, tiếp thị liên kết, săn event</li>
-                <li>Nhà phát triển, tester, marketer cần test dịch vụ</li>
-                <li>Bất kỳ ai cần nhận mã xác thực online nhanh chóng</li>
+                <li>{t('main_who_privacy')}</li>
+                <li>{t('main_who_mmo')}</li>
+                <li>{t('main_who_dev')}</li>
+                <li>{t('main_who_anyone')}</li>
               </ul>
             </div>
-
             {/* Hướng dẫn nhận SMS */}
             <div className={styles.section}>
-              <h3 className={styles.sectionSubtitle}>Hướng dẫn nhận mã SMS bằng số ảo</h3>
+              <h3 className={styles.sectionSubtitle}>{t('main_guide_title')}</h3>
               <div className={styles.guideGrid}>
                 <div className={styles.guideStep}>
                   <div className={styles.guideNum}>1</div>
                   <div>
-                    <div className={styles.guideTitle}>Chọn số điện thoại ảo</div>
-                    <div className={styles.guideDesc}>Đăng nhập, chọn quốc gia, dịch vụ và số điện thoại phù hợp.</div>
+                    <div className={styles.guideTitle}>{t('main_guide_step1_title')}</div>
+                    <div className={styles.guideDesc}>{t('main_guide_step1_desc')}</div>
                   </div>
                 </div>
                 <div className={styles.guideStep}>
                   <div className={styles.guideNum}>2</div>
                   <div>
-                    <div className={styles.guideTitle}>Nhận mã xác thực</div>
-                    <div className={styles.guideDesc}>Sử dụng số vừa chọn để đăng ký dịch vụ, nhận mã SMS gửi về ngay lập tức.</div>
+                    <div className={styles.guideTitle}>{t('main_guide_step2_title')}</div>
+                    <div className={styles.guideDesc}>{t('main_guide_step2_desc')}</div>
                   </div>
                 </div>
                 <div className={styles.guideStep}>
                   <div className={styles.guideNum}>3</div>
                   <div>
-                    <div className={styles.guideTitle}>Hoàn tất xác minh</div>
-                    <div className={styles.guideDesc}>Nhập mã xác thực vào dịch vụ bạn cần, hoàn tất đăng ký an toàn.</div>
+                    <div className={styles.guideTitle}>{t('main_guide_step3_title')}</div>
+                    <div className={styles.guideDesc}>{t('main_guide_step3_desc')}</div>
                   </div>
                 </div>
               </div>
             </div>
           </>
         )}
-
-        {activePage === 'faq' && (
-          <div className={styles.faqSection}>
-            {!faqDetail ? (
-              <>
-                <h2 className={styles.faqTitle}>Câu hỏi thường gặp (FAQ)</h2>
-                <div className={styles.faqGrid}>
-                  <div className={styles.faqCol}>
-                    <div className={styles.faqGroup}><span className={styles.faqIcon}>❓</span> <span className={styles.faqGroupTitle}>Câu hỏi chung</span></div>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Khi nào có số mới được thêm vào?')}>Khi nào có số mới được thêm vào?</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Tài khoản vừa tạo bị khóa sau một thời gian')}>Tài khoản vừa tạo bị khóa sau một thời gian</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Có số trên website nhưng không thể mua được')}>Có số trên website nhưng không thể mua được</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Số tạm thời là gì?')}>Số tạm thời là gì?</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Có số dùng lâu dài không?')}>Có số dùng lâu dài không?</a>
+        {/* FAQ */}
+        {activePage === 'nav_faq' && (
+          <>
+            <h2 className={styles.sectionTitle}>{t('faq_title')}</h2>
+            <div className={styles.faqSection}>
+              {!faqDetail ? (
+                <>
+                  <div className={styles.faqGrid}>
+                    <div className={styles.faqCol}>
+                      <div className={styles.faqGroup}><span className={styles.faqIcon}>❓</span> <span className={styles.faqGroupTitle}>{t('faq_common_questions')}</span></div>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Khi nào có số mới được thêm vào?')}>{t('faq_new_numbers')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Tài khoản vừa tạo bị khóa sau một thời gian')}>{t('faq_account_locked')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Có số trên website nhưng không thể mua được')}>{t('faq_cannot_buy')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Số tạm thời là gì?')}>{t('faq_temporary_number')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Có số dùng lâu dài không?')}>{t('faq_long_term_number')}</a>
+                    </div>
+                    <div className={styles.faqCol}>
+                      <div className={styles.faqGroup}><span className={styles.faqIcon}>❓</span> <span className={styles.faqGroupTitle}>{t('faq_technical_questions')}</span></div>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Tôi không thể tạo tài khoản 5SIM')}>{t('faq_cannot_create_account')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Không đăng nhập được bằng tài khoản/mật khẩu')}>{t('faq_login_issue')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Cách đổi email tài khoản 5SIM?')}>{t('faq_change_email')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Tài khoản bị hack phải làm sao?')}>{t('faq_account_hacked')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Làm sao lấy API key?')}>{t('faq_get_api_key')}</a>
+                    </div>
+                    <div className={styles.faqCol}>
+                      <div className={styles.faqGroup}><span className={styles.faqIcon}>❓</span> <span className={styles.faqGroupTitle}>{t('faq_sms_questions')}</span></div>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Không nhận được SMS thì làm gì?')}>{t('faq_no_sms')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Mã xác nhận sai')}>{t('faq_wrong_code')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Số điện thoại đã được sử dụng')}>{t('faq_number_used')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Làm sao nhận lại mã xác thực?')}>{t('faq_re_code')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Cách xác thực qua cuộc gọi?')}>{t('faq_call_verification')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Nhận cuộc gọi và mã từ voice bot như thế nào?')}>{t('faq_voice_bot')}</a>
+                    </div>
+                    <div className={styles.faqCol}>
+                      <div className={styles.faqGroup}><span className={styles.faqIcon}>❓</span> <span className={styles.faqGroupTitle}>{t('faq_payment_questions')}</span></div>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Làm sao để nạp tiền vào tài khoản 5SIM?')}>{t('faq_top_up')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Phí giao dịch')}>{t('faq_transaction_fee')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Tiền đã nạp nhưng chưa vào tài khoản')}>{t('faq_funds_not_credited')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Cách rút tiền từ tài khoản 5SIM?')}>{t('faq_withdraw')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Chuyển tiền sang tài khoản 5SIM khác')}>{t('faq_transfer_funds')}</a>
+                    </div>
+                    <div className={styles.faqCol}>
+                      <div className={styles.faqGroup}><span className={styles.faqIcon}>❓</span> <span className={styles.faqGroupTitle}>{t('faq_api_questions')}</span></div>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Mua số qua API')}>{t('faq_api_buy_number')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('IP bị chặn')}>{t('faq_ip_blocked')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Tích hợp 5SIM vào phần mềm')}>{t('faq_integrate_api')}</a>
+                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Bán số trên nền tảng 5SIM')}>{t('faq_sell_numbers')}</a>
+                    </div>
                   </div>
-                  <div className={styles.faqCol}>
-                    <div className={styles.faqGroup}><span className={styles.faqIcon}>💰</span> <span className={styles.faqGroupTitle}>Nạp & rút tiền</span></div>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Làm sao để nạp tiền vào tài khoản 5SIM?')}>Làm sao để nạp tiền vào tài khoản 5SIM?</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Phí giao dịch')}>Phí giao dịch</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Tiền đã nạp nhưng chưa vào tài khoản')}>Tiền đã nạp nhưng chưa vào tài khoản</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Cách rút tiền từ tài khoản 5SIM?')}>Cách rút tiền từ tài khoản 5SIM?</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Chuyển tiền sang tài khoản 5SIM khác')}>Chuyển tiền sang tài khoản 5SIM khác</a>
+                </>
+              ) : (
+                <div className={styles.faqDetailBox}>
+                  <div className={styles.faqBreadcrumb}>
+                    <span className={styles.faqBreadcrumbLink} onClick={() => setFaqDetail(null)}>{t('faq_back_to_faq')}</span>
+                    <span className={styles.faqBreadcrumbSep}>/</span>
+                    <span>{faqDetail}</span>
                   </div>
-                  <div className={styles.faqCol}>
-                    <div className={styles.faqGroup}><span className={styles.faqIcon}>⚠️</span> <span className={styles.faqGroupTitle}>Đánh giá thấp, không đủ tiền</span></div>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Thông báo "Không đủ tiền"')}>Thông báo "Không đủ tiền"</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Thông báo "Đánh giá thấp"')}>Thông báo "Đánh giá thấp"</a>
-                    <div className={styles.faqGroup} style={{marginTop: '1.2rem'}}><span className={styles.faqIcon}>📝</span> <span className={styles.faqGroupTitle}>Đăng ký, đăng nhập, email</span></div>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Tôi không thể tạo tài khoản 5SIM')}>Tôi không thể tạo tài khoản 5SIM</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Không đăng nhập được bằng tài khoản/mật khẩu')}>Không đăng nhập được bằng tài khoản/mật khẩu</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Cách đổi email tài khoản 5SIM?')}>Cách đổi email tài khoản 5SIM?</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Tài khoản bị hack phải làm sao?')}>Tài khoản bị hack phải làm sao?</a>
-                  </div>
-                  <div className={styles.faqCol}>
-                    <div className={styles.faqGroup}><span className={styles.faqIcon}>🔑</span> <span className={styles.faqGroupTitle}>SMS, mã xác thực</span></div>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Không nhận được SMS thì làm gì?')}>Không nhận được SMS thì làm gì?</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Mã xác nhận sai')}>Mã xác nhận sai</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Số điện thoại đã được sử dụng')}>Số điện thoại đã được sử dụng</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Làm sao nhận lại mã xác thực?')}>Làm sao nhận lại mã xác thực?</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Cách xác thực qua cuộc gọi?')}>Cách xác thực qua cuộc gọi?</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Nhận cuộc gọi và mã từ voice bot như thế nào?')}>Nhận cuộc gọi và mã từ voice bot như thế nào?</a>
-                    <div className={styles.faqGroup} style={{marginTop: '1.2rem'}}><span className={styles.faqIcon}>🔗</span> <span className={styles.faqGroupTitle}>Thông tin API</span></div>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Làm sao lấy API key?')}>Làm sao lấy API key?</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Mua số qua API')}>Mua số qua API</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('IP bị chặn')}>IP bị chặn</a>
-                  </div>
-                  <div className={styles.faqCol}>
-                    <div className={styles.faqGroup}><span className={styles.faqIcon}>🤝</span> <span className={styles.faqGroupTitle}>Hợp tác</span></div>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Tích hợp 5SIM vào phần mềm')}>Tích hợp 5SIM vào phần mềm</a>
-                    <a href="#" className={styles.faqLink} onClick={() => handleFaqClick('Bán số trên nền tảng 5SIM')}>Bán số trên nền tảng 5SIM</a>
-                  </div>
+                  <h2 className={styles.faqDetailTitle}>{faqDetail}</h2>
+                  <div className={styles.faqDetailContent}>{faqDetails[faqDetail]?.content}</div>
+                  <button className={styles.faqBackBtn} onClick={() => setFaqDetail(null)}>{t('faq_back_to_faq')}</button>
                 </div>
-              </>
-            ) : (
-              <div className={styles.faqDetailBox}>
-                <div className={styles.faqBreadcrumb}>
-                  <span className={styles.faqBreadcrumbLink} onClick={handleFaqBack}>FAQ</span>
-                  <span className={styles.faqBreadcrumbSep}>/</span>
-                  <span>{faqDetails[faqDetail]?.title}</span>
-                </div>
-                <h2 className={styles.faqDetailTitle}>{faqDetails[faqDetail]?.title}</h2>
-                <div className={styles.faqDetailContent}>{faqDetails[faqDetail]?.content}</div>
-                <button className={styles.faqBackBtn} onClick={handleFaqBack}>← Quay lại FAQ</button>
-              </div>
-            )}
-          </div>
-        )}
-
-        {activePage === 'api' && (
-          <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>API Information</h2>
-            <p className={styles.descriptionText}>Thông tin về API, hướng dẫn sử dụng API của 5SIM sẽ được hiển thị ở đây.</p>
-          </div>
-        )}
-        {activePage === 'howto' && (
-          <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>Hướng dẫn mua số và nhận mã SMS</h2>
-            <div className={styles.timeline}>
-              <div className={styles.timelineStep}>
-                <div className={styles.timelineIcon}>1</div>
-                <div className={styles.timelineContent}><b>Đăng nhập hoặc đăng ký tài khoản</b></div>
-                <div className={styles.timelineLine}></div>
-              </div>
-              <div className={styles.timelineStep}>
-                <div className={styles.timelineIcon}>2</div>
-                <div className={styles.timelineContent}><b>Nạp tiền vào tài khoản</b><span className={styles.timelineNote}>Bạn có thể chọn nhiều phương thức thanh toán khác nhau.</span></div>
-                <div className={styles.timelineLine}></div>
-              </div>
-              <div className={styles.timelineStep}>
-                <div className={styles.timelineIcon}>3</div>
-                <div className={styles.timelineContent}><b>Chọn dịch vụ cần nhận mã</b><span className={styles.timelineNote}>Chọn website/app bạn muốn nhận mã SMS.</span></div>
-                <div className={styles.timelineLine}></div>
-              </div>
-              <div className={styles.timelineStep}>
-                <div className={styles.timelineIcon}>4</div>
-                <div className={styles.timelineContent}><b>Chọn quốc gia</b><span className={styles.timelineNote}>Chọn quốc gia phù hợp với dịch vụ.</span></div>
-                <div className={styles.timelineLine}></div>
-              </div>
-              <div className={styles.timelineStep}>
-                <div className={styles.timelineIcon}>5</div>
-                <div className={styles.timelineContent}><b>Chọn nhà mạng (nếu có)</b></div>
-                <div className={styles.timelineLine}></div>
-              </div>
-              <div className={styles.timelineStep}>
-                <div className={styles.timelineIcon}>6</div>
-                <div className={styles.timelineContent}><b>Nhấn "Mua số"</b><span className={styles.timelineNote}>Số sẽ hiển thị ngay, bạn dùng số này để đăng ký dịch vụ.</span></div>
-                <div className={styles.timelineLine}></div>
-              </div>
-              <div className={styles.timelineStep}>
-                <div className={styles.timelineIcon}>7</div>
-                <div className={styles.timelineContent}><b>Nhận mã SMS</b><span className={styles.timelineNote}>Mã xác thực sẽ hiển thị ngay khi dịch vụ gửi về.</span></div>
-          </div>
-        </div>
-
-            <div className={styles.infoBox}>
-              <b>💡 Lưu ý:</b>
-              <ul>
-                <li>Nếu số không nhận được mã, bạn có thể hoàn tiền tự động sau 5-15 phút.</li>
-                <li>Không dùng số cho các dịch vụ cấm, gian lận, spam.</li>
-                <li>Hỗ trợ 24/7 qua Telegram, Facebook, Email.</li>
-              </ul>
-        </div>
-
-            <div className={styles.section}>
-              <h3 className={styles.sectionSubtitle}>Hướng dẫn sử dụng API</h3>
-              <div className={styles.apiBox}>
-                <div><b>API 5SIM là RESTful, trả về JSON.</b></div>
-                <div>Để xác thực, thêm <code>Authorization: Bearer {`<API_KEY>`}</code> vào header.</div>
-                <div className={styles.apiCodeBlock}>
-                  <div>Ví dụ header:</div>
-                  <pre>Authorization: Bearer sk-abc123xyz456</pre>
-                </div>
-                <div className={styles.apiCodeBlock}>
-                  <div>Ví dụ curl:</div>
-                  <pre>curl -H "Authorization: Bearer sk-abc123xyz456" https://5sim.net/v1/user/profile</pre>
-                </div>
-                <div className={styles.apiNote}>Xem tài liệu chi tiết tại <a href="https://5sim.net/docs" target="_blank" rel="noopener noreferrer">https://5sim.net/docs</a></div>
-              </div>
+              )}
             </div>
-          </div>
+          </>
         )}
-        {activePage === 'free' && (
-          <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>Số điện thoại ảo miễn phí để nhận SMS</h2>
-            <p className={styles.descriptionText}>
-              Bạn có thể sử dụng số điện thoại ảo miễn phí của 5SIM để nhận mã xác thực SMS mà không cần đăng ký tài khoản. Số miễn phí được cập nhật ngẫu nhiên, không theo lịch cố định. Bạn có thể dùng thử dịch vụ trước khi quyết định đăng ký.
-            </p>
-            <div className={styles.freeBoxWrap}>
-              <div className={styles.freeBox}>
-                <h3>Chọn số</h3>
-                <div className={styles.freeBoxEmpty}>Không có số miễn phí khả dụng</div>
-              </div>
-              <div className={styles.freeBox}>
-                <h3>Tin nhắn</h3>
-                <div className={styles.freeBoxEmpty}>Chưa có tin nhắn nào được nhận</div>
-              </div>
-            </div>
-            <div className={styles.freeNote}>
-              Sau khi thử nghiệm, bạn nên đăng ký tài khoản để sử dụng đầy đủ các tính năng và nhận nhiều số hơn.
-            </div>
-          </div>
-        )}
-
-        {activePage === 'blog' && (
-          <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>Blog về 5SIM – Nhận SMS và kích hoạt tài khoản mọi nền tảng</h2>
-            <div className={styles.blogWrap}>
-              <div className={styles.blogMain}>
-                {[
-                  {title:'Cách tạo tài khoản eBay không cần số điện thoại',date:'27/04/2023',read:'4 phút',desc:'eBay là một trong những sàn thương mại điện tử lớn nhất thế giới. Bạn có thể mua bán mọi thứ, từ quần áo, sách, đồ gia dụng đến đồ điện tử, xe cộ... Bài viết này hướng dẫn bạn tạo tài khoản eBay mà không cần số điện thoại.'},
-                  {title:'Cách tạo tài khoản Kwai không cần số điện thoại',date:'27/04/2023',read:'4 phút',desc:'Kwai là nền tảng video giải trí, mạng xã hội nổi tiếng. Bạn có thể tạo tài khoản, đăng video, kiếm tiền mà không cần số điện thoại thật.'},
-                  {title:'Số ảo Malaysia',date:'27/04/2023',read:'5 phút',desc:'Malaysia là quốc gia nhỏ nhưng phát triển mạnh về công nghệ, dịch vụ số. Số ảo Malaysia giúp bạn đăng ký nhiều dịch vụ quốc tế dễ dàng.'},
-                  {title:'Số ảo Ấn Độ nhận SMS online',date:'14/02/2023',read:'4 phút',desc:'Ấn Độ là quốc gia đông dân, nhiều dịch vụ online cần xác thực SMS. Số ảo Ấn Độ giúp bạn nhận mã xác thực dễ dàng.'},
-                  {title:'Số ảo Indonesia',date:'14/02/2023',read:'5 phút',desc:'Indonesia là quốc gia đa văn hóa, nhiều dịch vụ số phát triển. Số ảo Indonesia giúp bạn đăng ký tài khoản quốc tế nhanh chóng.'},
-                  {title:'Số ảo Brazil',date:'18/01/2023',read:'4 phút',desc:'Brazil là quốc gia lớn, nhiều dịch vụ online, số ảo giúp bạn nhận mã xác thực, đăng ký tài khoản dễ dàng.'},
-                  {title:'Cách tạo tài khoản Mail.ru không cần số điện thoại',date:'18/01/2023',read:'5 phút',desc:'Mail.ru là dịch vụ email lớn nhất tại Nga, hỗ trợ nhiều tính năng, số ảo giúp bạn đăng ký nhanh.'},
-                  {title:'Cách tạo tài khoản Eneba không cần số điện thoại',date:'18/01/2023',read:'5 phút',desc:'Eneba là sàn game, gift card, key bản quyền lớn, số ảo giúp bạn đăng ký, mua bán an toàn.'},
-                ].map((post, idx) => (
-                  <div className={styles.blogCard} key={idx}>
-                    <div className={styles.blogTitle}>{post.title}</div>
-                    <div className={styles.blogMeta}>{post.date} · {post.read}</div>
-                    <div className={styles.blogDesc}>{post.desc}</div>
-                  </div>
-                ))}
-              </div>
-              <div className={styles.blogSidebar}>
-                <div className={styles.blogSidebarTitle}>Bài viết mới</div>
-                <ul className={styles.blogSidebarList}>
-                  <li>Cách tạo tài khoản eBay không cần số điện thoại</li>
-                  <li>Cách tạo tài khoản Kwai không cần số điện thoại</li>
-                  <li>Số ảo Malaysia</li>
-                  <li>Số ảo Ấn Độ nhận SMS online</li>
-                  <li>Số ảo Indonesia</li>
-                </ul>
-              </div>
-            </div>
-            <div className={styles.blogPagination}>
-              <span className={styles.blogPageActive}>1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>4</span>
-              <span>5</span>
-            </div>
-          </div>
-        )}
-        {activePage === 'price' && (
-          <div className={styles.section}>
+        {/* Price */}
+        {activePage === 'nav_price' && (
+          <>
             <div className={styles.priceHeader}>
               <div className={styles.priceTabs}>
-                <button className={priceTab === 'price' ? styles.priceTabActive : styles.priceTab} onClick={() => setPriceTab('price')}>Bảng giá</button>
-                <button className={priceTab === 'stats' ? styles.priceTabActive : styles.priceTab} onClick={() => setPriceTab('stats')}>Thống kê</button>
+                <button className={priceTab === 'price' ? styles.priceTabActive : styles.priceTab} onClick={() => setPriceTab('price')}>{t('price_table_tab')}</button>
+                <button className={priceTab === 'stats' ? styles.priceTabActive : styles.priceTab} onClick={() => setPriceTab('stats')}>{t('stats_tab')}</button>
               </div>
-              <div className={styles.priceTitle}>{priceTab === 'price' ? 'Bảng giá dịch vụ' : 'Thống kê dịch vụ'}</div>
+              <div className={styles.priceTitle}>{priceTab === 'price' ? t('price_table_title') : t('stats_title')}</div>
             </div>
             {priceTab === 'price' && (
               <>
                 <div className={styles.priceFilters}>
-                  <button className={styles.priceFilterBtn}>⭐ Dịch vụ yêu thích</button>
-                  <button className={styles.priceFilterBtn}>⭐ Quốc gia yêu thích</button>
+                  <button className={styles.priceFilterBtn}>⭐ {t('price_favorite_services')}</button>
+                  <button className={styles.priceFilterBtn}>⭐ {t('price_favorite_countries')}</button>
                   <select className={styles.priceSelect} value={filterService} onChange={e => setFilterService(e.target.value)}>
-                    {serviceOptions.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+                    {serviceOptions.map(opt => <option key={opt} value={opt}>{opt === allKey ? t('all') : opt}</option>)}
                   </select>
                   <select className={styles.priceSelect} value={filterCountry} onChange={e => setFilterCountry(e.target.value)}>
-                    {countryOptions.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+                    {countryOptions.map(opt => <option key={opt} value={opt}>{opt === allKey ? t('all') : opt}</option>)}
                   </select>
-                  <select className={styles.priceSelect}><option>Giá</option><option>Thấp đến cao</option><option>Cao đến thấp</option></select>
-                  <select className={styles.priceSelect}><option>Thời gian</option><option>3 ngày</option><option>7 ngày</option></select>
-                  <button className={styles.priceFilterBtn}>CSV</button>
+                  <select className={styles.priceSelect}><option>{t('price_sort_by_price')}</option><option>{t('price_sort_low_to_high')}</option><option>{t('price_sort_high_to_low')}</option></select>
+                  <select className={styles.priceSelect}><option>{t('price_time_period')}</option><option>{t('price_3_days')}</option><option>{t('price_7_days')}</option></select>
+                  <button className={styles.priceFilterBtn}>{t('price_csv_export')}</button>
                 </div>
-                <div className={styles.priceNote}>Tỉ lệ thành công SMS được tính trong 3 ngày gần nhất</div>
+                <div className={styles.priceNote}>{t('price_success_rate_note')}</div>
                 <div className={styles.priceTableWrapper}>
                   <table className={styles.priceTable}>
                     <thead>
                       <tr>
-                        <th className={`sortable ${priceSortBy==='service' ? 'sorted' : ''}`} onClick={() => {setPriceSortBy('service');setPriceSortOrder(priceSortOrder==='desc'?'asc':'desc')}}>Dịch vụ</th>
-                        <th className={`sortable ${priceSortBy==='country' ? 'sorted ' + (priceSortOrder==='desc' ? 'sorted-desc' : 'sorted-asc') : ''}`} onClick={() => {setPriceSortBy('country');setPriceSortOrder(priceSortOrder==='desc'?'asc':'desc')}}>Quốc gia</th>
-                        <th>Nhà mạng</th>
-                        <th className={`sortable ${priceSortBy==='rate' ? 'sorted ' + (priceSortOrder==='desc' ? 'sorted-desc' : 'sorted-asc') : ''}`} onClick={() => {setPriceSortBy('rate');setPriceSortOrder(priceSortOrder==='desc'?'asc':'desc')}}>Tỉ lệ</th>
-                        <th>Số lượng</th>
-                        <th className={`sortable ${priceSortBy==='price' ? 'sorted ' + (priceSortOrder==='desc' ? 'sorted-desc' : 'sorted-asc') : ''}`} onClick={() => {setPriceSortBy('price');setPriceSortOrder(priceSortOrder==='desc'?'asc':'desc')}}>Giá</th>
+                        <th className={`sortable ${priceSortBy==='service' ? 'sorted' : ''}`} onClick={() => {setPriceSortBy('service');setPriceSortOrder(priceSortOrder==='desc'?'asc':'desc')}}>{t('price_service')}</th>
+                        <th className={`sortable ${priceSortBy==='country' ? 'sorted ' + (priceSortOrder==='desc' ? 'sorted-desc' : 'sorted-asc') : ''}`} onClick={() => {setPriceSortBy('country');setPriceSortOrder(priceSortOrder==='desc'?'asc':'desc')}}>{t('price_country')}</th>
+                        <th>{t('price_operator')}</th>
+                        <th className={`sortable ${priceSortBy==='rate' ? 'sorted ' + (priceSortOrder==='desc' ? 'sorted-desc' : 'sorted-asc') : ''}`} onClick={() => {setPriceSortBy('rate');setPriceSortOrder(priceSortOrder==='desc'?'asc':'desc')}}>{t('price_rate')}</th>
+                        <th>{t('price_quantity')}</th>
+                        <th className={`sortable ${priceSortBy==='price' ? 'sorted ' + (priceSortOrder==='desc' ? 'sorted-desc' : 'sorted-asc') : ''}`} onClick={() => {setPriceSortBy('price');setPriceSortOrder(priceSortOrder==='desc'?'asc':'desc')}}>{t('price_price')}</th>
                         <th></th>
                       </tr>
                     </thead>
                     <tbody>
-                      {sortedPriceData.map((row, idx) => (
-                        <tr key={idx}>
+                      {pagedPriceData.map((row, idx) => (
+                        <tr key={row.service + row.country + row.operator}>
                           <td>{row.service}</td>
-                          <td><span className={styles.flag}>{row.flag}</span> {row.country}</td>
+                          <td>{row.country}</td>
                           <td>{row.operator}</td>
                           <td>{row.rate !== null ? row.rate + '%' : 'n/a'}</td>
-                          <td>{row.pcs}</td>
-                          <td>{row.price}₽</td>
-                          <td><button className={styles.buyBtn}>Mua</button></td>
+                          <td>{row.count ?? ''}</td>
+                          <td>{currency === 'rub' ? row.price : Math.round(row.price * RUB_TO_VND)}{currency === 'rub' ? '₽' : '₫'}</td>
+                          <td><button className={styles.buyBtn}>{t('price_buy_button')}</button></td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 </div>
+                <div style={{display:'flex',justifyContent:'center',alignItems:'center',gap:12,margin:'16px 0'}}>
+                  <button disabled={page === 1} onClick={() => setPage(page-1)}>&lt; Prev</button>
+                  <span>Trang {page}/{totalPages}</span>
+                  <button disabled={page === totalPages} onClick={() => setPage(page+1)}>Next &gt;</button>
+                </div>
               </>
             )}
             {priceTab === 'stats' && (
               <div className={styles.priceStatsBox}>
-                <div className={styles.priceStatsTitle}>Thống kê dịch vụ (dữ liệu mẫu)</div>
-            
+                <div className={styles.priceStatsTitle}>{t('stats_title')}</div>
                 <div className={styles.statsChartHeaderGrid}>
                   <div className={styles.statsChartHeaderCol}>
-                    <span className={styles.statsChartHeaderLabel}>Tỉ lệ thành công</span>
+                    <span className={styles.statsChartHeaderLabel}>{t('stats_success_rate')}</span>
                     <span className={styles.statsChartHeaderCell} onClick={() => {setStatsSortBy('rate');setStatsSortOrder(statsSortOrder==='desc'?'asc':'desc')}}>
-                      (%) {statsSortBy==='rate' ? (statsSortOrder==='desc'?'▼':'▲') : ''}
+                      ({t('stats_rate_percent')}) {statsSortBy==='rate' ? (statsSortOrder==='desc'?'▼':'▲') : ''}
                     </span>
                   </div>
                   <div className={styles.statsChartHeaderCol}>
-                    <span className={styles.statsChartHeaderLabel}>Giá số</span>
+                    <span className={styles.statsChartHeaderLabel}>{t('stats_number_price')}</span>
                     <span className={styles.statsChartHeaderCell} onClick={() => {setStatsSortBy('price');setStatsSortOrder(statsSortOrder==='desc'?'asc':'desc')}}>
-                      (₽) {statsSortBy==='price' ? (statsSortOrder==='desc'?'▼':'▲') : ''}
+                      ({t('stats_price_ruble')}) {statsSortBy==='price' ? (statsSortOrder==='desc'?'▼':'▲') : ''}
                     </span>
                   </div>
                 </div>
                 <div className={styles.statsChartList}>
-                  {sortedStatsData.map((row, idx) => {
-                    // Tính % chiều dài bar cho giá
-                    const minPrice = Math.min(...sortedStatsData.map(r => r.price));
-                    const maxPrice = Math.max(...sortedStatsData.map(r => r.price));
-                    const pricePercent = ((row.price - minPrice) / (maxPrice - minPrice + 1e-6)) * 100;
+                  {statsDisplayData.map((row, idx) => {
+                    const pricePercent = ((row.price - statsMinPrice) / (statsMaxPrice - statsMinPrice + 1e-6)) * 100;
                     return (
                       <div className={styles.statsChartRow} key={idx}>
                         <div className={styles.statsChartInfo}>
-                          <span className={styles.flag}>{row.flag}</span>
                           <span className={styles.statsChartCountry}>{row.country}</span>
                           <span className={styles.statsChartOp}>{row.operator}</span>
                         </div>
@@ -824,7 +811,7 @@ function MainContent({ activePage }) {
                             ></div>
                             <span className={styles.statsBarValueRight}>{row.rate}%</span>
                             {hoveredBar === `rate${idx}` && (
-                              <div className="statsTooltip">Tỉ lệ thành công: {row.rate}%</div>
+                              <div className="statsTooltip">{t('stats_tooltip_rate')}: {row.rate}%</div>
                             )}
                           </div>
                           <div className={styles.statsBarWrap}>
@@ -834,20 +821,119 @@ function MainContent({ activePage }) {
                               onMouseEnter={() => setHoveredBar(`price${idx}`)}
                               onMouseLeave={() => setHoveredBar(null)}
                             ></div>
-                            <span className={styles.statsBarValueRight}>{row.price}₽</span>
+                            <span className={styles.statsBarValueRight}>{currency === 'rub' ? row.price : Math.round(row.price * RUB_TO_VND)}{currency === 'rub' ? '₽' : '₫'}</span>
                             {hoveredBar === `price${idx}` && (
-                              <div className="statsTooltip">Giá số: {row.price}₽</div>
+                              <div className="statsTooltip">{t('stats_tooltip_price')}: {currency === 'rub' ? row.price : Math.round(row.price * RUB_TO_VND)}{currency === 'rub' ? '₽' : '₫'}</div>
                             )}
                           </div>
                         </div>
-                        <button className={styles.statsBuyBtn}>Mua</button>
+                        <button className={styles.statsBuyBtn}>{t('price_buy_button')}</button>
                       </div>
                     );
                   })}
                 </div>
               </div>
             )}
-        </div>
+          </>
+        )}
+        {/* Blog */}
+        {activePage === 'nav_blog' && (
+          <>
+            <h2 className={styles.sectionTitle}>{t('blog_title')}</h2>
+            <div className={styles.blogWrap}>
+              <div className={styles.blogMain}>
+                {/* Danh sách bài viết mẫu */}
+                {[{
+                  title: t('blog_ebay_title'),
+                  date: '27/04/2023',
+                  read: '4 phút',
+                  desc: t('blog_ebay_desc')
+                },{
+                  title: t('blog_kwai_title'),
+                  date: '27/04/2023',
+                  read: '4 phút',
+                  desc: t('blog_kwai_desc')
+                }].map((post, idx) => (
+                  <div className={styles.blogCard} key={idx}>
+                    <div className={styles.blogTitle}>{post.title}</div>
+                    <div className={styles.blogMeta}>{post.date} · {post.read}</div>
+                    <div className={styles.blogDesc}>{post.desc}</div>
+                  </div>
+                ))}
+              </div>
+              <div className={styles.blogSidebar}>
+                <div className={styles.blogSidebarTitle}>{t('blog_new_posts')}</div>
+                <ul className={styles.blogSidebarList}>
+                  <li>{t('blog_ebay_post')}</li>
+                  <li>{t('blog_kwai_post')}</li>
+                </ul>
+              </div>
+            </div>
+          </>
+        )}
+        {/* How to buy */}
+        {activePage === 'nav_howto' && (
+          <>
+            <h2 className={styles.sectionTitle}>{t('howto_title')}</h2>
+            <div className={styles.timeline}>
+              {[1,2,3,4,5,6,7].map(step => (
+                <div className={styles.timelineStep} key={step}>
+                  <div className={styles.timelineIcon}>{step}</div>
+                  <div className={styles.timelineContent}><b>{t(`howto_step${step}_title`)}</b><span className={styles.timelineNote}>{t(`howto_step${step}_note`)}</span></div>
+                  <div className={styles.timelineLine}></div>
+                </div>
+              ))}
+            </div>
+            <div className={styles.infoBox}>
+              <b>{t('howto_note_attention')}</b>
+              <ul>
+                <li>{t('howto_note_auto_refund')}</li>
+                <li>{t('howto_note_do_not_use_for_forbidden')}</li>
+                <li>{t('howto_note_support')}</li>
+              </ul>
+            </div>
+          </>
+        )}
+        {/* Free */}
+        {activePage === 'nav_free' && (
+          <>
+            <h2 className={styles.sectionTitle}>{t('free_title')}</h2>
+            <p className={styles.descriptionText}>{t('free_desc')}</p>
+            <div className={styles.freeBoxWrap}>
+              <div className={styles.freeBox}>
+                <h3>{t('free_choose_number')}</h3>
+                <div className={styles.freeBoxEmpty}>{t('free_no_numbers_available')}</div>
+              </div>
+              <div className={styles.freeBox}>
+                <h3>{t('free_messages')}</h3>
+                <div className={styles.freeBoxEmpty}>{t('free_no_messages_received')}</div>
+              </div>
+            </div>
+            <div className={styles.freeNote}>{t('free_after_trial')}</div>
+          </>
+        )}
+        {/* API */}
+        {activePage === 'nav_api' && (
+          <>
+            <h2 className={styles.sectionTitle}>{t('api_info_title')}</h2>
+            <p className={styles.descriptionText}>{t('api_info_desc')}</p>
+            <div className={styles.section}>
+              <h3 className={styles.sectionSubtitle}>{t('howto_api_guide_title')}</h3>
+              <div className={styles.apiBox}>
+                <div><b>{t('api_5sim_is_restful')}</b></div>
+                <div>{t('api_add_authorization_header')}</div>
+                <div className={styles.apiCodeBlock}>
+                  <div>{t('api_example_header')}</div>
+                  <pre>Authorization: Bearer {'<API_KEY>'}</pre>
+                </div>
+                <div className={styles.apiCodeBlock}>
+                  <div>{t('api_example_curl')}</div>
+                  <pre>curl -H "Authorization: Bearer sk-abc123xyz456" https://5sim.net/v1/user/profile</pre>
+                </div>
+                <div className={styles.apiNote}>{t('api_see_docs')}</div>
+              </div>
+            </div>
+          </>
         )}
       </div>
     </div>

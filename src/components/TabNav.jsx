@@ -1,26 +1,20 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './TabNav.module.css';
 
-const tabItems = [
-  { key: 'home', label: 'Chung' },
-  { key: 'price', label: 'Giá' },
-  { key: 'api', label: 'API' },
-];
-
-function TabNav({ activePage, setActivePage }) {
+function TabNav({ activeTab, setActiveTab, tabs = [] }) {
+  const { t } = useTranslation();
   return (
     <div className={styles.tabNav}>
-      <div className={styles.tabList}>
-        {tabItems.map(tab => (
-          <div
-            key={tab.key}
-            className={activePage === tab.key ? styles.tabActive : styles.tab}
-            onClick={() => setActivePage(tab.key)}
-          >
-            {tab.label}
-          </div>
-        ))}
-      </div>
+      {tabs.map(tab => (
+        <button
+          key={tab.key}
+          className={activeTab === tab.key ? styles.active : ''}
+          onClick={() => setActiveTab(tab.key)}
+        >
+          {t(tab.label)}
+        </button>
+      ))}
     </div>
   );
 }
