@@ -67,19 +67,86 @@ function formatNumber(num) {
   return num.toLocaleString('en-US').replace(/,/g, ' ');
 }
 
-// (Demo) Icon cho dịch vụ và quốc gia
+// Icons cho dịch vụ với màu sắc (sử dụng CDN có màu)
 const serviceIcons = {
+  // Social Media
   facebook: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg',
+  instagram: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg',
+  twitter: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg',
+  tiktok: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg',
+  snapchat: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/snapchat.svg',
+  linkedin: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg',
+  pinterest: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pinterest.svg',
+  reddit: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/reddit.svg',
+  tumblr: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tumblr.svg',
+  vkontakte: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vkontakte.svg',
+  wechat: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/wechat.svg',
+  weibo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/weibo.svg',
+  yalla: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/yalla.svg',
+  
+  // Messaging
   telegram: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg',
   whatsapp: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg',
+  viber: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/viber.svg',
+  signal: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/signal.svg',
+  line: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/line.svg',
+  kik: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/kik.svg',
+  
+  // Tech Companies
   google: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg',
   microsoft: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoft.svg',
+  apple: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/apple.svg',
   amazon: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazon.svg',
-  instagram: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg',
-  tiktok: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg',
-  uber: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/uber.svg',
+  netflix: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/netflix.svg',
+  spotify: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/spotify.svg',
   discord: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg',
-  // ... thêm các dịch vụ khác nếu muốn
+  slack: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/slack.svg',
+  zoom: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zoom.svg',
+  skype: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/skype.svg',
+  
+  // E-commerce & Services
+  uber: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/uber.svg',
+  lyft: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/lyft.svg',
+  airbnb: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/airbnb.svg',
+  booking: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/booking.svg',
+  ebay: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/ebay.svg',
+  aliexpress: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/aliexpress.svg',
+  shopee: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/shopee.svg',
+  lazada: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/lazada.svg',
+  walmart: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/walmart.svg',
+  target: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/target.svg',
+  
+  // Gaming & Entertainment
+  steam: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/steam.svg',
+  epicgames: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/epicgames.svg',
+  twitch: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitch.svg',
+  youtube: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg',
+  
+  // Finance & Business
+  paypal: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/paypal.svg',
+  stripe: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/stripe.svg',
+  coinbase: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/coinbase.svg',
+  binance: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/binance.svg',
+  dropbox: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dropbox.svg',
+  github: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg',
+  gitlab: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gitlab.svg',
+  bitbucket: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/bitbucket.svg',
+  
+  // Other Services
+  tinder: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tinder.svg',
+  bumble: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/bumble.svg',
+  okcupid: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/okcupid.svg',
+  grubhub: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/grubhub.svg',
+  doordash: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/doordash.svg',
+  postmates: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postmates.svg',
+  wolt: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/wolt.svg',
+  yahoo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/yahoo.svg',
+  yandex: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/yandex.svg',
+  zoho: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zoho.svg',
+  truecaller: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/truecaller.svg',
+  vinted: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vinted.svg',
+  ticketmaster: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/ticketmaster.svg',
+  googlevoice: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlevoice.svg'
 };
 const countryIcons = {
   vietnam: 'https://flagcdn.com/24x18/vn.png',
@@ -188,7 +255,7 @@ const countryIcons = {
   romania: 'https://flagcdn.com/24x18/ro.png',
   dominicana: 'https://flagcdn.com/24x18/do.png'
 };
-const defaultIcon = 'https://cdn-icons-png.flaticon.com/512/1946/1946429.png'; // icon dấu hỏi tròn
+const defaultIcon = 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/question.svg'; // icon dấu hỏi cho dịch vụ mặc định
 
 // Debounce hook
 function useDebounce(value, delay) {
@@ -308,8 +375,8 @@ function SideBar({ onSelectNetwork, setActivePage, setPriceTab, priceTab }) {
     <div className={styles.sidebar}>
       {/* Header lớn với logo 5sim */}
       <div className={styles.sidebarHeader}>
-        <img src="/assets/icons/5sim-logo.svg" alt="5sim" className={styles.sidebarLogo} />
-        <div className={styles.sidebarTitle}>5sim Virtual Numbers<br/>for Receiving SMS Codes</div>
+        <img src="/assets/icons/sim-logo.svg" alt="5sim" className={styles.sidebarLogo} />
+        <div className={styles.sidebarTitle}>sim Virtual Numbers<br/>for Receiving SMS Codes</div>
       </div>
       {/* Tabs nhỏ */}
       <div className={styles.sidebarTabs}>
@@ -336,10 +403,13 @@ function SideBar({ onSelectNetwork, setActivePage, setPriceTab, priceTab }) {
         <label className={styles.label}>{t('sidebar_select_service')}</label>
         <input
           className={styles.searchBox}
-          placeholder={t('sidebar_select_service_placeholder')}
+          placeholder="Find website or app"
           value={serviceSearch}
           onChange={e => setServiceSearch(e.target.value)}
         />
+        <button className={styles.addServiceBtn}>
+          Add service
+        </button>
         <div className={styles.list}>
           {(showAllServices ? filteredServiceOptions : filteredServiceOptions.slice(0, MAX_SERVICE)).map((service) => {
             const minCost = getMinCostForService(service, selectedCountry);
@@ -352,17 +422,16 @@ function SideBar({ onSelectNetwork, setActivePage, setPriceTab, priceTab }) {
                   (selectedService === service ? ' ' + styles.listItemActive : '')
                 }
                 onClick={() => handleServiceChange(service)}
+
               >
                 <span className={styles.listItemMain}>
-                  {/* Star icon */}
-                  <span style={{color:'#bbb',marginRight:6,fontSize:18}}>&#9734;</span>
                   <img
                     src={serviceIcons[service] && typeof serviceIcons[service] === 'string' && serviceIcons[service].trim() !== '' ? serviceIcons[service] : defaultIcon}
                     alt="icon"
                     className={styles.listItemIcon}
                     onError={e => { e.target.onerror = null; e.target.src = defaultIcon; }}
                   />
-                  <span className={styles.listItemName} style={{marginLeft: 0}}>{service}</span>
+                  <span className={styles.listItemName}>{service}</span>
                 </span>
                 <span className={styles.listItemRight}>
                   {minCost !== null && (
@@ -370,7 +439,9 @@ function SideBar({ onSelectNetwork, setActivePage, setPriceTab, priceTab }) {
                       from {currency === 'rub' ? minCost : Math.round(minCost * RUB_TO_VND)}{currency === 'rub' ? '₽' : '₫'}
                     </span>
                   )}
-                  <span className={styles.listItemCount}>{formatNumber(count)} <span style={{color:'#888',fontWeight:400,fontSize:'0.97em'}}>numbers</span></span>
+                  <span className={styles.listItemCount}>
+                    {formatNumber(count)} <span style={{color:'#888',fontWeight:400,fontSize:'0.8em'}}>numbers</span>
+                  </span>
                 </span>
               </button>
             );
@@ -404,14 +475,13 @@ function SideBar({ onSelectNetwork, setActivePage, setPriceTab, priceTab }) {
                 onClick={() => handleCountryChange(c)}
               >
                 <span className={styles.listItemMain}>
-                  <span style={{color:'#bbb',marginRight:6,fontSize:18}}>&#9734;</span>
                   <img
                     src={countryIcons[c] || countryIcons[c.replace(/\s+/g, '_')] || defaultIcon}
                     alt="icon"
                     className={styles.listItemIcon}
                     onError={e => { e.target.onerror = null; e.target.src = defaultIcon; }}
                   />
-                  <span className={styles.listItemName} style={{marginLeft: 0}}>{c.charAt(0).toUpperCase() + c.slice(1)}</span>
+                  <span className={styles.listItemName}>{c.charAt(0).toUpperCase() + c.slice(1)}</span>
                 </span>
               </button>
             );

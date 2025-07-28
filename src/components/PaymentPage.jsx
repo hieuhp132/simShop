@@ -183,13 +183,13 @@ export default function PaymentPage({ user }) {
             onClick={() => setActiveTab('recharge')}
             className={activeTab === 'recharge' ? styles['tab-active'] : styles['tab-inactive']}
           >
-            {t('recharge') || 'Recharge'}
+            {t('recharge')}
           </button>
           <button
             onClick={() => setActiveTab('history')}
             className={activeTab === 'history' ? styles['tab-active'] : styles['tab-inactive']}
           >
-            {t('history') || 'History'}
+            {t('history')}
           </button>
         </div>
 

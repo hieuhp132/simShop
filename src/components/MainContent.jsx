@@ -156,97 +156,41 @@ function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab
 
   // Danh sách câu hỏi và nội dung chi tiết
   const faqDetails = {
-    'Khi nào có số mới được thêm vào?': {
-      title: 'Khi nào có số mới được thêm vào?',
-      content: (
-        <>
-          <p>Thông tin về việc bổ sung số mới cho các quốc gia Nga, Anh, Hà Lan, Pháp, Kazakhstan có thể theo dõi trên Telegram <a href="https://t.me/new_numbers_5sim" target="_blank" rel="noopener noreferrer">https://t.me/new_numbers_5sim</a>.</p>
-          <p>5SIM cũng có kênh tin tức trên Telegram <a href="https://t.me/news_en_5sim" target="_blank" rel="noopener noreferrer">https://t.me/news_en_5sim</a>.</p>
-          <p>Số của các nhà mạng Virtual4 sẽ được cập nhật vào 6-8h sáng và 18-21h tối (giờ Moscow). Các nhà mạng khác thường được cập nhật hàng ngày.</p>
-        </>
-      ),
+    [t('faq_new_numbers')]: {
+      title: t('faq_new_numbers'),
+      content: <p>{t('faq_detail_new_numbers')}</p>,
     },
-    'Tài khoản vừa tạo bị khóa sau một thời gian': {
-      title: 'Tài khoản vừa tạo bị khóa sau một thời gian',
-      content: (
-        <>
-          <p>Theo quy định của 5SIM, chúng tôi không chịu trách nhiệm về việc tài khoản bị khóa do nhiều nguyên nhân khác nhau. Không hoàn tiền hoặc thay thế số trong trường hợp này.</p>
-          <p>Một trong các lý do phổ biến là IP và vị trí địa lý không khớp với số điện thoại mua. Hãy sử dụng proxy/VPN chất lượng cao, mỗi tài khoản nên dùng proxy khác nhau.</p>
-          <ul>
-            <li>Dùng thiết bị khác nhau cho mỗi tài khoản.</li>
-            <li>Không dùng số ảo cho tài khoản chính, tài khoản quan trọng.</li>
-            <li>Không thực hiện hành vi spam, tự động hóa bất thường.</li>
-          </ul>
-        </>
-      ),
+    [t('faq_account_locked')]: {
+      title: t('faq_account_locked'),
+      content: <p>{t('faq_detail_account_locked')}</p>,
     },
-    'Có số trên website nhưng không thể mua được': {
-      title: 'Có số trên website nhưng không thể mua được',
-      content: (
-        <>
-          <p>Có hai lý do chính:</p>
-          <ol>
-            <li>Một số nhà mạng như virtual4, virtual7 không thể hiển thị chính xác số lượng. Hãy thử đổi nhà mạng hoặc quốc gia.</li>
-            <li>Hệ thống có cơ chế đánh giá. Nếu bạn bấm "Hủy" hoặc "Ban" nhiều lần, tài khoản có thể bị khóa mua số trong 1 giờ.</li>
-          </ol>
-        </>
-      ),
+    [t('faq_cannot_buy')]: {
+      title: t('faq_cannot_buy'),
+      content: <p>{t('faq_detail_cannot_buy')}</p>,
     },
-    'Số tạm thời là gì?': {
-      title: 'Số tạm thời là gì?',
-      content: (
-        <>
-          <p>Số tạm thời là số dùng một lần để đăng ký, xác thực tài khoản trên các nền tảng mà không cần số cá nhân. Số này không gắn với thông tin cá nhân, không dùng cho tài khoản quan trọng.</p>
-          <p>Không nên dùng số tạm thời cho tài khoản chính, tài khoản chứa thông tin bảo mật.</p>
-        </>
-      ),
+    [t('faq_temporary_number')]: {
+      title: t('faq_temporary_number'),
+      content: <p>{t('faq_detail_temporary_number')}</p>,
     },
-    'Có số dùng lâu dài không?': {
-      title: 'Có số dùng lâu dài không?',
-      content: (
-        <>
-          <p>5SIM chỉ cung cấp số tạm thời, thời gian sử dụng từ 10-20 phút. Hiện chưa hỗ trợ thuê số lâu dài.</p>
-          <p>Bạn có thể để lại yêu cầu, chúng tôi sẽ liên hệ khi có dịch vụ thuê số lâu dài.</p>
-        </>
-      ),
+    [t('faq_long_term_number')]: {
+      title: t('faq_long_term_number'),
+      content: <p>{t('faq_detail_long_term_number')}</p>,
     },
-    'Thông báo "Không đủ tiền"': {
-      title: 'Thông báo "Không đủ tiền"',
-      content: (
-        <>
-          <p>Nếu chọn nhà mạng "Bất kỳ", hệ thống sẽ hiển thị giá thấp nhất. Nếu không còn số ở mức giá đó, bạn sẽ được cung cấp số của nhà mạng khác với giá cao hơn.</p>
-          <p>Vì vậy, có thể bạn sẽ thấy thông báo này khi số giá rẻ đã hết.</p>
-        </>
-      ),
+    [t('faq_low_rating_no_money_msg')]: {
+      title: t('faq_low_rating_no_money_msg'),
+      content: <p>{t('faq_detail_funds_not_credited')}</p>,
     },
-    'Thông báo "Đánh giá thấp"': {
-      title: 'Thông báo "Đánh giá thấp"',
-      content: (
-        <>
-          <p>Nếu bạn hủy hoặc báo cáo số nhiều lần, tài khoản sẽ bị đánh giá thấp và có thể bị hạn chế mua số trong 1 giờ.</p>
-        </>
-      ),
+    [t('faq_low_rating_msg')]: {
+      title: t('faq_low_rating_msg'),
+      content: <p>{t('faq_detail_account_locked')}</p>,
     },
-    'Tôi không thể tạo tài khoản 5SIM': {
-      title: 'Tôi không thể tạo tài khoản 5SIM',
-      content: (
-        <>
-          <p>Bạn cần xác minh email để hoàn tất đăng ký. Hãy kiểm tra hộp thư (bao gồm cả mục Spam) và làm theo hướng dẫn trong email xác nhận.</p>
-        </>
-      ),
+    [t('faq_cannot_create_account')]: {
+      title: t('faq_cannot_create_account'),
+      content: <p>{t('faq_detail_cannot_create_account')}</p>,
     },
-    'Không đăng nhập được bằng tài khoản/mật khẩu': {
-      title: 'Không đăng nhập được bằng tài khoản/mật khẩu',
-      content: (
-        <>
-          <ol>
-            <li>Kiểm tra lại thông tin đăng nhập. Nếu quên mật khẩu, hãy sử dụng chức năng quên mật khẩu để đặt lại.</li>
-            <li>Nếu đăng ký qua Google, hãy đăng nhập bằng nút Google.</li>
-            <li>Nếu tài khoản bị xóa do không sử dụng hơn 1 năm, số dư sẽ không được hoàn lại.</li>
-            <li>Thử đổi địa chỉ IP nếu gặp lỗi liên quan đến IP.</li>
-          </ol>
-        </>
-      ),
+    [t('faq_cannot_login')]: {
+      title: t('faq_cannot_login'),
+      content: <p>{t('faq_detail_login_issue')}</p>,
     },
     'Cách đổi email tài khoản 5SIM?': {
       title: 'Cách đổi email tài khoản 5SIM?',
@@ -256,81 +200,33 @@ function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab
         </>
       ),
     },
-    'Tài khoản bị hack phải làm sao?': {
-      title: 'Tài khoản bị hack phải làm sao?',
-      content: (
-        <>
-          <ol>
-            <li>Vào cài đặt tài khoản, đổi mật khẩu và tick chọn chấm dứt tất cả phiên đăng nhập, khóa API key.</li>
-            <li>Không dùng chung mật khẩu cho nhiều website.</li>
-            <li>Kiểm tra xem email có bị lộ trên <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer">haveibeenpwned.com</a>.</li>
-            <li>Quét virus, kiểm tra thiết bị.</li>
-            <li>Luôn dùng proxy/VPN khi thao tác API.</li>
-          </ol>
-        </>
-      ),
+    [t('faq_account_hacked')]: {
+      title: t('faq_account_hacked'),
+      content: <p>{t('faq_detail_account_hacked')}</p>,
     },
-    'Không nhận được SMS thì làm gì?': {
-      title: 'Không nhận được SMS thì làm gì?',
-      content: (
-        <>
-          <p>Nếu không nhận được SMS, bạn nên thử mua số khác hoặc đổi nhà mạng/quốc gia. Đôi khi cần thử lại vài lần mới nhận được mã do tỉ lệ thành công không phải 100%. Xem thống kê tỉ lệ nhận SMS tại <a href="https://5sim.net/prices" target="_blank" rel="noopener noreferrer">bảng giá</a>.</p>
-          <p>Hãy đảm bảo bạn dùng proxy/VPN đúng quốc gia, thử đổi trình duyệt hoặc thiết bị nếu vẫn không nhận được mã.</p>
-          <p>Nếu không nhận được SMS, tiền sẽ tự động hoàn về tài khoản sau khi đơn hàng kết thúc.</p>
-        </>
-      ),
+    [t('faq_no_sms')]: {
+      title: t('faq_no_sms'),
+      content: <p>{t('faq_detail_no_sms')}</p>,
     },
-    'Mã xác nhận sai': {
-      title: 'Mã xác nhận sai',
-      content: (
-        <>
-          <p>Nếu mã xác nhận bạn nhận được không hợp lệ, để được hoàn tiền bạn cần:</p>
-          <ol>
-            <li>Gửi số đơn hàng hoặc số điện thoại đã mua.</li>
-            <li>Đính kèm ảnh chụp màn hình quá trình đăng ký, trong đó hiển thị rõ số điện thoại, thời gian đăng ký, mã xác nhận nhận được và cảnh báo mã sai.</li>
-          </ol>
-          <p>Bạn cũng có thể quay video quá trình nếu cần.</p>
-        </>
-      ),
+    [t('faq_wrong_code')]: {
+      title: t('faq_wrong_code'),
+      content: <p>{t('faq_detail_wrong_code')}</p>,
     },
-    'Số điện thoại đã được sử dụng': {
-      title: 'Số điện thoại đã được sử dụng',
-      content: (
-        <>
-          <p>Nếu số đã được sử dụng, để hoàn tiền bạn cần:</p>
-          <ol>
-            <li>Gửi số đơn hàng hoặc số điện thoại đã mua.</li>
-            <li>BẮT BUỘC gửi ảnh chụp màn hình quá trình đăng ký, trong đó hiển thị rõ số điện thoại, thời gian đăng ký, mã xác nhận và cảnh báo số đã dùng.</li>
-            <li>Mỗi ngày chỉ hoàn tối đa 3 đơn cho mỗi quốc gia + nhà mạng.</li>
-          </ol>
-          <p>Nếu bạn dùng app, hãy gửi video quá trình thao tác và cảnh báo số đã dùng.</p>
-        </>
-      ),
+    [t('faq_number_used')]: {
+      title: t('faq_number_used'),
+      content: <p>{t('faq_detail_number_used')}</p>,
     },
-    'Làm sao nhận lại mã xác thực?': {
-      title: 'Làm sao nhận lại mã xác thực?',
-      content: (
-        <>
-          <p>Sau khi nhận SMS đầu tiên, bạn có thể nhận thêm mã mới trong vòng 5 phút (nếu dịch vụ hỗ trợ). Một số nhà mạng chỉ nhận được 1 SMS duy nhất.</p>
-          <p>Bạn có thể nhận số lượng lớn SMS trong 6-30 phút với các nhà mạng hỗ trợ nhiều lần nhận mã.</p>
-        </>
-      ),
+    [t('faq_re_code')]: {
+      title: t('faq_re_code'),
+      content: <p>{t('faq_detail_re_code')}</p>,
     },
-    'Cách xác thực qua cuộc gọi?': {
-      title: 'Cách xác thực qua cuộc gọi?',
-      content: (
-        <>
-          <p>Nếu bạn cần nhận mã qua cuộc gọi, hãy chọn dịch vụ hỗ trợ xác thực bằng cuộc gọi (ví dụ: Virtual53, MTS, Yota, Megafon, Beeline...). Mã xác thực là các số cuối của số điện thoại hoặc sẽ hiển thị trên giao diện nhận SMS.</p>
-        </>
-      ),
+    [t('faq_call_verification')]: {
+      title: t('faq_call_verification'),
+      content: <p>{t('faq_detail_call_verification')}</p>,
     },
-    'Nhận cuộc gọi và mã từ voice bot như thế nào?': {
-      title: 'Nhận cuộc gọi và mã từ voice bot như thế nào?',
-      content: (
-        <>
-          <p>Để nhận mã từ voice bot, hãy chọn quốc gia Mỹ và nhà mạng Virtual28. Khi có cuộc gọi đến, hệ thống sẽ hiển thị mã xác thực trên giao diện nhận SMS.</p>
-        </>
-      ),
+    [t('faq_voice_bot')]: {
+      title: t('faq_voice_bot'),
+      content: <p>{t('faq_detail_voice_bot')}</p>,
     },
     'Làm sao để nạp tiền vào tài khoản 5SIM?': {
       title: 'Làm sao để nạp tiền vào tài khoản 5SIM?',
@@ -353,117 +249,37 @@ function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab
         </>
       ),
     },
-    'Tiền đã nạp nhưng chưa vào tài khoản': {
-      title: 'Tiền đã nạp nhưng chưa vào tài khoản',
-      content: (
-        <>
-          <p>Hãy kiểm tra lại phương thức thanh toán, gửi biên lai giao dịch cho bộ phận hỗ trợ để được kiểm tra và cộng tiền thủ công nếu cần.</p>
-        </>
-      ),
+    [t('faq_funds_not_credited')]: {
+      title: t('faq_funds_not_credited'),
+      content: <p>{t('faq_detail_funds_not_credited')}</p>,
     },
-    'Cách rút tiền từ tài khoản 5SIM?': {
-      title: 'Cách rút tiền từ tài khoản 5SIM?',
-      content: (
-        <>
-          <p>Khi rút tiền, hệ thống sẽ hiển thị các lưu ý về phí và điều kiện rút. Bạn nên sử dụng hết số dư trong hệ thống để tránh mất phí không cần thiết.</p>
-        </>
-      ),
+    [t('faq_withdraw')]: {
+      title: t('faq_withdraw'),
+      content: <p>{t('faq_detail_withdraw')}</p>,
     },
-    'Chuyển tiền sang tài khoản 5SIM khác': {
-      title: 'Chuyển tiền sang tài khoản 5SIM khác',
-      content: (
-        <>
-          <p>Hiện tại không thể chuyển tiền giữa các tài khoản 5SIM.</p>
-        </>
-      ),
+    [t('faq_transfer_funds')]: {
+      title: t('faq_transfer_funds'),
+      content: <p>{t('faq_detail_transfer_funds')}</p>,
     },
-    'Tôi không thể tạo tài khoản 5SIM': {
-      title: 'Tôi không thể tạo tài khoản 5SIM',
-      content: (
-        <>
-          <p>Bạn cần xác minh email để hoàn tất đăng ký. Hãy kiểm tra hộp thư (bao gồm cả mục Spam) và làm theo hướng dẫn trong email xác nhận.</p>
-        </>
-      ),
+    [t('faq_get_api_key')]: {
+      title: t('faq_get_api_key'),
+      content: <p>{t('faq_detail_get_api_key')}</p>,
     },
-    'Không đăng nhập được bằng tài khoản/mật khẩu': {
-      title: 'Không đăng nhập được bằng tài khoản/mật khẩu',
-      content: (
-        <>
-          <ol>
-            <li>Kiểm tra lại email và mật khẩu đã nhập đúng chưa.</li>
-            <li>Nếu đăng ký qua Google, hãy đăng nhập bằng nút Google.</li>
-            <li>Nếu tài khoản bị xóa do không sử dụng hơn 1 năm, số dư sẽ không được hoàn lại.</li>
-            <li>Thử đổi địa chỉ IP nếu gặp lỗi liên quan đến IP.</li>
-          </ol>
-        </>
-      ),
+    [t('faq_api_buy_number')]: {
+      title: t('faq_api_buy_number'),
+      content: <p>{t('faq_detail_api_buy_number')}</p>,
     },
-    'Cách đổi email tài khoản 5SIM?': {
-      title: 'Cách đổi email tài khoản 5SIM?',
-      content: (
-        <>
-          <p>Hiện tại không hỗ trợ đổi email tài khoản. Bạn chỉ có thể tạo tài khoản mới với email khác.</p>
-        </>
-      ),
+    [t('faq_ip_blocked')]: {
+      title: t('faq_ip_blocked'),
+      content: <p>{t('faq_detail_ip_blocked')}</p>,
     },
-    'Tài khoản bị hack phải làm sao?': {
-      title: 'Tài khoản bị hack phải làm sao?',
-      content: (
-        <>
-          <ol>
-            <li>Vào cài đặt tài khoản, đổi mật khẩu và tick chọn chấm dứt tất cả phiên đăng nhập, khóa API key.</li>
-            <li>Không dùng chung mật khẩu cho nhiều website.</li>
-            <li>Kiểm tra xem email có bị lộ trên <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer">haveibeenpwned.com</a>.</li>
-            <li>Quét virus, kiểm tra thiết bị.</li>
-            <li>Luôn dùng proxy/VPN khi thao tác API.</li>
-          </ol>
-        </>
-      ),
+    [t('faq_integrate_api')]: {
+      title: t('faq_integrate_api'),
+      content: <p>{t('faq_detail_integrate_api')}</p>,
     },
-    'Làm sao lấy API key?': {
-      title: 'Làm sao lấy API key?',
-      content: (
-        <>
-          <ol>
-            <li>Vào mục "Hồ sơ" trên website.</li>
-            <li>Chọn "Lấy API key".</li>
-            <li>Nếu phần mềm có 5sim.net, chọn "API key 5SIM protocol". Nếu không, chọn "API key API1 protocol (Deprecated API)".</li>
-          </ol>
-        </>
-      ),
-    },
-    'Mua số qua API': {
-      title: 'Mua số qua API',
-      content: (
-        <>
-          <p>Xem tài liệu API tại <a href="https://5sim.net/manual" target="_blank" rel="noopener noreferrer">https://5sim.net/manual</a> để biết cách mua số qua API.</p>
-          <p>API hỗ trợ nhiều phần mềm, có thể nhận hoa hồng cho mỗi đơn hàng qua API.</p>
-        </>
-      ),
-    },
-    'IP bị chặn': {
-      title: 'IP bị chặn',
-      content: (
-        <>
-          <p>Nếu IP bị chặn, có thể do vượt quá giới hạn truy cập. Xem chi tiết tại <a href="https://docs.5sim.net/ru/#c897b4c6d4" target="_blank" rel="noopener noreferrer">docs.5sim.net</a>. Hãy thử đổi mạng hoặc dùng VPN/proxy.</p>
-        </>
-      ),
-    },
-    'Tích hợp 5SIM vào phần mềm': {
-      title: 'Tích hợp 5SIM vào phần mềm',
-      content: (
-        <>
-          <p>Xem tài liệu API để biết cách tích hợp 5SIM vào phần mềm của bạn.</p>
-        </>
-      ),
-    },
-    'Bán số trên nền tảng 5SIM': {
-      title: 'Bán số trên nền tảng 5SIM',
-      content: (
-        <>
-          <p>Liên hệ với đội ngũ 5SIM để biết thêm chi tiết về việc hợp tác bán số.</p>
-        </>
-      ),
+    [t('faq_sell_numbers')]: {
+      title: t('faq_sell_numbers'),
+      content: <p>{t('faq_detail_sell_numbers')}</p>,
     },
   };
 
@@ -659,43 +475,43 @@ function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab
                   <div className={styles.faqGrid}>
                     <div className={styles.faqCol}>
                       <div className={styles.faqGroup}><span className={styles.faqIcon}>❓</span> <span className={styles.faqGroupTitle}>{t('faq_common_questions')}</span></div>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Khi nào có số mới được thêm vào?')}>{t('faq_new_numbers')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Tài khoản vừa tạo bị khóa sau một thời gian')}>{t('faq_account_locked')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Có số trên website nhưng không thể mua được')}>{t('faq_cannot_buy')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Số tạm thời là gì?')}>{t('faq_temporary_number')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Có số dùng lâu dài không?')}>{t('faq_long_term_number')}</a>
+                            <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_new_numbers'))}>{t('faq_new_numbers')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_account_locked'))}>{t('faq_account_locked')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_cannot_buy'))}>{t('faq_cannot_buy')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_temporary_number'))}>{t('faq_temporary_number')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_long_term_number'))}>{t('faq_long_term_number')}</a>
                     </div>
                     <div className={styles.faqCol}>
                       <div className={styles.faqGroup}><span className={styles.faqIcon}>❓</span> <span className={styles.faqGroupTitle}>{t('faq_technical_questions')}</span></div>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Tôi không thể tạo tài khoản 5SIM')}>{t('faq_cannot_create_account')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Không đăng nhập được bằng tài khoản/mật khẩu')}>{t('faq_login_issue')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Cách đổi email tài khoản 5SIM?')}>{t('faq_change_email')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Tài khoản bị hack phải làm sao?')}>{t('faq_account_hacked')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Làm sao lấy API key?')}>{t('faq_get_api_key')}</a>
+                            <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_cannot_create_account'))}>{t('faq_cannot_create_account')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_cannot_login'))}>{t('faq_cannot_login')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_change_email'))}>{t('faq_change_email')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_account_hacked'))}>{t('faq_account_hacked')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_get_api_key'))}>{t('faq_get_api_key')}</a>
                     </div>
                     <div className={styles.faqCol}>
                       <div className={styles.faqGroup}><span className={styles.faqIcon}>❓</span> <span className={styles.faqGroupTitle}>{t('faq_sms_questions')}</span></div>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Không nhận được SMS thì làm gì?')}>{t('faq_no_sms')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Mã xác nhận sai')}>{t('faq_wrong_code')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Số điện thoại đã được sử dụng')}>{t('faq_number_used')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Làm sao nhận lại mã xác thực?')}>{t('faq_re_code')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Cách xác thực qua cuộc gọi?')}>{t('faq_call_verification')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Nhận cuộc gọi và mã từ voice bot như thế nào?')}>{t('faq_voice_bot')}</a>
+                            <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_no_sms'))}>{t('faq_no_sms')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_wrong_code'))}>{t('faq_wrong_code')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_number_used'))}>{t('faq_number_used')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_re_code'))}>{t('faq_re_code')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_call_verification'))}>{t('faq_call_verification')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_voice_bot'))}>{t('faq_voice_bot')}</a>
                     </div>
                     <div className={styles.faqCol}>
                       <div className={styles.faqGroup}><span className={styles.faqIcon}>❓</span> <span className={styles.faqGroupTitle}>{t('faq_payment_questions')}</span></div>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Làm sao để nạp tiền vào tài khoản 5SIM?')}>{t('faq_top_up')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Phí giao dịch')}>{t('faq_transaction_fee')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Tiền đã nạp nhưng chưa vào tài khoản')}>{t('faq_funds_not_credited')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Cách rút tiền từ tài khoản 5SIM?')}>{t('faq_withdraw')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Chuyển tiền sang tài khoản 5SIM khác')}>{t('faq_transfer_funds')}</a>
+                            <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_top_up'))}>{t('faq_top_up')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_transaction_fee'))}>{t('faq_transaction_fee')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_funds_not_credited'))}>{t('faq_funds_not_credited')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_withdraw'))}>{t('faq_withdraw')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_transfer_funds'))}>{t('faq_transfer_funds')}</a>
                     </div>
                     <div className={styles.faqCol}>
                       <div className={styles.faqGroup}><span className={styles.faqIcon}>❓</span> <span className={styles.faqGroupTitle}>{t('faq_api_questions')}</span></div>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Mua số qua API')}>{t('faq_api_buy_number')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('IP bị chặn')}>{t('faq_ip_blocked')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Tích hợp 5SIM vào phần mềm')}>{t('faq_integrate_api')}</a>
-                      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail('Bán số trên nền tảng 5SIM')}>{t('faq_sell_numbers')}</a>
+                            <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_api_buy_number'))}>{t('faq_api_buy_number')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_ip_blocked'))}>{t('faq_ip_blocked')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_integrate_api'))}>{t('faq_integrate_api')}</a>
+      <a href="#" className={styles.faqLink} onClick={() => setFaqDetail(t('faq_sell_numbers'))}>{t('faq_sell_numbers')}</a>
                     </div>
                   </div>
                 </>

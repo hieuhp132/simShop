@@ -108,7 +108,7 @@ function TopNav({ activePage, setActivePage, theme, setTheme, user, setUser, onL
   const navItems = [
     { key: "nav_home", label: t("nav_home") },
     { key: "nav_price", label: t("nav_price") },
-    { key: "nav_faq", label: "FAQ" },
+    { key: "nav_faq", label: t("faq_title") },
     { key: "nav_howto", label: t("nav_howto") },
     { key: "nav_free", label: t("nav_free") },
     { key: "nav_blog", label: t("nav_blog") },
@@ -209,9 +209,9 @@ function TopNav({ activePage, setActivePage, theme, setTheme, user, setUser, onL
         ) : (
           <div className={styles.authBox}>
             <button className={styles.loginBtn} onClick={() => setActivePage('login')}>
-              {t("login") || "Đăng nhập"}
-            </button>
-            <button className={styles.registerBtn}>{t("register") || "Đăng ký"}</button>
+                      {t("login")}
+      </button>
+      <button className={styles.registerBtn}>{t("register")}</button>
           </div>
         )}
       </div>
