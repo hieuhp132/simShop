@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/simShop/static/css/main.ca59a4fd.css",
-    "main.js": "/simShop/static/js/main.8b7969b5.js",
+    "main.js": "/simShop/static/js/main.6ac39d9c.js",
     "static/js/453.46dc3e92.chunk.js": "/simShop/static/js/453.46dc3e92.chunk.js",
     "static/media/instagram.png": "/simShop/static/media/instagram.8bde8ffeb357fa260113.png",
     "static/media/1kkirana.jpg": "/simShop/static/media/1kkirana.0d79c5d8f27aad0070ec.jpg",
@@ -63,11 +63,11 @@
     "static/media/icons8-mcdonald.svg": "/simShop/static/media/icons8-mcdonald.b23d0eb6d363ef1fba4bb415c9ce41d1.svg",
     "static/media/Adidas_Logo_0.svg": "/simShop/static/media/Adidas_Logo_0.214653cf81647276d631c43a955e9050.svg",
     "main.ca59a4fd.css.map": "/simShop/static/css/main.ca59a4fd.css.map",
-    "main.8b7969b5.js.map": "/simShop/static/js/main.8b7969b5.js.map",
+    "main.6ac39d9c.js.map": "/simShop/static/js/main.6ac39d9c.js.map",
     "453.46dc3e92.chunk.js.map": "/simShop/static/js/453.46dc3e92.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca59a4fd.css",
-    "static/js/main.8b7969b5.js"
+    "static/js/main.6ac39d9c.js"
   ]
 }
