@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/simShop/static/css/main.ca59a4fd.css",
-    "main.js": "/simShop/static/js/main.6ac39d9c.js",
-    "static/js/453.46dc3e92.chunk.js": "/simShop/static/js/453.46dc3e92.chunk.js",
+    "main.css": "/simShop/static/css/main.f1e2147a.css",
+    "main.js": "/simShop/static/js/main.e872bb47.js",
+    "static/js/206.5f325063.chunk.js": "/simShop/static/js/206.5f325063.chunk.js",
     "static/media/instagram.png": "/simShop/static/media/instagram.8bde8ffeb357fa260113.png",
     "static/media/1kkirana.jpg": "/simShop/static/media/1kkirana.0d79c5d8f27aad0070ec.jpg",
     "static/media/99acress.png": "/simShop/static/media/99acress.8059371e7fb48350e860.png",
@@ -57,17 +57,14 @@
     "static/media/4102581_applications_media_social_wechat_icon.svg": "/simShop/static/media/4102581_applications_media_social_wechat_icon.07245583d76baaa12261d38cea272af3.svg",
     "static/media/icons8-riot-games.svg": "/simShop/static/media/icons8-riot-games.8188a4425ca3358b11b09a34967cfe4f.svg",
     "static/media/4202853_nike_icon.svg": "/simShop/static/media/4202853_nike_icon.86d379d9a116c93d7c08b460d178f122.svg",
-    "static/media/faceit.svg": "/simShop/static/media/faceit.2e14dd62a2f7b843dfbb5822013b2fbc.svg",
     "index.html": "/simShop/index.html",
+    "static/media/faceit.svg": "/simShop/static/media/faceit.2e14dd62a2f7b843dfbb5822013b2fbc.svg",
     "static/media/fiverr-icon.svg": "/simShop/static/media/fiverr-icon.3085fe1f34420b9f6f10185c9100cf53.svg",
     "static/media/icons8-mcdonald.svg": "/simShop/static/media/icons8-mcdonald.b23d0eb6d363ef1fba4bb415c9ce41d1.svg",
-    "static/media/Adidas_Logo_0.svg": "/simShop/static/media/Adidas_Logo_0.214653cf81647276d631c43a955e9050.svg",
-    "main.ca59a4fd.css.map": "/simShop/static/css/main.ca59a4fd.css.map",
-    "main.6ac39d9c.js.map": "/simShop/static/js/main.6ac39d9c.js.map",
-    "453.46dc3e92.chunk.js.map": "/simShop/static/js/453.46dc3e92.chunk.js.map"
+    "static/media/Adidas_Logo_0.svg": "/simShop/static/media/Adidas_Logo_0.214653cf81647276d631c43a955e9050.svg"
   },
   "entrypoints": [
-    "static/css/main.ca59a4fd.css",
-    "static/js/main.6ac39d9c.js"
+    "static/css/main.f1e2147a.css",
+    "static/js/main.e872bb47.js"
   ]
 }
