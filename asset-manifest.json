@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/simShop/static/css/main.f1e2147a.css",
-    "main.js": "/simShop/static/js/main.a79ddaaa.js",
-    "static/js/206.5f325063.chunk.js": "/simShop/static/js/206.5f325063.chunk.js",
+    "main.css": "/simShop/static/css/main.ca59a4fd.css",
+    "main.js": "/simShop/static/js/main.7c517286.js",
+    "static/js/453.46dc3e92.chunk.js": "/simShop/static/js/453.46dc3e92.chunk.js",
     "static/media/instagram.png": "/simShop/static/media/instagram.8bde8ffeb357fa260113.png",
     "static/media/1kkirana.jpg": "/simShop/static/media/1kkirana.0d79c5d8f27aad0070ec.jpg",
     "static/media/99acress.png": "/simShop/static/media/99acress.8059371e7fb48350e860.png",
@@ -61,10 +61,13 @@
     "static/media/faceit.svg": "/simShop/static/media/faceit.2e14dd62a2f7b843dfbb5822013b2fbc.svg",
     "static/media/fiverr-icon.svg": "/simShop/static/media/fiverr-icon.3085fe1f34420b9f6f10185c9100cf53.svg",
     "static/media/icons8-mcdonald.svg": "/simShop/static/media/icons8-mcdonald.b23d0eb6d363ef1fba4bb415c9ce41d1.svg",
-    "static/media/Adidas_Logo_0.svg": "/simShop/static/media/Adidas_Logo_0.214653cf81647276d631c43a955e9050.svg"
+    "static/media/Adidas_Logo_0.svg": "/simShop/static/media/Adidas_Logo_0.214653cf81647276d631c43a955e9050.svg",
+    "main.ca59a4fd.css.map": "/simShop/static/css/main.ca59a4fd.css.map",
+    "main.7c517286.js.map": "/simShop/static/js/main.7c517286.js.map",
+    "453.46dc3e92.chunk.js.map": "/simShop/static/js/453.46dc3e92.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1e2147a.css",
-    "static/js/main.a79ddaaa.js"
+    "static/css/main.ca59a4fd.css",
+    "static/js/main.7c517286.js"
   ]
 }
