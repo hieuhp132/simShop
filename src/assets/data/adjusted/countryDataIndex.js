@@ -34,7 +34,6 @@ import kenya from './kenya.json';
 import laos from './laos.json';
 import latvia from './latvia.json';
 import liberia from './liberia.json';
-import list from './list.json';
 import lithuania from './lithuania.json';
 import malawi from './malawi.json';
 import malaysia from './malaysia.json';
@@ -107,7 +106,6 @@ export const countryDataMap = {
   "laos": laos,
   "latvia": latvia,
   "liberia": liberia,
-  "list": list,
   "lithuania": lithuania,
   "malawi": malawi,
   "malaysia": malaysia,

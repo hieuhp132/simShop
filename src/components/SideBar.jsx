@@ -1,8 +1,13 @@
 import React, { useState, useMemo, useEffect, useContext } from 'react';
 import styles from './SideBar.module.css';
 import { useTranslation } from 'react-i18next';
-import { countryDataMap } from '../assets/data/adjusted/countryDataIndex';
+import apiClient, { API_BASE_URL } from '../apiConfig.js';
+import { countryDataMap } from '../assets/data/adjusted/countryDataIndex.js';
 import { BalanceContext } from './TopNav';
+
+// Import SIM icon
+import simIcon from '../assets/icons/sim-icon.png';
+
 import facebookIcon from '../assets/icons/facebook.svg';
 import instagramIcon from '../assets/icons/instagram.png';
 import wechatIcon from '../assets/icons/4102581_applications_media_social_wechat_icon.svg';
@@ -946,7 +951,7 @@ function useDebounce(value, delay) {
   return debounced;
 }
 
-function SideBar({ onSelectNetwork, setActivePage, setPriceTab, priceTab }) {
+function SideBar({ onSelectNetwork, setActivePage, setPriceTab, priceTab, user, onOrderCreated }) {
   const { t } = useTranslation();
   const { currency } = useContext(BalanceContext);
   const RUB_TO_VND = 330;
@@ -1018,15 +1023,82 @@ function SideBar({ onSelectNetwork, setActivePage, setPriceTab, priceTab }) {
   };
 
   const handleNetworkClick = (network, info) => {
-    if (!selectedCountry || !selectedService) return;
-    setSelectedNetwork({ network, info });
-    onSelectNetwork({
-      country: selectedCountry,
-      service: selectedService,
-      network,
-      cost: info.cost,
-      count: info.count
-    });
+    setSelectedNetwork({ network, ...info });
+    onSelectNetwork && onSelectNetwork({ network, ...info });
+  };
+
+  const handlePurchaseNumber = async (network, info) => {
+    if (!user) {
+      alert(t('alert_login_required'));
+      return;
+    }
+
+    if (!selectedService || !selectedCountry) {
+      alert(t('alert_select_service_country'));
+      return;
+    }
+
+    console.log('🔍 User:', user);
+    try {
+      console.log('🔍 Selected Service:', selectedService);
+      console.log('🔍 Selected Country:', selectedCountry);
+      console.log('🔍 Selected Network:', network);
+      console.log('🔍 Selected Info:', info);
+
+    
+      const orderData = {
+        userId: user._id,
+        service: selectedService,
+        country: selectedCountry,
+        network: network,
+        info: info,
+      };
+
+      console.log('🛒 Attempting to purchase number:', orderData);
+
+      const response = await apiClient.post(`/api/orders`, orderData);
+
+      if (response.data?.success) {
+        alert(`Mua số thành công!`);
+        // Navigate to purchase page to show the new order
+        setActivePage && setActivePage('purchase');
+        
+        // Scroll to main content after navigation
+        setTimeout(() => {
+          const mainContent = document.querySelector('[data-main-content]');
+          if (mainContent) {
+            mainContent.scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'start' 
+            });
+          }
+        }, 100);
+        
+        // Gọi callback để refresh đơn hàng trong PurchasePage
+        if (onOrderCreated) {
+          onOrderCreated(response.data.order || response.data);
+        }
+
+      } else {
+        throw new Error('Server response indicates failure');
+      }
+    } catch (error) {
+      console.error('Error purchasing number:', error);
+      if (error.code === 'ECONNABORTED') {
+        alert(t('alert_connection_timeout'));
+      } else if (error.response?.status === 404) {
+        alert(t('alert_api_endpoint_not_found'));
+      } else if (error.response?.status >= 500) {
+        alert(t('alert_server_error'));
+      } else {
+        const serverMessage = error.response?.data?.message;
+        if (serverMessage) {
+          alert(serverMessage);
+        } else {
+          alert(t('alert_purchase_error'));
+        }
+      }
+    }
   };
 
   // Số lượng hiển thị mặc định
@@ -1054,8 +1126,8 @@ function SideBar({ onSelectNetwork, setActivePage, setPriceTab, priceTab }) {
     <div className={styles.sidebar}>
       {/* Header lớn với logo 5sim */}
       <div className={styles.sidebarHeader}>
-        <img src="/assets/icons/sim-logo.svg" alt="5sim" className={styles.sidebarLogo} />
-        <div className={styles.sidebarTitle}>sim Virtual Numbers<br/>for Receiving SMS Codes</div>
+        <img src={simIcon} alt="SIM Icon" className={styles.sidebarLogo} />
+        <div className={styles.sidebarTitle}><b>{t('sidebar_title')}</b> <br/> {t('sidebar_title_2')}</div>
       </div>
       {/* Tabs nhỏ */}
       <div className={styles.sidebarTabs}>
@@ -1232,7 +1304,7 @@ function SideBar({ onSelectNetwork, setActivePage, setPriceTab, priceTab }) {
                       style={{
                         width:36,height:36,borderRadius:'50%',background:'#f4f7ff',border:'1.5px solid #2563eb33',display:'flex',alignItems:'center',justifyContent:'center',padding:0,marginLeft:0,transition:'background 0.18s, border 0.18s',cursor:'pointer',boxShadow:'0 1px 4px #2563eb11',outline:'none',
                       }}
-                      onClick={e => { e.stopPropagation(); setActivePage && setActivePage('nav_payment'); }}
+                      onClick={e => { e.stopPropagation(); handlePurchaseNumber(network, info); }}
                       title="Buy"
                     >
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="url(#cartGradient)" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">

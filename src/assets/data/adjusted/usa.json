@@ -1,16 +1,22 @@
 {
   "usa": {
+    "1688": {
+      "virtual28": {
+        "cost": 8.1,
+        "count": 0
+      }
+    },
     "1xbet": {
       "virtual40": {
-        "cost": 15.6,
+        "cost": 13,
         "count": 16407,
         "rate": 0
       }
     },
     "ace2three": {
       "virtual40": {
-        "cost": 10.32,
-        "count": 49120,
+        "cost": 8.6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -21,9 +27,27 @@
       }
     },
     "adidas": {
+      "virtual28": {
+        "cost": 13.5,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 8.64,
-        "count": 49120,
+        "cost": 7.2,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "adobe": {
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -34,120 +58,187 @@
       }
     },
     "airbnb": {
-      "virtual40": {
-        "cost": 6,
-        "count": 49068,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 2.86,
-        "rate24": 14.75,
-        "rate72": 26.12,
-        "rate168": 15.81,
-        "rate720": 23.07
-      },
-      "virtual8": {
-        "cost": 3.02,
-        "count": 32583,
-        "rate": 3.13,
-        "rate1": 3.13,
-        "rate3": 3.13,
-        "rate24": 1.92,
-        "rate72": 1.33,
-        "rate168": 0.25,
-        "rate720": 0.89
-      }
-    },
-    "airindia": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49120,
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.18
+        "rate720": 0
+      },
+      "virtual40": {
+        "cost": 5,
+        "count": 43508,
+        "rate": 59.09,
+        "rate1": 59.09,
+        "rate3": 68.57,
+        "rate24": 75.58,
+        "rate72": 79.35,
+        "rate168": 76.78,
+        "rate720": 43.27
+      },
+      "virtual8": {
+        "cost": 2.52,
+        "count": 32576,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 12.02,
+        "rate168": 13.1,
+        "rate720": 1.91
+      }
+    },
+    "airindia": {
+      "virtual28": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
       }
     },
     "alibaba": {
+      "virtual28": {
+        "cost": 5,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 2.64,
-        "count": 49042,
-        "rate": 81.82,
-        "rate1": 81.82,
-        "rate3": 80,
-        "rate24": 84.67,
-        "rate72": 79.5,
-        "rate168": 71.52,
-        "rate720": 49.41
+        "cost": 2.2,
+        "count": 43493,
+        "rate": 80.77,
+        "rate1": 80.77,
+        "rate3": 78.69,
+        "rate24": 76.45,
+        "rate72": 70.2,
+        "rate168": 71.85,
+        "rate720": 71.66
       }
     },
     "aliexpress": {
+      "virtual28": {
+        "cost": 4.1,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 4.8,
-        "count": 48907,
-        "rate": 4.76,
-        "rate1": 4.76,
-        "rate3": 9.09,
-        "rate24": 41.95,
-        "rate72": 48.87,
-        "rate168": 55.34,
-        "rate720": 66.5
+        "cost": 4,
+        "count": 43546,
+        "rate": 4,
+        "rate1": 4,
+        "rate3": 4.35,
+        "rate24": 6.49,
+        "rate72": 10.18,
+        "rate168": 25.35,
+        "rate720": 49.59
       },
       "virtual8": {
-        "cost": 4.8,
-        "count": 32559,
-        "rate": 3.23,
-        "rate1": 3.23,
-        "rate3": 6.67,
-        "rate24": 11.36,
-        "rate72": 10.71,
-        "rate168": 10.98,
-        "rate720": 23.15
+        "cost": 4,
+        "count": 32598,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 13.38
       }
     },
     "alipay": {
+      "virtual28": {
+        "cost": 7,
+        "count": 0,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 6,
-        "count": 49038,
-        "rate": 20.83,
-        "rate1": 20.83,
-        "rate3": 3.57,
-        "rate24": 36.67,
-        "rate72": 54.34,
-        "rate168": 55.29,
-        "rate720": 45.95
+        "cost": 5,
+        "count": 43563,
+        "rate": 61.9,
+        "rate1": 61.9,
+        "rate3": 20.83,
+        "rate24": 45.83,
+        "rate72": 46.38,
+        "rate168": 48.96,
+        "rate720": 44.98
+      },
+      "virtual8": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "aloyoga": {
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
       }
     },
     "amazon": {
       "virtual40": {
-        "cost": 24,
-        "count": 44022,
-        "rate": 73.17,
-        "rate1": 73.17,
-        "rate3": 81.37,
-        "rate24": 85.34,
-        "rate72": 82.56,
-        "rate168": 82.51,
-        "rate720": 84.75
+        "cost": 20,
+        "count": 39865,
+        "rate": 70.27,
+        "rate1": 70.27,
+        "rate3": 71.64,
+        "rate24": 73.59,
+        "rate72": 73.34,
+        "rate168": 76.4,
+        "rate720": 82.36
       },
       "virtual8": {
-        "cost": 12,
-        "count": 11946,
-        "rate": 13.14,
-        "rate1": 13.14,
-        "rate3": 12.65,
-        "rate24": 32.51,
-        "rate72": 28.24,
-        "rate168": 23.94,
-        "rate720": 53.6
+        "cost": 10,
+        "count": 0,
+        "rate": 83.33,
+        "rate1": 83.33,
+        "rate3": 48.39,
+        "rate24": 50,
+        "rate72": 44.53,
+        "rate168": 37.39,
+        "rate720": 44.14
       }
     },
     "aol": {
+      "virtual28": {
+        "cost": 0.63,
+        "count": 0,
+        "rate": 0
+      },
+      "virtual40": {
+        "cost": 1,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual8": {
-        "cost": 1.34,
-        "count": 32403,
+        "cost": 1.12,
+        "count": 32524,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -159,8 +250,8 @@
     },
     "appen": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -170,8 +261,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -182,27 +273,32 @@
       }
     },
     "apple": {
+      "virtual28": {
+        "cost": 20,
+        "count": 0,
+        "rate": 4.17
+      },
       "virtual40": {
-        "cost": 14.4,
-        "count": 49120,
-        "rate": 68.97,
-        "rate1": 68.97,
-        "rate3": 80,
-        "rate24": 69.25,
-        "rate72": 71.74,
-        "rate168": 71.66,
-        "rate720": 71.17
+        "cost": 12,
+        "count": 43575,
+        "rate": 50,
+        "rate1": 50,
+        "rate3": 57.78,
+        "rate24": 68.01,
+        "rate72": 59.7,
+        "rate168": 70,
+        "rate720": 73.09
       },
       "virtual8": {
-        "cost": 3.36,
-        "count": 32412,
+        "cost": 2.8,
+        "count": 32449,
         "rate": 0
       }
     },
     "arlens": {
       "virtual40": {
-        "cost": 12,
-        "count": 49076,
+        "cost": 10,
+        "count": 43472,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -214,8 +310,8 @@
     },
     "atlasearth": {
       "virtual40": {
-        "cost": 7.2,
-        "count": 49120,
+        "cost": 6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -227,8 +323,8 @@
     },
     "authy": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -240,8 +336,8 @@
     },
     "avito": {
       "virtual8": {
-        "cost": 5.21,
-        "count": 32605,
+        "cost": 4.34,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -252,39 +348,44 @@
       }
     },
     "badoo": {
+      "virtual28": {
+        "cost": 8,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 9.6,
-        "count": 49120,
+        "cost": 8,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 26.67,
-        "rate72": 21.18,
-        "rate168": 16.3,
-        "rate720": 10.37
+        "rate24": 16,
+        "rate72": 25.93,
+        "rate168": 20.43,
+        "rate720": 17.82
       },
       "virtual8": {
-        "cost": 9.6,
-        "count": 32605
+        "cost": 8,
+        "count": 32601
       }
     },
     "baihe": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 0,
-        "rate72": 1.67,
-        "rate168": 0.5,
-        "rate720": 0.09
+        "rate24": 14.29,
+        "rate72": 27.27,
+        "rate168": 13.33,
+        "rate720": 2.16
       }
     },
     "bananatok": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -295,22 +396,31 @@
       }
     },
     "band": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 72.73,
-        "rate1": 72.73,
-        "rate3": 78.13,
-        "rate24": 80.65,
-        "rate72": 86.59,
-        "rate168": 66.79,
-        "rate720": 19.25
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 3.67,
+        "rate720": 34.59
       }
     },
     "bearwww": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -320,8 +430,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -332,22 +442,27 @@
       }
     },
     "beehiiv": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 4.08,
-        "rate72": 12,
-        "rate168": 8.93,
-        "rate720": 2.53
+        "rate24": 0,
+        "rate72": 1.92,
+        "rate168": 7.69,
+        "rate720": 5.2
       }
     },
     "benjamin": {
       "virtual40": {
-        "cost": 4.2,
-        "count": 49120,
+        "cost": 3.5,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -355,85 +470,128 @@
         "rate72": 0,
         "rate168": 0,
         "rate720": 0
+      },
+      "virtual8": {
+        "cost": 3.5,
+        "count": 0
       }
     },
     "bestbuy": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 4.35,
+        "rate72": 0.93,
+        "rate168": 2.2,
+        "rate720": 1.23
+      }
+    },
+    "bet365": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 3.23,
+        "rate168": 7.07,
+        "rate720": 2.54
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32601
+      }
+    },
+    "bigolive": {
+      "virtual28": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual40": {
+        "cost": 7,
+        "count": 43575,
+        "rate": 2.78,
+        "rate1": 2.78,
+        "rate3": 2.78,
+        "rate24": 7.32,
+        "rate72": 12.66,
+        "rate168": 19.81,
+        "rate720": 13.18
+      },
+      "virtual8": {
+        "cost": 20,
+        "count": 32594
+      }
+    },
+    "biketown": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.49
+        "rate720": 0
+      },
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 90.91,
+        "rate168": 94.87,
+        "rate720": 29.87
       }
     },
-    "bet365": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49120,
+    "bilibili": {
+      "virtual28": {
+        "cost": 6,
+        "count": 0,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 1.56,
-        "rate720": 0.87
+        "rate168": 0,
+        "rate720": 0
+      },
+      "virtual40": {
+        "cost": 6,
+        "count": 43574,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 15.38,
+        "rate72": 35.29,
+        "rate168": 23.43,
+        "rate720": 17.29
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32603
-      }
-    },
-    "bigolive": {
-      "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 5.88,
-        "rate72": 16.67,
-        "rate168": 28.57,
-        "rate720": 37.29
-      },
-      "virtual8": {
-        "cost": 24,
-        "count": 32592
-      }
-    },
-    "biketown": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 1.79,
-        "rate72": 82.61,
-        "rate168": 22.22,
-        "rate720": 30.1
-      }
-    },
-    "bilibili": {
-      "virtual40": {
-        "cost": 7.2,
-        "count": 49119,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 9.52,
-        "rate72": 13.64,
-        "rate168": 22.22,
-        "rate720": 13.17
+        "cost": 6,
+        "count": 0
       }
     },
     "bitclout": {
+      "virtual28": {
+        "cost": 5.6,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49076,
+        "cost": 10,
+        "count": 43564,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -443,8 +601,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 13.02,
-        "count": 32605,
+        "cost": 10.85,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -456,21 +614,29 @@
     },
     "bitexen": {
       "virtual40": {
-        "cost": 18,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 0,
-        "rate720": 8.15
+        "cost": 15,
+        "count": 43575,
+        "rate": 92.31,
+        "rate1": 92.31,
+        "rate3": 86.05,
+        "rate24": 86.24,
+        "rate72": 85.21,
+        "rate168": 83.88,
+        "rate720": 30.88
+      },
+      "virtual8": {
+        "cost": 15,
+        "count": 0
       }
     },
     "blackbird": {
+      "virtual28": {
+        "cost": 12,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 14.4,
-        "count": 49120,
+        "cost": 12,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -480,8 +646,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 14.4,
-        "count": 32605,
+        "cost": 12,
+        "count": 32600,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -493,8 +659,8 @@
     },
     "blankstreet": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -506,8 +672,8 @@
     },
     "blibli": {
       "virtual40": {
-        "cost": 7.2,
-        "count": 49120,
+        "cost": 6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -517,10 +683,22 @@
         "rate720": 0
       }
     },
+    "blizzard": {
+      "virtual28": {
+        "cost": 4,
+        "count": 0,
+        "rate": 0
+      }
+    },
     "blued": {
+      "virtual28": {
+        "cost": 17,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 17.16,
-        "count": 49120,
+        "cost": 14.3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -528,23 +706,29 @@
         "rate72": 0,
         "rate168": 0,
         "rate720": 0
+      }
+    },
+    "bluesky": {
+      "three": {
+        "cost": 7,
+        "count": 0
       }
     },
     "boletomovil": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 1.02
+        "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -555,22 +739,33 @@
       }
     },
     "bolt": {
-      "virtual40": {
-        "cost": 8.64,
-        "count": 49120,
+      "virtual28": {
+        "cost": 7,
+        "count": 0,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 4.76,
-        "rate72": 2.63,
-        "rate168": 1.65,
-        "rate720": 1.49
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
+      "virtual40": {
+        "cost": 7.2,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 19.05,
+        "rate72": 17.14,
+        "rate168": 5.33,
+        "rate720": 1.85
       }
     },
     "bonnysrosasrewards": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -582,69 +777,78 @@
     },
     "botim": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 4.35,
-        "rate168": 1.79,
-        "rate720": 12.31
+        "rate72": 2.56,
+        "rate168": 47.62,
+        "rate720": 8.27
       }
     },
     "brevo": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49119,
-        "rate": 2.22,
-        "rate1": 2.22,
-        "rate3": 2.22,
-        "rate24": 69.57,
-        "rate72": 71.43,
-        "rate168": 14.21,
-        "rate720": 7.55
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 3.75,
+        "rate72": 5.26,
+        "rate168": 8.77,
+        "rate720": 14.61
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32600,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 4.63,
-        "rate720": 0.59
+        "rate168": 11.11,
+        "rate720": 2.47
       }
     },
     "bumble": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49117,
-        "rate": 2.17,
-        "rate1": 2.17,
-        "rate3": 5.26,
-        "rate24": 47.83,
-        "rate72": 57.14,
-        "rate168": 27.46,
-        "rate720": 29.5
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0
       },
-      "virtual8": {
-        "cost": 12,
-        "count": 32596,
+      "virtual40": {
+        "cost": 10,
+        "count": 43563,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 0,
-        "rate72": 9.52,
-        "rate168": 2.7,
-        "rate720": 0.59
+        "rate24": 31.51,
+        "rate72": 43.17,
+        "rate168": 37.79,
+        "rate720": 34.41
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32587,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 23.81,
+        "rate72": 19.57,
+        "rate168": 12.41,
+        "rate720": 5.93
       }
     },
     "byteplus": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -656,8 +860,8 @@
     },
     "cadbury": {
       "virtual40": {
-        "cost": 14.4,
-        "count": 49120,
+        "cost": 12,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -668,33 +872,38 @@
       }
     },
     "careem": {
+      "virtual28": {
+        "cost": 3.5,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 2.4,
-        "count": 49031,
-        "rate": 91.11,
-        "rate1": 91.11,
-        "rate3": 91.49,
-        "rate24": 67.11,
-        "rate72": 67.43,
-        "rate168": 62.49,
-        "rate720": 65.96
+        "cost": 2,
+        "count": 43480,
+        "rate": 82.22,
+        "rate1": 82.22,
+        "rate3": 75.93,
+        "rate24": 73.4,
+        "rate72": 69.15,
+        "rate168": 65.36,
+        "rate720": 65.93
       },
       "virtual8": {
-        "cost": 3.02,
-        "count": 32587,
+        "cost": 2.52,
+        "count": 32590,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.77
+        "rate720": 0
       }
     },
     "carousell": {
       "virtual40": {
-        "cost": 10.32,
-        "count": 49120,
+        "cost": 8.6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -705,48 +914,61 @@
       }
     },
     "cathay": {
+      "virtual28": {
+        "cost": 8,
+        "count": 0,
+        "rate": 27.27
+      },
       "virtual40": {
-        "cost": 9.6,
-        "count": 49120,
+        "cost": 8,
+        "count": 43560,
         "rate": 0,
         "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 0,
-        "rate720": 0
+        "rate3": 12.2,
+        "rate24": 35.05,
+        "rate72": 35.25,
+        "rate168": 52.11,
+        "rate720": 41.29
+      },
+      "virtual8": {
+        "cost": 8,
+        "count": 0
       }
     },
     "chargepoint": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.22
+        "rate720": 0.37
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 0
       }
     },
     "chipotle": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 1.67,
-        "rate72": 1.79,
-        "rate168": 2.83,
-        "rate720": 1.18
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 1.87,
+        "rate720": 2.01
       }
     },
     "chispadatinglatinos": {
       "virtual40": {
-        "cost": 22.32,
-        "count": 49120,
+        "cost": 18.6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -757,9 +979,13 @@
       }
     },
     "cineplex": {
+      "virtual28": {
+        "cost": 15,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 14.4,
-        "count": 49120,
+        "cost": 12,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -769,8 +995,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 18,
-        "count": 32605,
+        "cost": 15,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -781,9 +1007,13 @@
       }
     },
     "citymobil": {
+      "virtual28": {
+        "cost": 2.45,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 4.32,
-        "count": 49120,
+        "cost": 3.6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -793,8 +1023,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 5.21,
-        "count": 32605,
+        "cost": 4.34,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -806,21 +1036,21 @@
     },
     "classpass": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.47
+        "rate720": 0.18
       }
     },
     "claudeai": {
       "virtual40": {
-        "cost": 38.4,
-        "count": 49119,
+        "cost": 32,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -830,8 +1060,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 38.4,
-        "count": 32599,
+        "cost": 32,
+        "count": 32596,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -843,8 +1073,8 @@
     },
     "clickentregas": {
       "virtual40": {
-        "cost": 10.32,
-        "count": 49120,
+        "cost": 8.6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -856,21 +1086,21 @@
     },
     "cloudbet": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 0,
-        "rate720": 0
+        "rate168": 0.97,
+        "rate720": 0.16
       }
     },
     "clove": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -881,63 +1111,71 @@
       }
     },
     "clubhouse": {
-      "virtual40": {
-        "cost": 24,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 2.63,
-        "rate72": 1.22,
-        "rate168": 1.49,
-        "rate720": 1.36
+      "virtual28": {
+        "cost": 20,
+        "count": 0
       },
-      "virtual8": {
-        "cost": 24,
-        "count": 32595
-      }
-    },
-    "cocacola": {
       "virtual40": {
-        "cost": 14.4,
-        "count": 49120,
+        "cost": 20,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 2.5,
-        "rate168": 0.9,
-        "rate720": 4.17
+        "rate72": 0,
+        "rate168": 10,
+        "rate720": 1.47
+      },
+      "virtual8": {
+        "cost": 20,
+        "count": 32601
+      }
+    },
+    "cocacola": {
+      "virtual28": {
+        "cost": 12,
+        "count": 0
+      },
+      "virtual40": {
+        "cost": 12,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 1.43,
+        "rate168": 0.97,
+        "rate720": 1.53
       }
     },
     "codashop": {
       "virtual40": {
-        "cost": 18,
-        "count": 49120,
+        "cost": 15,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 0.65,
-        "rate720": 7.3
+        "rate3": 4.26,
+        "rate24": 8.16,
+        "rate72": 20,
+        "rate168": 15.83,
+        "rate720": 10.21
       },
       "virtual8": {
-        "cost": 18,
-        "count": 32604,
+        "cost": 15,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 1.04,
-        "rate720": 0.25
+        "rate168": 0,
+        "rate720": 0.57
       }
     },
     "codeium": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -949,8 +1187,8 @@
     },
     "coindcx": {
       "virtual40": {
-        "cost": 30.84,
-        "count": 49120,
+        "cost": 25.7,
+        "count": 43572,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -962,8 +1200,8 @@
     },
     "continente": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -974,9 +1212,13 @@
       }
     },
     "costar": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -988,8 +1230,8 @@
     },
     "coursehero": {
       "virtual40": {
-        "cost": 9.6,
-        "count": 49120,
+        "cost": 8,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1001,8 +1243,8 @@
     },
     "courtyard": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1014,21 +1256,25 @@
     },
     "coze": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 0,
-        "rate720": 0
+        "rate168": 5.13,
+        "rate720": 1.15
       }
     },
     "craigslist": {
+      "virtual28": {
+        "cost": 3.22,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 5.16,
-        "count": 49120,
+        "cost": 4.3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1038,8 +1284,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 6.97,
-        "count": 32580,
+        "cost": 5.81,
+        "count": 32572,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1051,38 +1297,42 @@
     },
     "crumblcookies": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 2.13,
-        "rate72": 1.14,
-        "rate168": 1.14,
-        "rate720": 0.77
+        "rate24": 0,
+        "rate72": 2.04,
+        "rate168": 8.82,
+        "rate720": 2.73
       }
     },
     "cupid": {
+      "virtual28": {
+        "cost": 21,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 21.6,
-        "count": 49120,
+        "cost": 18,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 20.83,
-        "rate72": 21.74,
-        "rate168": 21.28,
-        "rate720": 10.01
+        "rate24": 54.84,
+        "rate72": 45.45,
+        "rate168": 18.23,
+        "rate720": 8.48
       },
       "virtual8": {
-        "cost": 21.6,
-        "count": 32604
+        "cost": 18,
+        "count": 32600
       }
     },
     "daki": {
       "virtual40": {
-        "cost": 21.6,
-        "count": 49120,
+        "cost": 18,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1094,21 +1344,30 @@
     },
     "deliveroo": {
       "virtual40": {
-        "cost": 30.84,
-        "count": 49120,
+        "cost": 25.7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 0,
-        "rate720": 0
+        "rate168": 0.97,
+        "rate720": 0.25
+      },
+      "virtual8": {
+        "cost": 25.7,
+        "count": 0
       }
     },
     "delivery": {
+      "virtual28": {
+        "cost": 2.45,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 4.32,
-        "count": 49120,
+        "cost": 3.6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1118,8 +1377,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 5.21,
-        "count": 32604,
+        "cost": 4.34,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1130,9 +1389,13 @@
       }
     },
     "dent": {
+      "virtual28": {
+        "cost": 0.84,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 1.7,
-        "count": 49120,
+        "cost": 1.42,
+        "count": 43573,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1143,135 +1406,171 @@
       }
     },
     "depop": {
+      "virtual28": {
+        "cost": 6,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 5.4,
-        "count": 49118,
+        "cost": 4.5,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 1.82,
-        "rate72": 5.3,
-        "rate168": 3.45,
-        "rate720": 0.75
+        "rate24": 17.19,
+        "rate72": 27.27,
+        "rate168": 11.84,
+        "rate720": 9.64
       },
       "virtual8": {
-        "cost": 5.4,
-        "count": 32605,
+        "cost": 4.5,
+        "count": 32592,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 2.7,
-        "rate720": 0.24
+        "rate168": 0,
+        "rate720": 1.17
       }
     },
     "dewupoizon": {
+      "virtual28": {
+        "cost": 8,
+        "count": 0,
+        "rate": 2.22
+      },
       "virtual40": {
-        "cost": 9.6,
-        "count": 49120,
+        "cost": 8,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 2.91,
-        "rate168": 2.22,
-        "rate720": 0.68
+        "rate3": 3.17,
+        "rate24": 14.29,
+        "rate72": 37.5,
+        "rate168": 23.96,
+        "rate720": 6
       },
       "virtual8": {
-        "cost": 9.6,
-        "count": 32605,
+        "cost": 8,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 3.23,
-        "rate168": 3.23,
-        "rate720": 0.11
+        "rate168": 4,
+        "rate720": 0.75
       }
     },
     "didi": {
       "virtual40": {
-        "cost": 10.32,
-        "count": 49116,
-        "rate": 82.61,
-        "rate1": 82.61,
-        "rate3": 100,
-        "rate24": 56.52,
-        "rate72": 52.54,
-        "rate168": 67.59,
-        "rate720": 78.59
+        "cost": 7,
+        "count": 43567,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 70.27,
+        "rate72": 55.21,
+        "rate168": 58.38,
+        "rate720": 58.53
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 32601,
+        "cost": 7,
+        "count": 32592,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 6.9,
-        "rate72": 40,
-        "rate168": 26.87,
-        "rate720": 9.5
+        "rate72": 42.86,
+        "rate168": 38.89,
+        "rate720": 14.55
       }
     },
     "dilmil": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 18,
-        "count": 49120,
-        "rate": 93.33,
-        "rate1": 93.33,
-        "rate3": 95.83,
-        "rate24": 90,
-        "rate72": 88.52,
-        "rate168": 85.16,
-        "rate720": 72.22
+        "cost": 15,
+        "count": 43575,
+        "rate": 38.46,
+        "rate1": 38.46,
+        "rate3": 86.36,
+        "rate24": 86.96,
+        "rate72": 90.58,
+        "rate168": 88.76,
+        "rate720": 82.62
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605
+        "cost": 10,
+        "count": 32601
       }
     },
     "dingtalk": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49120,
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 12.5,
-        "rate168": 26.23,
-        "rate720": 10.95
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
+      "virtual40": {
+        "cost": 10,
+        "count": 43574,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 1.96,
+        "rate72": 14.17,
+        "rate168": 9.23,
+        "rate720": 11.83
       }
     },
     "discord": {
+      "virtual28": {
+        "cost": 15,
+        "count": 0,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 10.32,
-        "count": 48055,
-        "rate": 81.72,
-        "rate1": 81.72,
-        "rate3": 72.31,
-        "rate24": 77.29,
-        "rate72": 78.44,
-        "rate168": 65.2,
-        "rate720": 56.27
+        "cost": 15,
+        "count": 43494,
+        "rate": 10,
+        "rate1": 10,
+        "rate3": 61.9,
+        "rate24": 42.14,
+        "rate72": 77.33,
+        "rate168": 79.38,
+        "rate720": 61.89
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 31681,
-        "rate": 52.46,
-        "rate1": 52.46,
-        "rate3": 68,
-        "rate24": 62.13,
-        "rate72": 60.29,
-        "rate168": 58.94,
-        "rate720": 66.46
+        "cost": 15,
+        "count": 32523,
+        "rate": 14.29,
+        "rate1": 14.29,
+        "rate3": 28.57,
+        "rate24": 44.83,
+        "rate72": 34.48,
+        "rate168": 40.78,
+        "rate720": 63.98
       }
     },
     "discoverhongkong": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1282,9 +1581,20 @@
       }
     },
     "dominospizza": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1295,33 +1605,37 @@
       }
     },
     "doordash": {
+      "virtual28": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 18,
-        "count": 49104,
-        "rate": 20,
-        "rate1": 20,
-        "rate3": 43.18,
-        "rate24": 79.17,
-        "rate72": 48.48,
-        "rate168": 70.63,
-        "rate720": 83.09
+        "cost": 15,
+        "count": 43541,
+        "rate": 95.65,
+        "rate1": 95.65,
+        "rate3": 77.27,
+        "rate24": 82.76,
+        "rate72": 76.55,
+        "rate168": 73.82,
+        "rate720": 74.26
       },
       "virtual8": {
-        "cost": 18,
-        "count": 32553,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 18.18,
-        "rate72": 24.42,
-        "rate168": 26.21,
-        "rate720": 32.99
+        "cost": 15,
+        "count": 32576,
+        "rate": 81.48,
+        "rate1": 81.48,
+        "rate3": 78.13,
+        "rate24": 27.27,
+        "rate72": 41.94,
+        "rate168": 62.68,
+        "rate720": 21.28
       }
     },
     "dosi": {
       "virtual40": {
-        "cost": 22.8,
-        "count": 49120,
+        "cost": 19,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1331,8 +1645,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 23.4,
-        "count": 32605,
+        "cost": 19.5,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1343,33 +1657,37 @@
       }
     },
     "dott": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 0,
-        "rate720": 0.17
+        "rate168": 3.13,
+        "rate720": 0.22
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32595,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 2.22,
         "rate24": 2.33,
-        "rate72": 2.17,
-        "rate168": 56.52,
-        "rate720": 2.2
+        "rate72": 39.13,
+        "rate168": 39.13,
+        "rate720": 5.25
       }
     },
     "dream11": {
       "virtual40": {
-        "cost": 8.64,
-        "count": 49119,
+        "cost": 7.2,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1381,21 +1699,32 @@
     },
     "driffle": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.5
+        "rate720": 0
       }
     },
     "drugvokrug": {
+      "virtual28": {
+        "cost": 0.63,
+        "count": 0,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 1.2,
-        "count": 49119,
+        "cost": 1,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1405,31 +1734,7 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 1.34,
-        "count": 32605,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 0,
-        "rate720": 0
-      }
-    },
-    "ebay": {
-      "virtual40": {
-        "cost": 13.8,
-        "count": 49118,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0.37,
-        "rate168": 0.19,
-        "rate720": 0.12
-      },
-      "virtual8": {
-        "cost": 32.17,
+        "cost": 1.12,
         "count": 32601,
         "rate": 0,
         "rate1": 0,
@@ -1440,10 +1745,20 @@
         "rate720": 0
       }
     },
-    "efsanetr": {
+    "drumo": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 0
+      }
+    },
+    "ebay": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1452,9 +1767,44 @@
         "rate168": 0,
         "rate720": 0
       },
+      "virtual40": {
+        "cost": 11.5,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 1.32,
+        "rate168": 0.69,
+        "rate720": 0.41
+      },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 26.81,
+        "count": 32592,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0.12
+      }
+    },
+    "efsanetr": {
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 9.09,
+        "rate72": 24.44,
+        "rate168": 33.33,
+        "rate720": 5.13
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1465,35 +1815,39 @@
       }
     },
     "eleme": {
+      "virtual28": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 6,
-        "count": 49119,
-        "rate": 6.25,
-        "rate1": 6.25,
-        "rate3": 14.89,
-        "rate24": 15.22,
-        "rate72": 23.21,
-        "rate168": 22.81,
-        "rate720": 2.06
+        "cost": 5,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0.99,
+        "rate72": 0.99,
+        "rate168": 1.85,
+        "rate720": 6.49
       }
     },
     "eneba": {
       "virtual40": {
-        "cost": 8.64,
-        "count": 49120,
+        "cost": 7.2,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 12,
-        "rate168": 8.33,
-        "rate720": 4.53
+        "rate72": 25,
+        "rate168": 5.88,
+        "rate720": 3.57
       }
     },
     "epicgames": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1503,8 +1857,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1516,50 +1870,58 @@
     },
     "etsy": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 2.38,
-        "rate168": 2.44,
-        "rate720": 0.29
+        "rate3": 3.03,
+        "rate24": 0.56,
+        "rate72": 0.5,
+        "rate168": 0.93,
+        "rate720": 0.62
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 32605,
+        "cost": 7,
+        "count": 32601,
         "rate": 0
       }
     },
     "facebook": {
       "virtual40": {
-        "cost": 45.6,
-        "count": 47911,
-        "rate": 46.15,
-        "rate1": 46.15,
-        "rate3": 15.38,
-        "rate24": 23.28,
-        "rate72": 22.92,
-        "rate168": 22.66,
-        "rate720": 28.3
+        "cost": 38,
+        "count": 42608,
+        "rate": 14.67,
+        "rate1": 14.67,
+        "rate3": 19.82,
+        "rate24": 19.71,
+        "rate72": 25.38,
+        "rate168": 26.35,
+        "rate720": 24.98
       },
       "virtual8": {
-        "cost": 45.6,
-        "count": 32001,
-        "rate": 4.55,
-        "rate1": 4.55,
-        "rate3": 6.38,
-        "rate24": 2.79,
-        "rate72": 4.03,
-        "rate168": 6.61,
-        "rate720": 10.68
+        "cost": 38,
+        "count": 30306,
+        "rate": 13.04,
+        "rate1": 13.04,
+        "rate3": 11.11,
+        "rate24": 5.87,
+        "rate72": 9.19,
+        "rate168": 15.48,
+        "rate720": 10.74
       }
     },
     "fambase": {
+      "virtual12": {
+        "cost": 10,
+        "count": 0
+      },
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1570,9 +1932,13 @@
       }
     },
     "fastmail": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1582,8 +1948,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1595,94 +1961,107 @@
     },
     "fastmoss": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 85.71,
-        "rate72": 81.82,
-        "rate168": 87.01,
-        "rate720": 29.81
+        "cost": 10,
+        "count": 43575,
+        "rate": 3.23,
+        "rate1": 3.23,
+        "rate3": 1.96,
+        "rate24": 7.02,
+        "rate72": 97.14,
+        "rate168": 97.33,
+        "rate720": 45.82
       }
     },
     "favorited": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.12
+        "rate720": 0
       }
     },
     "feeld": {
+      "virtual28": {
+        "cost": 12,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 14.4,
-        "count": 49120,
+        "cost": 12,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.11
+        "rate720": 0.28
       },
       "virtual8": {
-        "cost": 14.4,
-        "count": 32605,
+        "cost": 12,
+        "count": 32601,
         "rate": 0,
         "rate720": 0
       }
     },
     "feels": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
-        "rate3": 8,
-        "rate24": 12.5,
-        "rate72": 62.96,
-        "rate168": 69.57,
-        "rate720": 22.03
+        "rate3": 2.63,
+        "rate24": 20.41,
+        "rate72": 47.83,
+        "rate168": 44.74,
+        "rate720": 32.57
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605
+        "cost": 10,
+        "count": 32601
       }
     },
     "feetfinder": {
+      "virtual28": {
+        "cost": 7,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 8.4,
-        "count": 48345,
-        "rate": 77.42,
-        "rate1": 77.42,
-        "rate3": 84,
-        "rate24": 75.71,
-        "rate72": 78.45,
-        "rate168": 79.59,
-        "rate720": 80.52
+        "cost": 7,
+        "count": 43007,
+        "rate": 72.73,
+        "rate1": 72.73,
+        "rate3": 80.95,
+        "rate24": 83.62,
+        "rate72": 78.88,
+        "rate168": 80.16,
+        "rate720": 80.5
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 32554,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 3.85,
-        "rate24": 57.58,
-        "rate72": 71.23,
-        "rate168": 63.59,
-        "rate720": 39.73
+        "cost": 7,
+        "count": 32382,
+        "rate": 83.33,
+        "rate1": 83.33,
+        "rate3": 86.96,
+        "rate24": 79.01,
+        "rate72": 69.26,
+        "rate168": 64.24,
+        "rate720": 54.36
       }
     },
     "fetchrewards": {
       "virtual40": {
-        "cost": 13.8,
-        "count": 49120,
+        "cost": 11.5,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1690,12 +2069,16 @@
         "rate72": 0,
         "rate168": 0,
         "rate720": 0
+      },
+      "virtual8": {
+        "cost": 11.5,
+        "count": 0
       }
     },
     "findingall": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1707,8 +2090,8 @@
     },
     "fishfin": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1719,57 +2102,81 @@
       }
     },
     "fiverr": {
+      "virtual28": {
+        "cost": 15,
+        "count": 0,
+        "rate": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 9.6,
-        "count": 48529,
-        "rate": 50,
-        "rate1": 50,
-        "rate3": 52.38,
-        "rate24": 45.95,
-        "rate72": 41.52,
-        "rate168": 39.02,
-        "rate720": 34.91
+        "cost": 11,
+        "count": 43123,
+        "rate": 73.08,
+        "rate1": 73.08,
+        "rate3": 74.75,
+        "rate24": 72.9,
+        "rate72": 70.34,
+        "rate168": 58.35,
+        "rate720": 43.33
       },
       "virtual8": {
-        "cost": 13.2,
-        "count": 32571,
-        "rate": 12.5,
-        "rate1": 12.5,
-        "rate3": 0,
-        "rate24": 5.22,
-        "rate72": 8.1,
-        "rate168": 12.2,
-        "rate720": 7.66
-      }
-    },
-    "fivesurveys": {
-      "virtual40": {
-        "cost": 9,
-        "count": 49118,
+        "cost": 11,
+        "count": 32542,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 21.74,
-        "rate72": 40.91,
-        "rate168": 46.67,
-        "rate720": 16.14
+        "rate24": 1.32,
+        "rate72": 15.32,
+        "rate168": 24.06,
+        "rate720": 9.51
+      }
+    },
+    "fivesurveys": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0
+      },
+      "virtual40": {
+        "cost": 7.5,
+        "count": 43572,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 1.12,
+        "rate24": 6.33,
+        "rate72": 70.83,
+        "rate168": 26.97,
+        "rate720": 24.67
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32604,
+        "cost": 10,
+        "count": 32599,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 2.78,
         "rate72": 8.33,
-        "rate168": 10.71,
-        "rate720": 1.38
+        "rate168": 0,
+        "rate720": 3.2
       }
     },
     "flash": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "flypgs": {
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1780,9 +2187,13 @@
       }
     },
     "foodhub": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1794,8 +2205,8 @@
     },
     "foodora": {
       "virtual40": {
-        "cost": 22.32,
-        "count": 49120,
+        "cost": 18.6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1805,8 +2216,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 22.32,
-        "count": 32605,
+        "cost": 18.6,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1818,8 +2229,8 @@
     },
     "foodpanda": {
       "virtual40": {
-        "cost": 18.96,
-        "count": 49118,
+        "cost": 15.8,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1831,8 +2242,8 @@
     },
     "frangle": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1843,46 +2254,50 @@
       }
     },
     "freelancercom": {
+      "virtual28": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 9.6,
-        "count": 49120,
-        "rate": 3.7,
-        "rate1": 3.7,
-        "rate3": 3.33,
-        "rate24": 21.95,
-        "rate72": 76.32,
-        "rate168": 86.81,
-        "rate720": 30.75
+        "cost": 8,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 14.29,
+        "rate24": 100,
+        "rate72": 93.48,
+        "rate168": 51.56,
+        "rate720": 56.57
       }
     },
     "fruitz": {
       "virtual40": {
-        "cost": 12,
-        "count": 49119,
+        "cost": 10,
+        "count": 43570,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 76.19,
-        "rate72": 80.65,
-        "rate168": 77.05,
-        "rate720": 11.96
+        "rate24": 90.48,
+        "rate72": 85.96,
+        "rate168": 85.71,
+        "rate720": 46.01
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 4.65,
-        "rate168": 5.13,
-        "rate720": 3.92
+        "rate72": 0,
+        "rate168": 17.39,
+        "rate720": 1.67
       }
     },
     "gailsbakery": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1894,8 +2309,8 @@
     },
     "gamekit": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1907,8 +2322,8 @@
     },
     "gappx": {
       "virtual40": {
-        "cost": 20.57,
-        "count": 49120,
+        "cost": 17.14,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1920,21 +2335,21 @@
     },
     "gcxmemberservices": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0
+        "rate720": 0.6
       }
     },
     "geekay": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1946,8 +2361,8 @@
     },
     "genspark": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -1959,38 +2374,42 @@
     },
     "getir": {
       "virtual40": {
-        "cost": 13.68,
-        "count": 49120,
+        "cost": 11.4,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 0,
-        "rate720": 0.31
+        "rate168": 0.54,
+        "rate720": 0.47
       }
     },
     "getresponse": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0
+        "rate720": 0.24
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605
+        "cost": 10,
+        "count": 32601
       }
     },
     "gett": {
+      "virtual28": {
+        "cost": 0.63,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 1.2,
-        "count": 49120,
+        "cost": 1,
+        "count": 43558,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2000,8 +2419,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 1.34,
-        "count": 32591,
+        "cost": 1.12,
+        "count": 32584,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2012,9 +2431,20 @@
       }
     },
     "gift2games": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2025,9 +2455,13 @@
       }
     },
     "glovo": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2037,8 +2471,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2049,70 +2483,96 @@
       }
     },
     "gofundme": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49118,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 7.32,
-        "rate72": 21.74,
-        "rate168": 63.64,
-        "rate720": 4.85
+        "rate24": 0,
+        "rate72": 5.88,
+        "rate168": 3.08,
+        "rate720": 9.78
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32604,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.44
+        "rate720": 0
       }
     },
     "google": {
+      "virtual28": {
+        "cost": 32,
+        "count": 0,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
+      "virtual40": {
+        "cost": 35,
+        "count": 43163,
+        "rate": 2.94,
+        "rate1": 2.94,
+        "rate3": 0.82,
+        "rate24": 8.18,
+        "rate72": 8.33,
+        "rate168": 7.27,
+        "rate720": 3.73
+      },
       "virtual8": {
-        "cost": 42,
-        "count": 32367,
-        "rate": 3.7,
-        "rate1": 3.7,
-        "rate3": 1.15,
-        "rate24": 0.55,
-        "rate72": 0.52,
-        "rate168": 0.49,
-        "rate720": 3.91
+        "cost": 35,
+        "count": 32514,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0.98,
+        "rate168": 0.91,
+        "rate720": 0.93
       }
     },
     "googlevoice": {
       "virtual40": {
-        "cost": 20.64,
-        "count": 49063,
-        "rate": 93.33,
-        "rate1": 93.33,
-        "rate3": 33.33,
-        "rate24": 32.08,
-        "rate72": 47.94,
-        "rate168": 47.09,
-        "rate720": 41.93
+        "cost": 17.2,
+        "count": 43545,
+        "rate": 38.46,
+        "rate1": 38.46,
+        "rate3": 65.22,
+        "rate24": 50,
+        "rate72": 27.04,
+        "rate168": 29.3,
+        "rate720": 37.47
       },
       "virtual8": {
-        "cost": 24,
-        "count": 32547,
+        "cost": 20,
+        "count": 32527,
         "rate": 0,
         "rate1": 0,
-        "rate3": 0,
-        "rate24": 27.12,
-        "rate72": 32.65,
-        "rate168": 28.3,
-        "rate720": 9.9
+        "rate3": 19.05,
+        "rate24": 37.5,
+        "rate72": 35.11,
+        "rate168": 26.14,
+        "rate720": 21.06
       }
     },
     "gopuff": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2123,44 +2583,53 @@
       }
     },
     "grabtaxi": {
+      "virtual28": {
+        "cost": 15,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 18,
-        "count": 49120,
-        "rate": 62.5,
-        "rate1": 62.5,
-        "rate3": 42.86,
-        "rate24": 51.92,
-        "rate72": 49.72,
-        "rate168": 54.09,
-        "rate720": 34.19
+        "cost": 15,
+        "count": 43575,
+        "rate": 91.3,
+        "rate1": 91.3,
+        "rate3": 57.69,
+        "rate24": 66.67,
+        "rate72": 65.97,
+        "rate168": 63.41,
+        "rate720": 49.91
       },
       "virtual8": {
-        "cost": 18,
-        "count": 32605
+        "cost": 15,
+        "count": 32601
       }
     },
     "grindr": {
+      "virtual28": {
+        "cost": 2.1,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 1.2,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 7.37,
-        "rate24": 12.94,
-        "rate72": 11.8,
-        "rate168": 11.51,
-        "rate720": 15.98
+        "cost": 1,
+        "count": 43575,
+        "rate": 8.7,
+        "rate1": 8.7,
+        "rate3": 38.46,
+        "rate24": 22.78,
+        "rate72": 20.17,
+        "rate168": 18.13,
+        "rate720": 15.66
       },
       "virtual8": {
-        "cost": 1.2,
-        "count": 32443,
+        "cost": 1,
+        "count": 32595,
         "rate": 0
       }
     },
     "guicheweb": {
       "virtual40": {
-        "cost": 18,
-        "count": 49120,
+        "cost": 15,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2172,8 +2641,8 @@
     },
     "hapi": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2185,34 +2654,38 @@
     },
     "happn": {
       "virtual40": {
-        "cost": 25.8,
-        "count": 49120,
+        "cost": 21.5,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 0,
-        "rate720": 6.1
+        "rate24": 4.76,
+        "rate72": 47.62,
+        "rate168": 40,
+        "rate720": 7.61
       }
     },
     "hellotalk": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43571,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 8.7,
-        "rate72": 88.46,
-        "rate168": 81.25,
-        "rate720": 21.67
+        "rate24": 5.06,
+        "rate72": 14.81,
+        "rate168": 25,
+        "rate720": 26.78
       }
     },
     "hepsiburadacom": {
       "virtual40": {
-        "cost": 13.68,
-        "count": 49120,
+        "cost": 11.4,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2223,33 +2696,38 @@
       }
     },
     "hinge": {
+      "virtual28": {
+        "cost": 17,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 24,
-        "count": 49102,
-        "rate": 9.52,
-        "rate1": 9.52,
-        "rate3": 92,
-        "rate24": 68.42,
-        "rate72": 65.36,
-        "rate168": 64.64,
-        "rate720": 61.7
+        "cost": 20,
+        "count": 43506,
+        "rate": 5.26,
+        "rate1": 5.26,
+        "rate3": 15.56,
+        "rate24": 16.45,
+        "rate72": 25.45,
+        "rate168": 27.76,
+        "rate720": 47.74
       },
       "virtual8": {
-        "cost": 24,
-        "count": 32601,
+        "cost": 20,
+        "count": 32592,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 4.76,
-        "rate72": 10.34,
-        "rate168": 15.15,
-        "rate720": 7.8
+        "rate24": 0,
+        "rate72": 13.16,
+        "rate168": 11.76,
+        "rate720": 13.29
       }
     },
     "hongguoduanju": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2260,22 +2738,26 @@
       }
     },
     "hopper": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 2.38,
-        "rate72": 2.5,
-        "rate168": 2.63,
-        "rate720": 2.98
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0.67
       }
     },
     "howzat": {
       "virtual40": {
-        "cost": 15.6,
-        "count": 49120,
+        "cost": 13,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2286,9 +2768,14 @@
       }
     },
     "hqtrivia": {
+      "virtual28": {
+        "cost": 0.84,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 1.7,
-        "count": 49120,
+        "cost": 1.42,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2298,8 +2785,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 1.85,
-        "count": 32605,
+        "cost": 1.54,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2311,45 +2798,49 @@
     },
     "huawei": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 4.35,
-        "rate24": 4.55,
-        "rate72": 2.17,
-        "rate168": 2.33,
-        "rate720": 0.77
-      }
-    },
-    "hudapp": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 7.41,
-        "rate168": 8.7,
-        "rate720": 1.36
+        "rate72": 3.51,
+        "rate168": 1.9,
+        "rate720": 0.98
+      }
+    },
+    "hudapp": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
       },
-      "virtual8": {
-        "cost": 12,
-        "count": 32605,
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 0,
-        "rate720": 0.26
+        "rate168": 1.02,
+        "rate720": 1.76
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32599,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 8.33,
+        "rate168": 2.83,
+        "rate720": 1.98
       }
     },
     "huionepay": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2360,59 +2851,71 @@
       }
     },
     "humblebundle": {
+      "virtual28": {
+        "cost": 7,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 8.4,
-        "count": 49119,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 66.67,
-        "rate72": 76.27,
-        "rate168": 77.39,
-        "rate720": 34.33
+        "cost": 7,
+        "count": 43574,
+        "rate": 3.57,
+        "rate1": 3.57,
+        "rate3": 6.25,
+        "rate24": 22.73,
+        "rate72": 37.5,
+        "rate168": 10.64,
+        "rate720": 24.01
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 32602,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 7.69,
-        "rate720": 0.39
-      }
-    },
-    "hungrypanda": {
-      "virtual40": {
-        "cost": 18,
-        "count": 49120,
+        "cost": 7,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.5
+        "rate720": 0.69
       }
     },
-    "hyperbolic": {
+    "hungrypanda": {
+      "virtual28": {
+        "cost": 15,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49119,
+        "cost": 15,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 2.22,
-        "rate720": 0.87
+        "rate168": 0,
+        "rate720": 0.16
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 0
+      }
+    },
+    "hyperbolic": {
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0.27
       }
     },
     "icecasino": {
       "virtual40": {
-        "cost": 9.6,
-        "count": 49120,
+        "cost": 8,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2424,8 +2927,8 @@
     },
     "ifood": {
       "virtual40": {
-        "cost": 10.32,
-        "count": 49120,
+        "cost": 8.6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2436,83 +2939,105 @@
       }
     },
     "immutableplay": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49119,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 16,
-        "rate168": 25,
-        "rate720": 1.72
+        "rate3": 66.67,
+        "rate24": 31.82,
+        "rate72": 36.96,
+        "rate168": 38.35,
+        "rate720": 24.36
       }
     },
     "imo": {
-      "virtual40": {
-        "cost": 5.16,
-        "count": 49103,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 1.77,
-        "rate720": 0.7
+      "virtual28": {
+        "cost": 1.5,
+        "count": 0,
+        "rate": 0
       },
-      "virtual8": {
-        "cost": 7.8,
-        "count": 32604,
+      "virtual40": {
+        "cost": 4.3,
+        "count": 43571,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.13
+        "rate720": 0.42
+      },
+      "virtual8": {
+        "cost": 6.5,
+        "count": 32600,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 2.13,
+        "rate72": 4.76,
+        "rate168": 1.54,
+        "rate720": 0.7
       }
     },
     "indeed": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 4.88,
-        "rate72": 11.36,
-        "rate168": 52,
-        "rate720": 5.3
+        "rate24": 2.27,
+        "rate72": 6.98,
+        "rate168": 3.96,
+        "rate720": 6.43
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32604,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 3.03,
-        "rate720": 1.13
+        "rate168": 4.35,
+        "rate720": 1.65
       }
     },
     "inshallah": {
+      "virtual28": {
+        "cost": 7,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0
+        "rate720": 0.47
       }
     },
     "instacart": {
+      "virtual28": {
+        "cost": 4,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 4.8,
-        "count": 49120,
+        "cost": 4,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2522,99 +3047,109 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 4.8,
-        "count": 32605
+        "cost": 4,
+        "count": 32601
       }
     },
     "instagram": {
+      "virtual28": {
+        "cost": 15,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 18,
-        "count": 48930,
-        "rate": 29.41,
-        "rate1": 29.41,
-        "rate3": 36.36,
-        "rate24": 31.92,
-        "rate72": 43.34,
-        "rate168": 46.34,
-        "rate720": 48.8
+        "cost": 15,
+        "count": 43460,
+        "rate": 8.7,
+        "rate1": 8.7,
+        "rate3": 59.46,
+        "rate24": 54.32,
+        "rate72": 54.07,
+        "rate168": 55.99,
+        "rate720": 46.47
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32355,
-        "rate": 83.33,
-        "rate1": 83.33,
-        "rate3": 88.57,
-        "rate24": 33.44,
-        "rate72": 37.33,
-        "rate168": 46.63,
-        "rate720": 46.28
+        "cost": 10,
+        "count": 31602,
+        "rate": 70.97,
+        "rate1": 70.97,
+        "rate3": 80.77,
+        "rate24": 75.71,
+        "rate72": 66.89,
+        "rate168": 59.89,
+        "rate720": 46.98
       }
     },
     "ipsosisay": {
       "virtual40": {
-        "cost": 6,
-        "count": 49120,
+        "cost": 5,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 3.23,
-        "rate72": 2.86,
-        "rate168": 9.09,
-        "rate720": 2.49
+        "rate24": 1.56,
+        "rate72": 14.29,
+        "rate168": 25,
+        "rate720": 4.67
       }
     },
     "jaco": {
       "virtual40": {
-        "cost": 12,
-        "count": 49076,
-        "rate": 56.52,
-        "rate1": 56.52,
-        "rate3": 58.7,
-        "rate24": 52.63,
-        "rate72": 58.27,
-        "rate168": 74.63,
-        "rate720": 74.75
+        "cost": 10,
+        "count": 43472,
+        "rate": 96.77,
+        "rate1": 96.77,
+        "rate3": 100,
+        "rate24": 87.18,
+        "rate72": 85.65,
+        "rate168": 77.01,
+        "rate720": 71.31
       }
     },
     "jd": {
+      "virtual28": {
+        "cost": 5,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 10.32,
-        "count": 49120,
+        "cost": 8.6,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 3.28,
+        "rate168": 0.75,
+        "rate720": 0.22
+      },
+      "virtual8": {
+        "cost": 5,
+        "count": 32593,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 6.13
-      },
-      "virtual8": {
-        "cost": 6,
-        "count": 32594,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 2.7,
-        "rate720": 1.11
+        "rate720": 0.09
       }
     },
     "jeevansathi": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 0,
-        "rate720": 0
+        "rate168": 0.99,
+        "rate720": 0.33
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2625,9 +3160,13 @@
       }
     },
     "kaggle": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2637,51 +3176,66 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605
+        "cost": 10,
+        "count": 32600
       }
     },
     "kakaotalk": {
+      "virtual28": {
+        "cost": 11,
+        "count": 0,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 13.8,
-        "count": 48858,
+        "cost": 11.5,
+        "count": 43567,
         "rate": 66.67,
         "rate1": 66.67,
-        "rate3": 64.38,
-        "rate24": 63.99,
-        "rate72": 67.81,
-        "rate168": 69.43,
-        "rate720": 69.98
+        "rate3": 61.76,
+        "rate24": 57.14,
+        "rate72": 65.25,
+        "rate168": 62.2,
+        "rate720": 65.98
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 32148,
-        "rate": 50,
-        "rate1": 50,
-        "rate3": 31.82,
-        "rate24": 45.41,
-        "rate72": 50,
-        "rate168": 63.89,
-        "rate720": 39.1
+        "cost": 7,
+        "count": 32345,
+        "rate": 91.67,
+        "rate1": 91.67,
+        "rate3": 88.64,
+        "rate24": 85.37,
+        "rate72": 69.59,
+        "rate168": 67.66,
+        "rate720": 58.33
       }
     },
     "karrot": {
       "virtual40": {
-        "cost": 14.4,
-        "count": 49120,
+        "cost": 12,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 0,
-        "rate720": 0
+        "rate168": 5.41,
+        "rate720": 0.89
       }
     },
     "keybase": {
+      "virtual28": {
+        "cost": 11.76,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 24,
-        "count": 49120,
+        "cost": 20,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2691,8 +3245,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 25.37,
-        "count": 32604,
+        "cost": 21.14,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2703,9 +3257,14 @@
       }
     },
     "kfc": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2715,8 +3274,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32603,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2728,34 +3287,38 @@
     },
     "kiacom": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 2.5,
-        "rate168": 2.78,
-        "rate720": 0.15
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0.26
       }
     },
     "kwai": {
+      "virtual28": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 31.82,
-        "rate1": 31.82,
-        "rate3": 45.16,
-        "rate24": 65.05,
-        "rate72": 78.57,
-        "rate168": 82.12,
-        "rate720": 77.81
+        "cost": 10,
+        "count": 43575,
+        "rate": 2.33,
+        "rate1": 2.33,
+        "rate3": 72,
+        "rate24": 84.06,
+        "rate72": 84.44,
+        "rate168": 80.45,
+        "rate720": 78.9
       }
     },
     "lazada": {
       "virtual40": {
-        "cost": 10.32,
-        "count": 49120,
+        "cost": 8.6,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2767,21 +3330,21 @@
     },
     "legeropinion": {
       "virtual40": {
-        "cost": 6,
-        "count": 49120,
+        "cost": 5,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 0,
-        "rate168": 0,
-        "rate720": 0
+        "rate72": 0.97,
+        "rate168": 0.97,
+        "rate720": 0.2
       }
     },
     "leolist": {
       "virtual8": {
-        "cost": 8.4,
-        "count": 32605,
+        "cost": 7,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2792,20 +3355,25 @@
       }
     },
     "line": {
+      "virtual28": {
+        "cost": 15,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 3.6,
-        "count": 49119,
+        "cost": 3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 19.35,
+        "rate24": 0,
         "rate72": 0,
-        "rate168": 12.77,
-        "rate720": 1.36
+        "rate168": 0,
+        "rate720": 1.77
       },
       "virtual8": {
-        "cost": 3.53,
-        "count": 32605,
+        "cost": 2.94,
+        "count": 32596,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2816,46 +3384,56 @@
       }
     },
     "linkedin": {
+      "virtual28": {
+        "cost": 15,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49119,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
-        "rate3": 0,
-        "rate24": 4,
-        "rate72": 0.54,
-        "rate168": 0.59,
-        "rate720": 0.52
+        "rate3": 13.04,
+        "rate24": 4.76,
+        "rate72": 4.08,
+        "rate168": 5.59,
+        "rate720": 1.16
       },
       "virtual8": {
-        "cost": 1.34,
-        "count": 32537,
+        "cost": 1.12,
+        "count": 32589,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 0.47,
-        "rate168": 1.85,
-        "rate720": 0.85
+        "rate72": 0,
+        "rate168": 0.98,
+        "rate720": 1.44
       }
     },
     "lovoo": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 38.1
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 3.45,
-        "rate168": 4.4,
-        "rate720": 7.43
+        "rate3": 6.45,
+        "rate24": 17.95,
+        "rate72": 15.79,
+        "rate168": 11.71,
+        "rate720": 10.42
       }
     },
     "lybrate": {
       "virtual40": {
-        "cost": 13.68,
-        "count": 49120,
+        "cost": 11.4,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2866,22 +3444,32 @@
       }
     },
     "lyft": {
+      "virtual28": {
+        "cost": 10.5,
+        "count": 0,
+        "rate": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 6,
-        "count": 49009,
-        "rate": 96.15,
-        "rate1": 96.15,
-        "rate3": 88.46,
-        "rate24": 93.41,
-        "rate72": 92.2,
-        "rate168": 92.18,
-        "rate720": 87.45
+        "cost": 9,
+        "count": 43489,
+        "rate": 93.94,
+        "rate1": 93.94,
+        "rate3": 100,
+        "rate24": 95.93,
+        "rate72": 94.77,
+        "rate168": 92.25,
+        "rate720": 92.1
       }
     },
     "magnit": {
+      "virtual28": {
+        "cost": 1.61,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 3.6,
-        "count": 49120,
+        "cost": 3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2891,8 +3479,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 3.53,
-        "count": 32605,
+        "cost": 2.94,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2904,21 +3492,25 @@
     },
     "mail2world": {
       "virtual40": {
-        "cost": 6,
-        "count": 49117,
+        "cost": 5,
+        "count": 43573,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 0,
-        "rate168": 30.23,
-        "rate720": 4.98
+        "rate72": 10.64,
+        "rate168": 10.45,
+        "rate720": 9.84
       }
     },
     "mailru": {
+      "virtual28": {
+        "cost": 3.2,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 3.6,
-        "count": 49119,
+        "cost": 3,
+        "count": 43573,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2928,8 +3520,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 4.37,
-        "count": 32604,
+        "cost": 3.64,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2940,51 +3532,70 @@
       }
     },
     "mamba": {
+      "virtual28": {
+        "cost": 0.63,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 1.2,
-        "count": 49041,
-        "rate": 55.56,
-        "rate1": 55.56,
-        "rate3": 92.31,
-        "rate24": 75.54,
-        "rate72": 71.04,
-        "rate168": 69.12,
-        "rate720": 66.67
+        "cost": 1,
+        "count": 43539,
+        "rate": 73.91,
+        "rate1": 73.91,
+        "rate3": 70.83,
+        "rate24": 71.83,
+        "rate72": 68.49,
+        "rate168": 71.3,
+        "rate720": 64.29
       },
       "virtual8": {
-        "cost": 1.34,
-        "count": 32604,
-        "rate": 77.27
-      }
-    },
-    "manus": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49118,
+        "cost": 1.12,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 6.45,
-        "rate72": 9.09,
-        "rate168": 61.9,
-        "rate720": 20.26
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 2.04,
+        "rate720": 0.32
+      }
+    },
+    "manus": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 1.12,
+        "rate1": 1.12,
+        "rate3": 2.91,
+        "rate24": 3.85,
+        "rate72": 4.62,
+        "rate168": 2.71,
+        "rate720": 5.37
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32600,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 1.6
+        "rate720": 4.55
       }
     },
     "mega": {
+      "virtual28": {
+        "cost": 1.4,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 2.57,
-        "count": 49120,
+        "cost": 2.14,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -2994,8 +3605,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 3.02,
-        "count": 32605,
+        "cost": 2.52,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3007,21 +3618,21 @@
     },
     "meituan": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 1.01
+        "rate720": 0.58
       }
     },
     "memelut": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3032,33 +3643,38 @@
       }
     },
     "mercari": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49118,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 7.14,
-        "rate72": 11.11,
-        "rate168": 4.44,
-        "rate720": 3
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0
       },
-      "virtual8": {
-        "cost": 12,
-        "count": 32604,
+      "virtual40": {
+        "cost": 10,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 0,
-        "rate168": 0.56,
-        "rate720": 0.87
+        "rate72": 0.65,
+        "rate168": 1.24,
+        "rate720": 2.06
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32564,
+        "rate": 2.94,
+        "rate1": 2.94,
+        "rate3": 4.35,
+        "rate24": 2.25,
+        "rate72": 1.88,
+        "rate168": 1.56,
+        "rate720": 0.76
       }
     },
     "mewt": {
       "virtual40": {
-        "cost": 27.6,
-        "count": 49120,
+        "cost": 23,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3069,9 +3685,13 @@
       }
     },
     "michat": {
+      "virtual28": {
+        "cost": 1.61,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 3.6,
-        "count": 49120,
+        "cost": 3,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3081,8 +3701,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 3.53,
-        "count": 32605,
+        "cost": 2.94,
+        "count": 32600,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3093,33 +3713,44 @@
       }
     },
     "microsoft": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 14.4,
-        "count": 48873,
-        "rate": 2.13,
-        "rate1": 2.13,
-        "rate3": 2.74,
-        "rate24": 5.82,
-        "rate72": 4.4,
-        "rate168": 10.48,
-        "rate720": 21.11
+        "cost": 12,
+        "count": 43500,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 12,
+        "rate24": 10.9,
+        "rate72": 7.36,
+        "rate168": 6.89,
+        "rate720": 13.18
       },
       "virtual8": {
-        "cost": 14.4,
-        "count": 32591,
-        "rate": 0.27,
-        "rate1": 0.27,
-        "rate3": 12.5,
-        "rate24": 11.32,
-        "rate72": 1.85,
-        "rate168": 1.5,
-        "rate720": 5.66
+        "cost": 12,
+        "count": 32594,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 1.81,
+        "rate168": 2.16,
+        "rate720": 3.19
       }
     },
     "mihuashi": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3131,8 +3762,8 @@
     },
     "momo": {
       "virtual40": {
-        "cost": 18.84,
-        "count": 49117,
+        "cost": 15.7,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3143,9 +3774,14 @@
       }
     },
     "monsterenergy": {
+      "virtual28": {
+        "cost": 22,
+        "count": 0,
+        "rate": 4.55
+      },
       "virtual40": {
-        "cost": 26.4,
-        "count": 49120,
+        "cost": 22,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3155,8 +3791,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 26.4,
-        "count": 32605,
+        "cost": 22,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3168,8 +3804,8 @@
     },
     "mpanels": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3180,22 +3816,30 @@
       }
     },
     "muzz": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 2.38,
-        "rate72": 4.88,
-        "rate168": 3.3,
-        "rate720": 1.65
+        "rate24": 0,
+        "rate72": 4.48,
+        "rate168": 11.63,
+        "rate720": 4.87
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 0
       }
     },
     "myntra": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3206,33 +3850,42 @@
       }
     },
     "naver": {
+      "virtual28": {
+        "cost": 5,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 18,
-        "count": 48855,
-        "rate": 95.45,
-        "rate1": 95.45,
-        "rate3": 92,
-        "rate24": 85.14,
-        "rate72": 85.52,
-        "rate168": 88.22,
-        "rate720": 81.27
+        "cost": 15,
+        "count": 43566,
+        "rate": 54.84,
+        "rate1": 54.84,
+        "rate3": 80.95,
+        "rate24": 31.82,
+        "rate72": 56.51,
+        "rate168": 75.41,
+        "rate720": 78.5
       },
       "virtual8": {
-        "cost": 18,
-        "count": 17375,
+        "cost": 15,
+        "count": 10804,
         "rate": 0,
         "rate1": 0,
-        "rate3": 38.1,
-        "rate24": 50,
-        "rate72": 53.08,
-        "rate168": 33.56,
-        "rate720": 67.5
+        "rate3": 9.68,
+        "rate24": 7.5,
+        "rate72": 43.48,
+        "rate168": 25.4,
+        "rate720": 46.68
       }
     },
     "ncsoft": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3242,8 +3895,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3255,8 +3908,8 @@
     },
     "nerdwallet": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3267,70 +3920,84 @@
       }
     },
     "netease": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 3.7,
-        "rate168": 0.9,
-        "rate720": 0.2
+      "virtual28": {
+        "cost": 10,
+        "count": 0
       },
-      "virtual8": {
-        "cost": 12,
-        "count": 32605,
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0
+        "rate720": 0.44
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32601,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 1.06
       }
     },
     "netflix": {
+      "virtual28": {
+        "cost": 10.78,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 15.6,
-        "count": 49047,
+        "cost": 13,
+        "count": 43458,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.52
+        "rate720": 0.29
       },
       "virtual8": {
-        "cost": 18,
-        "count": 32592,
+        "cost": 15,
+        "count": 32572,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 0,
-        "rate168": 0.48,
-        "rate720": 0.27
+        "rate72": 0.65,
+        "rate168": 0.69,
+        "rate720": 0.46
       }
     },
     "nextdoor": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 2.27,
-        "rate72": 62.96,
-        "rate168": 17.14,
-        "rate720": 21.55
+        "rate24": 3.23,
+        "rate72": 3.23,
+        "rate168": 29.79,
+        "rate720": 23.77
       }
     },
     "nike": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 10.32,
-        "count": 49115,
+        "cost": 8.6,
+        "count": 43566,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3340,8 +4007,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 9,
-        "count": 32600,
+        "cost": 7.5,
+        "count": 32586,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3353,8 +4020,8 @@
     },
     "nimo": {
       "virtual40": {
-        "cost": 6,
-        "count": 49120,
+        "cost": 5,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3366,21 +4033,25 @@
     },
     "noon": {
       "virtual40": {
-        "cost": 17.16,
-        "count": 49120,
+        "cost": 14.3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 3.45,
-        "rate720": 1.59
+        "rate168": 0,
+        "rate720": 1.17
       }
     },
     "nttgame": {
+      "virtual28": {
+        "cost": 1.4,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 2.64,
-        "count": 49120,
+        "cost": 2.2,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3390,8 +4061,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 3.02,
-        "count": 32605,
+        "cost": 2.52,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3402,9 +4073,13 @@
       }
     },
     "odnoklassniki": {
+      "virtual28": {
+        "cost": 3.22,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 5.16,
-        "count": 49120,
+        "cost": 4.3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3416,8 +4091,8 @@
     },
     "offerup": {
       "virtual40": {
-        "cost": 3.6,
-        "count": 49120,
+        "cost": 3,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3427,8 +4102,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 4.37,
-        "count": 32603,
+        "cost": 3.64,
+        "count": 32594,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3440,8 +4115,8 @@
     },
     "olacabs": {
       "virtual40": {
-        "cost": 25.8,
-        "count": 49120,
+        "cost": 21.5,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3452,9 +4127,13 @@
       }
     },
     "olx": {
+      "virtual28": {
+        "cost": 0.63,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 1.2,
-        "count": 49120,
+        "cost": 1,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3464,8 +4143,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 1.34,
-        "count": 32604,
+        "cost": 1.12,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3477,21 +4156,21 @@
     },
     "omi": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 3.7,
-        "rate72": 3.85,
-        "rate168": 3.57,
-        "rate720": 7.28
+        "rate24": 4.55,
+        "rate72": 13.33,
+        "rate168": 57.14,
+        "rate720": 9.75
       }
     },
     "oneforma": {
       "virtual40": {
-        "cost": 36,
-        "count": 49120,
+        "cost": 30,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3501,8 +4180,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32599,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3513,9 +4192,14 @@
       }
     },
     "openai": {
+      "virtual28": {
+        "cost": 20,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 8.64,
-        "count": 49076,
+        "cost": 7.2,
+        "count": 43544,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3527,43 +4211,43 @@
     },
     "other": {
       "virtual28": {
-        "cost": 48,
-        "count": 18933,
-        "rate": 12.5,
-        "rate1": 12.5,
-        "rate3": 25.64,
-        "rate24": 18.33,
-        "rate72": 17.15,
-        "rate168": 12.81,
-        "rate720": 29.09
+        "cost": 40,
+        "count": 17962,
+        "rate": 42.86,
+        "rate1": 42.86,
+        "rate3": 41.67,
+        "rate24": 26.15,
+        "rate72": 28.05,
+        "rate168": 26.36,
+        "rate720": 16.56
       },
       "virtual40": {
-        "cost": 36,
-        "count": 48745,
-        "rate": 48.78,
-        "rate1": 48.78,
-        "rate3": 36.59,
-        "rate24": 23.99,
-        "rate72": 30.84,
-        "rate168": 30.22,
-        "rate720": 30.59
+        "cost": 30,
+        "count": 43347,
+        "rate": 13.04,
+        "rate1": 13.04,
+        "rate3": 23.33,
+        "rate24": 22.47,
+        "rate72": 23.76,
+        "rate168": 27.22,
+        "rate720": 28.33
       },
       "virtual8": {
-        "cost": 36,
-        "count": 32541,
-        "rate": 1.15,
-        "rate1": 1.15,
-        "rate3": 23.81,
-        "rate24": 18.11,
-        "rate72": 16.11,
-        "rate168": 14.98,
-        "rate720": 29.43
+        "cost": 30,
+        "count": 32490,
+        "rate": 4.76,
+        "rate1": 4.76,
+        "rate3": 20.83,
+        "rate24": 32.35,
+        "rate72": 18.75,
+        "rate168": 14.11,
+        "rate720": 16
       }
     },
     "otovinn": {
       "virtual40": {
-        "cost": 10.32,
-        "count": 49120,
+        "cost": 8.6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3574,9 +4258,14 @@
       }
     },
     "ozon": {
+      "virtual28": {
+        "cost": 1.4,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 2.64,
-        "count": 49120,
+        "cost": 2.2,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3586,8 +4275,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 3.02,
-        "count": 32605,
+        "cost": 2.52,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3599,8 +4288,8 @@
     },
     "pairs": {
       "virtual40": {
-        "cost": 30.84,
-        "count": 49120,
+        "cost": 25.7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3611,9 +4300,14 @@
       }
     },
     "papara": {
+      "virtual28": {
+        "cost": 6.37,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 8.64,
-        "count": 49120,
+        "cost": 7.2,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3623,8 +4317,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 13.86,
-        "count": 32605,
+        "cost": 11.55,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3635,22 +4329,32 @@
       }
     },
     "paypal": {
+      "virtual28": {
+        "cost": 30,
+        "count": 0,
+        "rate": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 30.96,
-        "count": 49097,
+        "cost": 25.8,
+        "count": 43555,
         "rate": 0,
         "rate1": 0,
-        "rate3": 4.35,
-        "rate24": 0.85,
-        "rate72": 0.16,
-        "rate168": 0.27,
-        "rate720": 0.84
+        "rate3": 0,
+        "rate24": 0.76,
+        "rate72": 1.63,
+        "rate168": 1.32,
+        "rate720": 0.91
+      },
+      "virtual8": {
+        "cost": 25,
+        "count": 0
       }
     },
     "picpay": {
       "virtual40": {
-        "cost": 27.6,
-        "count": 49120,
+        "cost": 23,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3662,45 +4366,54 @@
     },
     "pikkit": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43570,
         "rate": 0,
         "rate1": 0,
-        "rate3": 0,
-        "rate24": 100,
-        "rate72": 95.24,
-        "rate168": 81.97,
-        "rate720": 56.23
+        "rate3": 96,
+        "rate24": 95.24,
+        "rate72": 97.22,
+        "rate168": 92.11,
+        "rate720": 73.12
       }
     },
     "pinduoduo": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49119,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 0,
-        "rate72": 59.09,
-        "rate168": 73.91,
-        "rate720": 19.01
+        "rate24": 11.86,
+        "rate72": 27.12,
+        "rate168": 7.73,
+        "rate720": 10.46
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32604,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 7.89,
         "rate72": 8.82,
-        "rate168": 3.85,
-        "rate720": 1.36
+        "rate168": 12.12,
+        "rate720": 2.48
       }
     },
     "pixels": {
+      "virtual28": {
+        "cost": 7.5,
+        "count": 0,
+        "rate": 31.82
+      },
       "virtual40": {
-        "cost": 9,
-        "count": 49120,
+        "cost": 7.5,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3712,8 +4425,8 @@
     },
     "planetfans": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3724,9 +4437,13 @@
       }
     },
     "playerauctions": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 24,
-        "count": 49120,
+        "cost": 20,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3736,15 +4453,20 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
         "rate": 0
       }
     },
     "pof": {
+      "virtual28": {
+        "cost": 21.3,
+        "count": 0,
+        "rate": 0
+      },
       "virtual8": {
-        "cost": 18,
-        "count": 32585,
+        "cost": 15,
+        "count": 32583,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3756,8 +4478,8 @@
     },
     "poikey": {
       "virtual40": {
-        "cost": 18,
-        "count": 49120,
+        "cost": 15,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3768,13 +4490,24 @@
       }
     },
     "poparide": {
+      "virtual28": {
+        "cost": 50,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 60,
-        "count": 49120
+        "cost": 50,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
       },
       "virtual8": {
-        "cost": 60,
-        "count": 32605,
+        "cost": 50,
+        "count": 32601,
         "rate": 0,
         "rate3": 0,
         "rate24": 0,
@@ -3785,112 +4518,139 @@
     },
     "poshmark": {
       "virtual40": {
-        "cost": 68.58,
-        "count": 49120,
+        "cost": 57.15,
+        "count": 43575,
         "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0.82
+      }
+    },
+    "protonmail": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
         "rate720": 0
-      }
-    },
-    "protonmail": {
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 3.7,
-        "rate72": 0,
-        "rate168": 0.71,
-        "rate720": 0.97
+        "rate24": 2.91,
+        "rate72": 45.95,
+        "rate168": 12.9,
+        "rate720": 7.05
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32587,
+        "cost": 10,
+        "count": 32556,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 3.45,
-        "rate72": 3.13,
-        "rate168": 2.92,
-        "rate720": 0.87
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 1.16
       }
     },
     "proxy302": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.15
+        "rate720": 0.36
       }
     },
     "pubg": {
+      "virtual28": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 9.6,
-        "count": 49119,
+        "cost": 8,
+        "count": 43573,
         "rate": 0,
         "rate1": 0,
-        "rate3": 10,
-        "rate24": 17.65,
-        "rate72": 52.17,
-        "rate168": 16.77,
-        "rate720": 10.25
+        "rate3": 0,
+        "rate24": 6.45,
+        "rate72": 28,
+        "rate168": 14.74,
+        "rate720": 17.2
       }
     },
     "publix": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0
+        "rate720": 0.5
+      }
+    },
+    "pyaterochka": {
+      "virtual28": {
+        "cost": 1.61,
+        "count": 0
       }
     },
     "qantas": {
       "virtual40": {
-        "cost": 12,
-        "count": 49103,
-        "rate": 87.8,
-        "rate1": 87.8,
-        "rate3": 96,
-        "rate24": 89.58,
-        "rate72": 90.32,
-        "rate168": 89.67,
-        "rate720": 74.7
+        "cost": 10,
+        "count": 43501,
+        "rate": 82.76,
+        "rate1": 82.76,
+        "rate3": 87.69,
+        "rate24": 88.54,
+        "rate72": 86.13,
+        "rate168": 83.03,
+        "rate720": 83.4
       }
     },
     "radiate": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 2.33,
-        "rate720": 0.51
+        "rate168": 0,
+        "rate720": 0.25
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605
+        "cost": 10,
+        "count": 32601
       }
     },
     "radquest": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3902,21 +4662,21 @@
     },
     "rappi": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49117,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 8.7,
-        "rate72": 12,
-        "rate168": 22.5,
-        "rate720": 21.18
+        "cost": 7,
+        "count": 43573,
+        "rate": 8.7,
+        "rate1": 8.7,
+        "rate3": 15.38,
+        "rate24": 70.83,
+        "rate72": 74.07,
+        "rate168": 46.09,
+        "rate720": 35.69
       }
     },
     "razer": {
       "virtual40": {
-        "cost": 3.6,
-        "count": 49120,
+        "cost": 3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3928,8 +4688,8 @@
     },
     "realresearcher": {
       "virtual40": {
-        "cost": 17.16,
-        "count": 49120,
+        "cost": 14.3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -3940,64 +4700,74 @@
       }
     },
     "redbook": {
+      "virtual28": {
+        "cost": 2.5,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49057,
-        "rate": 6.56,
-        "rate1": 6.56,
-        "rate3": 18.18,
-        "rate24": 11.87,
-        "rate72": 19.92,
-        "rate168": 25.03,
-        "rate720": 28.46
+        "cost": 10,
+        "count": 43527,
+        "rate": 9.52,
+        "rate1": 9.52,
+        "rate3": 14.29,
+        "rate24": 47.92,
+        "rate72": 29.07,
+        "rate168": 33.22,
+        "rate720": 31.59
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32520,
-        "rate": 1.75,
-        "rate1": 1.75,
-        "rate3": 8.33,
-        "rate24": 6.72,
-        "rate72": 10.58,
-        "rate168": 23.76,
-        "rate720": 34.89
+        "cost": 10,
+        "count": 32568,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 14.29,
+        "rate24": 18.18,
+        "rate72": 16,
+        "rate168": 20.85,
+        "rate720": 26.37
       }
     },
     "redbubble": {
       "virtual40": {
-        "cost": 19.2,
-        "count": 49120,
+        "cost": 16,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
-        "rate3": 4.76,
+        "rate3": 1.3,
         "rate24": 36.36,
-        "rate72": 40,
-        "rate168": 40.96,
-        "rate720": 24.09
+        "rate72": 63.64,
+        "rate168": 22.02,
+        "rate720": 32.45
       },
       "virtual8": {
-        "cost": 19.2,
-        "count": 32605,
+        "cost": 16,
+        "count": 32601,
         "rate": 0
       }
     },
     "reelskit": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 32.33
+        "rate720": 1.82
       }
     },
     "remotasks": {
+      "virtual28": {
+        "cost": 20,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 24,
-        "count": 49120,
+        "cost": 20,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4008,9 +4778,20 @@
       }
     },
     "ridery": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4021,9 +4802,20 @@
       }
     },
     "riffusion": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4033,10 +4825,21 @@
         "rate720": 0
       }
     },
+    "ripkord": {
+      "virtual8": {
+        "cost": 45.85,
+        "count": 0
+      }
+    },
     "roblox": {
+      "virtual28": {
+        "cost": 7,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4047,48 +4850,52 @@
       }
     },
     "rover": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 1.45,
-        "rate720": 0.42
-      }
-    },
-    "ryde": {
-      "virtual40": {
-        "cost": 19.2,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0
+        "rate720": 0.95
+      }
+    },
+    "ryde": {
+      "virtual40": {
+        "cost": 16,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0.99,
+        "rate168": 2.97,
+        "rate720": 0.86
       }
     },
     "salams": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
-        "rate3": 0,
-        "rate24": 75,
-        "rate72": 77.19,
-        "rate168": 35.94,
-        "rate720": 23.55
+        "rate3": 1.52,
+        "rate24": 3.95,
+        "rate72": 32.23,
+        "rate168": 19.32,
+        "rate720": 27.27
       }
     },
     "salt": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4099,33 +4906,41 @@
       }
     },
     "samsungshop": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49118,
+        "cost": 10,
+        "count": 43573,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 1.35,
-        "rate72": 66.67,
-        "rate168": 13.43,
-        "rate720": 52.03
+        "rate24": 66.67,
+        "rate72": 73.53,
+        "rate168": 19.18,
+        "rate720": 21.02
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32603,
+        "cost": 10,
+        "count": 32598,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 4.17,
-        "rate168": 11.11,
-        "rate720": 17.42
+        "rate168": 38.1,
+        "rate720": 10
       }
     },
     "seated": {
+      "virtual28": {
+        "cost": 7,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4133,12 +4948,16 @@
         "rate72": 0,
         "rate168": 0,
         "rate720": 0
+      },
+      "virtual8": {
+        "cost": 7,
+        "count": 0
       }
     },
     "sendinblue": {
       "virtual40": {
-        "cost": 13.8,
-        "count": 49120,
+        "cost": 11.5,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4149,9 +4968,13 @@
       }
     },
     "seosprint": {
+      "virtual28": {
+        "cost": 0.63,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 1.2,
-        "count": 49120,
+        "cost": 1,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4161,8 +4984,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 1.34,
-        "count": 32605,
+        "cost": 1.12,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4174,21 +4997,21 @@
     },
     "serpapi": {
       "virtual40": {
-        "cost": 12,
-        "count": 49119,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 3.13,
-        "rate72": 3.57,
-        "rate168": 0.99,
-        "rate720": 1.93
+        "rate24": 1.37,
+        "rate72": 6.41,
+        "rate168": 5.61,
+        "rate720": 2.43
       }
     },
     "shareparty": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4200,8 +5023,8 @@
     },
     "sheerid": {
       "virtual40": {
-        "cost": 24,
-        "count": 49120,
+        "cost": 20,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4211,8 +5034,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 25.03,
-        "count": 32605,
+        "cost": 20.86,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4223,46 +5046,54 @@
       }
     },
     "shein": {
+      "virtual28": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 9.6,
-        "count": 49120,
-        "rate": 78.26,
-        "rate1": 78.26,
-        "rate3": 83.58,
-        "rate24": 85.37,
-        "rate72": 89.07,
-        "rate168": 88.79,
-        "rate720": 88.21
+        "cost": 10,
+        "count": 42852,
+        "rate": 76.19,
+        "rate1": 76.19,
+        "rate3": 76.79,
+        "rate24": 84.21,
+        "rate72": 86.38,
+        "rate168": 87.8,
+        "rate720": 88.55
       },
       "virtual8": {
-        "cost": 9.6,
-        "count": 30534,
-        "rate": 96.15,
-        "rate1": 96.15,
-        "rate3": 93.33,
-        "rate24": 93.18,
-        "rate72": 91.89,
-        "rate168": 94.12,
-        "rate720": 90.76
+        "cost": 10,
+        "count": 31715,
+        "rate": 84.62,
+        "rate1": 84.62,
+        "rate3": 90.32,
+        "rate24": 89.14,
+        "rate72": 70.46,
+        "rate168": 71.02,
+        "rate720": 73.84
       }
     },
     "shopback": {
       "virtual40": {
-        "cost": 12,
-        "count": 49119,
+        "cost": 10,
+        "count": 43570,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 48.15,
-        "rate72": 33.33,
-        "rate168": 76,
-        "rate720": 54.79
+        "rate24": 96.55,
+        "rate72": 91.94,
+        "rate168": 83.92,
+        "rate720": 59.42
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32601
       }
     },
     "shopee": {
       "virtual40": {
-        "cost": 32.58,
-        "count": 49120,
+        "cost": 27.15,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4273,77 +5104,77 @@
       }
     },
     "shopify": {
+      "virtual28": {
+        "cost": 7,
+        "count": 0,
+        "rate": 20
+      },
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
-        "rate": 85.71,
-        "rate1": 85.71,
-        "rate3": 87.1,
-        "rate24": 88.36,
-        "rate72": 87.84,
-        "rate168": 87.78,
-        "rate720": 87.28
+        "cost": 7,
+        "count": 43230,
+        "rate": 69.23,
+        "rate1": 69.23,
+        "rate3": 81.97,
+        "rate24": 89.93,
+        "rate72": 88.53,
+        "rate168": 87.64,
+        "rate720": 86.5
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 32605,
-        "rate": 9.52
+        "cost": 7,
+        "count": 32402,
+        "rate": 92,
+        "rate1": 92,
+        "rate3": 68,
+        "rate24": 88.99,
+        "rate72": 71.58,
+        "rate168": 72.24,
+        "rate720": 73.95
       }
     },
     "signal": {
+      "virtual28": {
+        "cost": 3,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 14.4,
-        "count": 48965,
-        "rate": 88.46,
-        "rate1": 88.46,
-        "rate3": 70.73,
-        "rate24": 55.31,
-        "rate72": 54.63,
-        "rate168": 53.53,
-        "rate720": 47.45
+        "cost": 12,
+        "count": 43288,
+        "rate": 82.14,
+        "rate1": 82.14,
+        "rate3": 90.59,
+        "rate24": 79.25,
+        "rate72": 75.84,
+        "rate168": 73.15,
+        "rate720": 63.02
       }
     },
     "signalhire": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 3.57,
-        "rate72": 8,
-        "rate168": 7.14,
-        "rate720": 4.34
+        "rate24": 2.7,
+        "rate72": 11.11,
+        "rate168": 4.27,
+        "rate720": 6.08
       }
     },
     "sikayetvar": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 0,
-        "rate720": 0.39
+      "virtual28": {
+        "cost": 10,
+        "count": 0
       },
-      "virtual8": {
-        "cost": 12,
-        "count": 32605,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 0,
-        "rate720": 0.15
-      }
-    },
-    "siliconflow": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4353,8 +5184,36 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0.21
+      }
+    },
+    "siliconflow": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4365,9 +5224,13 @@
       }
     },
     "skin": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4378,9 +5241,14 @@
       }
     },
     "skout": {
+      "virtual28": {
+        "cost": 1.61,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 3.48,
-        "count": 49120,
+        "cost": 2.9,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4390,8 +5258,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 3.53,
-        "count": 32571,
+        "cost": 2.94,
+        "count": 32583,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4403,45 +5271,56 @@
     },
     "smitten": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 1.72,
+        "rate168": 2.25,
+        "rate720": 6.49
+      }
+    },
+    "snapchat": {
+      "virtual28": {
+        "cost": 5,
+        "count": 0,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 0.99,
-        "rate720": 4.49
-      }
-    },
-    "snapchat": {
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 6,
-        "count": 49106,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 19.05,
-        "rate24": 29.03,
-        "rate72": 7.98,
-        "rate168": 21.88,
-        "rate720": 41.08
+        "cost": 5,
+        "count": 43550,
+        "rate": 4.76,
+        "rate1": 4.76,
+        "rate3": 20.83,
+        "rate24": 36.36,
+        "rate72": 30.99,
+        "rate168": 78.15,
+        "rate720": 43.06
       },
       "virtual8": {
-        "cost": 4.2,
-        "count": 32539,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0.2,
+        "cost": 3.5,
+        "count": 32530,
+        "rate": 100,
+        "rate1": 100,
+        "rate3": 85.29,
         "rate24": 37.5,
-        "rate72": 5.16,
-        "rate168": 11.72,
-        "rate720": 16.38
+        "rate72": 32.81,
+        "rate168": 39.57,
+        "rate720": 34.15
       }
     },
     "sneakerboy": {
       "virtual40": {
-        "cost": 30.84,
-        "count": 49120,
+        "cost": 25.7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4453,19 +5332,19 @@
     },
     "snkrdunk": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 0,
-        "rate720": 0.42
+        "rate168": 1.37,
+        "rate720": 0.67
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 32605,
+        "cost": 7,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4477,21 +5356,26 @@
     },
     "soop": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 7.13
+        "rate720": 1.44
       }
     },
     "sorare": {
+      "virtual28": {
+        "cost": 7,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4501,8 +5385,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 32605,
+        "cost": 7,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4513,26 +5397,35 @@
       }
     },
     "soulapp": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 1.03,
-        "rate720": 3.35
+        "cost": 10,
+        "count": 43575,
+        "rate": 2.38,
+        "rate1": 2.38,
+        "rate3": 2.38,
+        "rate24": 4.35,
+        "rate72": 13.46,
+        "rate168": 22.22,
+        "rate720": 6.26
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605
+        "cost": 10,
+        "count": 32601
       }
     },
     "sparkdriver": {
+      "virtual28": {
+        "cost": 6,
+        "count": 0,
+        "rate": 57.69
+      },
       "virtual40": {
-        "cost": 7.2,
-        "count": 49120,
+        "cost": 6,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4544,21 +5437,26 @@
     },
     "splitdrop": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 4.17,
-        "rate72": 26.92,
-        "rate168": 20.37,
-        "rate720": 13.89
+        "cost": 10,
+        "count": 43575,
+        "rate": 3.41,
+        "rate1": 3.41,
+        "rate3": 3,
+        "rate24": 5.83,
+        "rate72": 14.16,
+        "rate168": 27.07,
+        "rate720": 25.31
       }
     },
     "steam": {
+      "virtual28": {
+        "cost": 2.45,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 5.16,
-        "count": 49090,
+        "cost": 4.3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4568,8 +5466,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 5.21,
-        "count": 32545,
+        "cost": 4.34,
+        "count": 32584,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4580,22 +5478,33 @@
       }
     },
     "supercell": {
+      "virtual28": {
+        "cost": 8.5,
+        "count": 0,
+        "rate": 50
+      },
       "virtual40": {
-        "cost": 10.2,
-        "count": 49120,
+        "cost": 8.5,
+        "count": 43572,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 0,
-        "rate72": 1.96,
-        "rate168": 1.05,
-        "rate720": 0.53
+        "rate24": 0.99,
+        "rate72": 7.41,
+        "rate168": 4.64,
+        "rate720": 5.35
+      }
+    },
+    "supercom": {
+      "virtual40": {
+        "cost": 10,
+        "count": 0
       }
     },
     "surveoo": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4607,8 +5516,8 @@
     },
     "surveyjunkie": {
       "virtual40": {
-        "cost": 18.84,
-        "count": 49120,
+        "cost": 15.7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4619,46 +5528,56 @@
       }
     },
     "tantan": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 8.64,
-        "count": 49115,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 19.05,
-        "rate72": 28.95,
-        "rate168": 18.25,
-        "rate720": 13.43
+        "cost": 7.2,
+        "count": 43572,
+        "rate": 1.96,
+        "rate1": 1.96,
+        "rate3": 1.94,
+        "rate24": 40.91,
+        "rate72": 37.93,
+        "rate168": 46.75,
+        "rate720": 19.89
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 32604,
+        "cost": 7,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 2.86,
-        "rate720": 1.68
+        "rate168": 13.64,
+        "rate720": 6.05
       }
     },
     "taobao": {
+      "virtual28": {
+        "cost": 5,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 17.16,
-        "count": 49120,
+        "cost": 14.3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 0,
-        "rate72": 31.82,
-        "rate168": 23.91,
-        "rate720": 6.18
+        "rate24": 19.05,
+        "rate72": 29.03,
+        "rate168": 15.38,
+        "rate720": 15.23
       }
     },
     "taskdealsin": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4670,21 +5589,21 @@
     },
     "taskverse": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.72
+        "rate720": 0
       }
     },
     "tataneu": {
       "virtual40": {
-        "cost": 18.84,
-        "count": 49120,
+        "cost": 15.7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4696,75 +5615,95 @@
     },
     "telegram": {
       "virtual28": {
-        "cost": 72,
-        "count": 26054,
-        "rate": 7.81,
-        "rate1": 7.81,
-        "rate3": 23.31,
-        "rate24": 15.82,
-        "rate72": 15.04,
-        "rate168": 19.97,
-        "rate720": 17.08
+        "cost": 60,
+        "count": 20089,
+        "rate": 18.18,
+        "rate1": 18.18,
+        "rate3": 22.61,
+        "rate24": 23.48,
+        "rate72": 24.15,
+        "rate168": 23.52,
+        "rate720": 17.36
       },
       "virtual40": {
-        "cost": 72,
-        "count": 44905,
-        "rate": 53.33,
-        "rate1": 53.33,
-        "rate3": 53.9,
-        "rate24": 35.9,
-        "rate72": 35.44,
-        "rate168": 41.58,
-        "rate720": 48.12
-      }
-    },
-    "temu": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 60,
+        "count": 40319,
+        "rate": 29.41,
+        "rate1": 29.41,
+        "rate3": 38.97,
+        "rate24": 38.16,
+        "rate72": 36.97,
+        "rate168": 38.72,
+        "rate720": 35.19
+      },
+      "virtual8": {
+        "cost": 60,
+        "count": 2324,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 11.43,
-        "rate72": 34.78,
-        "rate168": 17.26,
-        "rate720": 24.6
+        "rate24": 0.99,
+        "rate72": 2.4,
+        "rate168": 6.79,
+        "rate720": 16.35
+      }
+    },
+    "temu": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0
+      },
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 3.57,
+        "rate24": 73.68,
+        "rate72": 76.47,
+        "rate168": 53.22,
+        "rate720": 39.93
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32583,
+        "cost": 10,
+        "count": 32601,
         "rate": 22.73,
         "rate720": 22.73
       }
     },
     "tencentqq": {
+      "virtual28": {
+        "cost": 3.78,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 6.84,
-        "count": 49061,
+        "cost": 5.7,
+        "count": 43502,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 14,
-        "rate72": 14.29,
-        "rate168": 13.16,
-        "rate720": 6.98
+        "rate24": 0,
+        "rate72": 0.75,
+        "rate168": 2.6,
+        "rate720": 5.23
       },
       "virtual8": {
-        "cost": 8.23,
-        "count": 32563,
+        "cost": 6.86,
+        "count": 32517,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.41
+        "rate720": 0.3
       }
     },
     "theconcert": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4776,21 +5715,25 @@
     },
     "thefork": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49115,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 100,
-        "rate24": 96.67,
-        "rate72": 92.86,
-        "rate168": 70.06,
-        "rate720": 66.96
+        "cost": 7,
+        "count": 43557,
+        "rate": 19.15,
+        "rate1": 19.15,
+        "rate3": 85.71,
+        "rate24": 92.86,
+        "rate72": 88.35,
+        "rate168": 89.33,
+        "rate720": 84.32
       }
     },
     "thinkacademy": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4800,8 +5743,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32595,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4812,9 +5755,14 @@
       }
     },
     "ticketmaster": {
+      "virtual28": {
+        "cost": 1,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4824,8 +5772,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32590,
+        "cost": 10,
+        "count": 32597,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4837,21 +5785,25 @@
     },
     "ticketplus": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 0,
-        "rate720": 1.35
+        "rate24": 3.36,
+        "rate72": 2.78,
+        "rate168": 1.53,
+        "rate720": 1.53
       }
     },
     "tier": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4861,64 +5813,81 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605
+        "cost": 10,
+        "count": 32601
       }
     },
     "tiktok": {
       "virtual40": {
-        "cost": 9.6,
-        "count": 48343,
-        "rate": 65.85,
-        "rate1": 65.85,
-        "rate3": 64.58,
-        "rate24": 74.81,
-        "rate72": 73.12,
-        "rate168": 69.51,
-        "rate720": 79.76
+        "cost": 10,
+        "count": 42851,
+        "rate": 76.74,
+        "rate1": 76.74,
+        "rate3": 82.93,
+        "rate24": 87.74,
+        "rate72": 84.23,
+        "rate168": 83.15,
+        "rate720": 79.41
       },
       "virtual8": {
-        "cost": 12,
-        "count": 31247,
-        "rate": 30.43,
-        "rate1": 30.43,
-        "rate3": 44.44,
-        "rate24": 53.57,
-        "rate72": 47.9,
-        "rate168": 51.21,
-        "rate720": 61.81
+        "cost": 10,
+        "count": 28841,
+        "rate": 76,
+        "rate1": 76,
+        "rate3": 60,
+        "rate24": 47.83,
+        "rate72": 62.72,
+        "rate168": 61.98,
+        "rate720": 61.08
       }
     },
-    "tongchengtravel": {
-      "virtual40": {
-        "cost": 18,
-        "count": 49120,
+    "tinder": {
+      "virtual8": {
+        "cost": 28,
+        "count": 32579,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.34
+        "rate720": 0
       }
     },
-    "toutiao": {
+    "tongchengtravel": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 15,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 10.34,
-        "rate720": 0.65
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "toutiao": {
+      "virtual40": {
+        "cost": 7,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0.57
       }
     },
     "towns": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4929,26 +5898,30 @@
       }
     },
     "tradingview": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 4,
-        "rate1": 4,
-        "rate3": 100,
-        "rate24": 85.71,
-        "rate72": 78.26,
-        "rate168": 87.14,
-        "rate720": 68.28
+        "cost": 10,
+        "count": 43575,
+        "rate": 8,
+        "rate1": 8,
+        "rate3": 14.29,
+        "rate24": 22.22,
+        "rate72": 52.99,
+        "rate168": 56.01,
+        "rate720": 70.33
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605
+        "cost": 10,
+        "count": 32600
       }
     },
     "trendyol": {
       "virtual40": {
-        "cost": 13.7,
-        "count": 49120,
+        "cost": 11.42,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4959,33 +5932,38 @@
       }
     },
     "truecaller": {
+      "virtual28": {
+        "cost": 1.61,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 3.6,
-        "count": 48133,
-        "rate": 4,
-        "rate1": 4,
-        "rate3": 5.48,
-        "rate24": 8.75,
-        "rate72": 35.12,
-        "rate168": 21.1,
-        "rate720": 10.72
+        "cost": 3,
+        "count": 42104,
+        "rate": 9.51,
+        "rate1": 9.51,
+        "rate3": 9.19,
+        "rate24": 13.14,
+        "rate72": 12.72,
+        "rate168": 11.8,
+        "rate720": 14.07
       },
       "virtual8": {
-        "cost": 3.53,
-        "count": 32493,
-        "rate": 12.5,
-        "rate1": 12.5,
-        "rate3": 12.35,
-        "rate24": 5.2,
-        "rate72": 12.84,
-        "rate168": 7.2,
-        "rate720": 3.34
+        "cost": 2.94,
+        "count": 31819,
+        "rate": 13.64,
+        "rate1": 13.64,
+        "rate3": 12.16,
+        "rate24": 6.32,
+        "rate72": 10.23,
+        "rate168": 9.29,
+        "rate720": 8.63
       }
     },
     "truthsocial": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -4997,8 +5975,8 @@
     },
     "twitch": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5009,9 +5987,14 @@
       }
     },
     "twitter": {
+      "virtual28": {
+        "cost": 25,
+        "count": 0,
+        "rate": 0
+      },
       "virtual8": {
-        "cost": 1.2,
-        "count": 32598,
+        "cost": 1,
+        "count": 32579,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5023,8 +6006,8 @@
     },
     "txtsignal": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5035,33 +6018,38 @@
       }
     },
     "uber": {
+      "virtual28": {
+        "cost": 20,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 18,
-        "count": 49087,
-        "rate": 0.98,
-        "rate1": 0.98,
-        "rate3": 83.33,
-        "rate24": 78.48,
-        "rate72": 80.15,
-        "rate168": 36.77,
-        "rate720": 66.4
+        "cost": 15,
+        "count": 43525,
+        "rate": 17.65,
+        "rate1": 17.65,
+        "rate3": 23.08,
+        "rate24": 46.72,
+        "rate72": 61.07,
+        "rate168": 66.17,
+        "rate720": 64.13
       },
       "virtual8": {
-        "cost": 9.6,
-        "count": 32599,
+        "cost": 8,
+        "count": 32568,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 3.03,
-        "rate72": 8,
-        "rate168": 19.49,
-        "rate720": 53.01
+        "rate24": 4.07,
+        "rate72": 12.8,
+        "rate168": 41.93,
+        "rate720": 40.6
       }
     },
     "ubisoft": {
       "virtual8": {
-        "cost": 8.4,
-        "count": 32605,
+        "cost": 7,
+        "count": 32594,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5071,10 +6059,23 @@
         "rate720": 0
       }
     },
+    "unitedairlines": {
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0.93,
+        "rate720": 11.29
+      }
+    },
     "unni": {
       "virtual40": {
-        "cost": 5.64,
-        "count": 49120,
+        "cost": 4.7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5086,8 +6087,8 @@
     },
     "upland": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5097,8 +6098,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 32605,
+        "cost": 7,
+        "count": 32570,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5109,35 +6110,40 @@
       }
     },
     "upwork": {
+      "virtual28": {
+        "cost": 4.5,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 5.4,
-        "count": 49120,
+        "cost": 4.5,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 3.45,
-        "rate72": 4.26,
-        "rate168": 4.94,
-        "rate720": 0.95
+        "rate24": 0,
+        "rate72": 0.68,
+        "rate168": 2.26,
+        "rate720": 2.99
       }
     },
     "userlyticssecurity": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 2.27,
-        "rate720": 0.37
+        "rate168": 0,
+        "rate720": 0.28
       }
     },
     "uu163": {
       "virtual40": {
-        "cost": 9.6,
-        "count": 49119,
+        "cost": 8,
+        "count": 43571,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5149,11 +6155,20 @@
     },
     "venmo": {
       "virtual40": {
-        "cost": 17.16,
-        "count": 49120,
+        "cost": 14.3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
+      "virtual8": {
+        "cost": 15,
+        "count": 32590,
+        "rate": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
@@ -5162,8 +6177,8 @@
     },
     "viber": {
       "virtual8": {
-        "cost": 9.6,
-        "count": 32546,
+        "cost": 8,
+        "count": 32566,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5175,84 +6190,111 @@
     },
     "vinita": {
       "virtual40": {
-        "cost": 12,
-        "count": 49118,
+        "cost": 10,
+        "count": 43566,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 69.57,
+        "rate72": 75,
+        "rate168": 66.33,
+        "rate720": 33.44
+      }
+    },
+    "vinted": {
+      "virtual28": {
+        "cost": 17,
+        "count": 0,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
-        "rate72": 17.78,
-        "rate168": 15.25,
-        "rate720": 11
-      }
-    },
-    "vinted": {
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      },
       "virtual40": {
-        "cost": 29.16,
-        "count": 49120,
+        "cost": 24.3,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 9.52,
-        "rate72": 14.29,
-        "rate168": 5.23,
-        "rate720": 3.76
+        "rate24": 59.09,
+        "rate72": 13.16,
+        "rate168": 16.76,
+        "rate720": 4.9
       }
     },
     "vkontakte": {
+      "virtual28": {
+        "cost": 5,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 18,
-        "count": 49105,
-        "rate": 8.61,
-        "rate1": 8.61,
-        "rate3": 43.48,
-        "rate24": 52.17,
-        "rate72": 26.48,
-        "rate168": 38.94,
-        "rate720": 19.24
+        "cost": 15,
+        "count": 43476,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 2.22,
+        "rate24": 11.29,
+        "rate72": 27.03,
+        "rate168": 34.38,
+        "rate720": 22.21
       },
       "virtual8": {
-        "cost": 18,
-        "count": 32580,
+        "cost": 15,
+        "count": 32592,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 27.27,
-        "rate72": 25,
-        "rate168": 21.38,
-        "rate720": 13.63
+        "rate24": 3.13,
+        "rate72": 2.56,
+        "rate168": 14.29,
+        "rate720": 17.78
       }
     },
     "walmart": {
+      "virtual28": {
+        "cost": 15,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 18,
-        "count": 48058,
-        "rate": 100,
-        "rate1": 100,
-        "rate3": 89.41,
-        "rate24": 93.9,
-        "rate72": 81.36,
-        "rate168": 63.92,
-        "rate720": 77.18
+        "cost": 15,
+        "count": 42277,
+        "rate": 94.29,
+        "rate1": 94.29,
+        "rate3": 92.63,
+        "rate24": 88.96,
+        "rate72": 86.55,
+        "rate168": 79.24,
+        "rate720": 76.15
       }
     },
     "warpcast": {
       "virtual40": {
-        "cost": 10.8,
-        "count": 49120,
-        "rate": 95.24,
-        "rate1": 95.24,
-        "rate3": 95.24,
-        "rate24": 97.12,
-        "rate72": 94.64,
-        "rate168": 95.37,
-        "rate720": 92.44
+        "cost": 9,
+        "count": 43575,
+        "rate": 96.77,
+        "rate1": 96.77,
+        "rate3": 95.45,
+        "rate24": 94.22,
+        "rate72": 92.98,
+        "rate168": 93.59,
+        "rate720": 95.39
+      }
+    },
+    "watermelonvideo": {
+      "virtual40": {
+        "cost": 16,
+        "count": 0
       }
     },
     "weareher": {
       "virtual40": {
-        "cost": 7.8,
-        "count": 49120,
+        "cost": 6.5,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5264,8 +6306,8 @@
     },
     "web3auth": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5276,57 +6318,77 @@
       }
     },
     "wechat": {
-      "virtual40": {
-        "cost": 24,
-        "count": 49110,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 45.45,
-        "rate24": 26.53,
-        "rate72": 26,
-        "rate168": 15.67,
-        "rate720": 16.43
-      },
-      "virtual8": {
-        "cost": 18.98,
-        "count": 32590,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 14.29,
-        "rate72": 7.5,
-        "rate168": 4.18,
-        "rate720": 2.56
-      }
-    },
-    "weex": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49120,
+      "virtual28": {
+        "cost": 30,
+        "count": 0,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 21.93
+        "rate720": 0
       },
-      "virtual8": {
-        "cost": 12,
-        "count": 32605,
+      "virtual40": {
+        "cost": 20,
+        "count": 43498,
         "rate": 0,
         "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 5.13,
-        "rate168": 6.36,
-        "rate720": 7.78
+        "rate3": 14.67,
+        "rate24": 21.43,
+        "rate72": 29.63,
+        "rate168": 23.37,
+        "rate720": 15.31
+      },
+      "virtual8": {
+        "cost": 15.82,
+        "count": 32486,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 6.25,
+        "rate24": 8.33,
+        "rate72": 7.87,
+        "rate168": 8.43,
+        "rate720": 4.86
+      }
+    },
+    "weex": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 96.3,
+        "rate1": 96.3,
+        "rate3": 96.3,
+        "rate24": 100,
+        "rate72": 94.74,
+        "rate168": 40.68,
+        "rate720": 18.48
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32526,
+        "rate": 93.1,
+        "rate1": 93.1,
+        "rate3": 94.44,
+        "rate24": 94.44,
+        "rate72": 94.87,
+        "rate168": 94.87,
+        "rate720": 35.13
       }
     },
     "weibo": {
+      "virtual28": {
+        "cost": 21.3,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 25.2,
-        "count": 49120,
+        "cost": 21,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5336,8 +6398,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 25.2,
-        "count": 32602,
+        "cost": 21,
+        "count": 32598,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5348,9 +6410,14 @@
       }
     },
     "welocalize": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 71.43
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5360,8 +6427,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5372,142 +6439,171 @@
       }
     },
     "wert": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.55
+        "rate720": 0.3
+      }
+    },
+    "whatnot": {
+      "virtual40": {
+        "cost": 5,
+        "count": 43575,
+        "rate": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
       }
     },
     "whatsapp": {
       "virtual28": {
-        "cost": 144,
-        "count": 30210,
-        "rate": 54.05,
-        "rate1": 54.05,
-        "rate3": 53.29,
-        "rate24": 24.51,
-        "rate72": 29.43,
-        "rate168": 36.25,
-        "rate720": 37.02
+        "cost": 120,
+        "count": 17232,
+        "rate": 5,
+        "rate1": 5,
+        "rate3": 21.94,
+        "rate24": 23.71,
+        "rate72": 30.88,
+        "rate168": 33.36,
+        "rate720": 35.65
       },
       "virtual40": {
-        "cost": 84,
-        "count": 48636,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 2.56,
-        "rate24": 0.27,
-        "rate72": 0.53,
-        "rate168": 0.41,
-        "rate720": 1.63
-      },
-      "virtual8": {
-        "cost": 114,
-        "count": 32579,
+        "cost": 70,
+        "count": 43140,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 0,
-        "rate72": 0.19,
-        "rate168": 0.24,
-        "rate720": 0.75
-      }
-    },
-    "winzo": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49093,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 100,
-        "rate24": 97.06,
-        "rate72": 90.54,
-        "rate168": 86.74,
-        "rate720": 53
+        "rate24": 4.14,
+        "rate72": 3.42,
+        "rate168": 3.85,
+        "rate720": 2.06
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32602,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 0,
-        "rate168": 2.88,
-        "rate720": 0.53
-      }
-    },
-    "wise": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 29.63,
-        "rate72": 68.42,
-        "rate168": 37.8,
-        "rate720": 30.53
-      },
-      "virtual8": {
-        "cost": 3.6,
-        "count": 32604,
-        "rate": 19.05
-      }
-    },
-    "wolt": {
-      "virtual40": {
-        "cost": 6,
-        "count": 49120,
-        "rate": 100,
-        "rate1": 100,
-        "rate3": 100,
-        "rate24": 78.95,
-        "rate72": 76.32,
-        "rate168": 54.14,
-        "rate720": 59.46
-      }
-    },
-    "wooplus": {
-      "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 20.69,
-        "rate168": 30.95,
-        "rate720": 8.13
-      },
-      "virtual8": {
-        "cost": 12,
-        "count": 32605
-      }
-    },
-    "ximalaya": {
-      "virtual40": {
-        "cost": 9.6,
-        "count": 49120,
+        "cost": 95,
+        "count": 32296,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.29
+        "rate720": 0.87
+      }
+    },
+    "winzo": {
+      "virtual40": {
+        "cost": 10,
+        "count": 43569,
+        "rate": 4,
+        "rate1": 4,
+        "rate3": 1.96,
+        "rate24": 80.95,
+        "rate72": 89.74,
+        "rate168": 90.1,
+        "rate720": 65.51
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32597,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 7.14,
+        "rate720": 5.99
+      }
+    },
+    "wise": {
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 52.38,
+        "rate72": 57.14,
+        "rate168": 23.88,
+        "rate720": 26.34
+      },
+      "virtual8": {
+        "cost": 3,
+        "count": 32554,
+        "rate": 19.05
+      }
+    },
+    "wolt": {
+      "virtual28": {
+        "cost": 5,
+        "count": 0,
+        "rate": 0
+      },
+      "virtual40": {
+        "cost": 5,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 64.29,
+        "rate72": 76.83,
+        "rate168": 42.05,
+        "rate720": 52.81
+      }
+    },
+    "wooplus": {
+      "virtual40": {
+        "cost": 10,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 75,
+        "rate72": 48.28,
+        "rate168": 51.35,
+        "rate720": 20.53
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32601
+      }
+    },
+    "ximalaya": {
+      "virtual40": {
+        "cost": 8,
+        "count": 43575,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "xingchengonline": {
+      "virtual40": {
+        "cost": 10,
+        "count": 43575
+      },
+      "virtual8": {
+        "cost": 10,
+        "count": 32577
       }
     },
     "xumo": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5519,8 +6615,8 @@
     },
     "xunyou": {
       "virtual40": {
-        "cost": 16.8,
-        "count": 49120,
+        "cost": 14,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5531,57 +6627,67 @@
       }
     },
     "yalla": {
-      "virtual40": {
-        "cost": 1.7,
-        "count": 49119,
-        "rate": 95.45,
-        "rate1": 95.45,
-        "rate3": 95.45,
-        "rate24": 0,
-        "rate72": 56.16,
-        "rate168": 27.78,
-        "rate720": 9.26
+      "virtual28": {
+        "cost": 2.24,
+        "count": 0,
+        "rate": 0
       },
-      "virtual8": {
-        "cost": 2.4,
-        "count": 32590,
+      "virtual40": {
+        "cost": 1.42,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0
+        "rate720": 17.5
+      },
+      "virtual8": {
+        "cost": 2,
+        "count": 32545,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 1.06
       }
     },
     "yandex": {
+      "virtual28": {
+        "cost": 1.4,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 2.64,
-        "count": 49085,
-        "rate": 32.26,
-        "rate1": 32.26,
-        "rate3": 37.84,
-        "rate24": 62.82,
-        "rate72": 55.63,
-        "rate168": 52.65,
-        "rate720": 54.46
+        "cost": 2.2,
+        "count": 43558,
+        "rate": 20.83,
+        "rate1": 20.83,
+        "rate3": 70.37,
+        "rate24": 58,
+        "rate72": 45.36,
+        "rate168": 42.3,
+        "rate720": 50.72
       },
       "virtual8": {
-        "cost": 3.02,
-        "count": 32604,
+        "cost": 2.52,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 1.73
+        "rate720": 1.81
       }
     },
     "yango": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5592,9 +6698,14 @@
       }
     },
     "yemeksepeti": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 24,
-        "count": 49120,
+        "cost": 20,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5604,8 +6715,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32604,
+        "cost": 10,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5617,8 +6728,8 @@
     },
     "yikyak": {
       "virtual40": {
-        "cost": 8.28,
-        "count": 49120,
+        "cost": 6.9,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5630,8 +6741,8 @@
     },
     "yongshiwangluo": {
       "virtual40": {
-        "cost": 4.08,
-        "count": 49120,
+        "cost": 3.4,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5643,25 +6754,29 @@
     },
     "yophone": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
         "rate168": 0,
-        "rate720": 0.41
+        "rate720": 0
       },
       "virtual8": {
-        "cost": 12,
-        "count": 32605
+        "cost": 10,
+        "count": 32601
       }
     },
     "yorkbbs": {
+      "virtual28": {
+        "cost": 10,
+        "count": 0
+      },
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5672,9 +6787,14 @@
       }
     },
     "youla": {
+      "virtual28": {
+        "cost": 3.2,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 2.64,
-        "count": 49120,
+        "cost": 2.2,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5684,8 +6804,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 3.02,
-        "count": 32605,
+        "cost": 2.52,
+        "count": 32600,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5697,8 +6817,8 @@
     },
     "yuewen": {
       "virtual40": {
-        "cost": 8.4,
-        "count": 49120,
+        "cost": 7,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5708,8 +6828,8 @@
         "rate720": 0
       },
       "virtual8": {
-        "cost": 8.4,
-        "count": 32604,
+        "cost": 7,
+        "count": 32601,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5720,9 +6840,14 @@
       }
     },
     "zalo": {
+      "virtual28": {
+        "cost": 8,
+        "count": 0,
+        "rate": 0
+      },
       "virtual40": {
-        "cost": 8.64,
-        "count": 49119,
+        "cost": 7.2,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5734,8 +6859,8 @@
     },
     "zhihu": {
       "virtual40": {
-        "cost": 9.6,
-        "count": 49120,
+        "cost": 8,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5747,45 +6872,50 @@
     },
     "zhipuai": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
-        "rate": 86.36,
-        "rate1": 86.36,
-        "rate3": 0,
-        "rate24": 0,
-        "rate72": 100,
-        "rate168": 46.67,
-        "rate720": 10.99
-      }
-    },
-    "zoho": {
-      "virtual40": {
-        "cost": 5.16,
-        "count": 48399,
-        "rate": 65.22,
-        "rate1": 65.22,
-        "rate3": 61.22,
-        "rate24": 72.45,
-        "rate72": 72.76,
-        "rate168": 69.4,
-        "rate720": 65.66
-      },
-      "virtual8": {
-        "cost": 5.21,
-        "count": 32552,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 3.88,
-        "rate72": 11.51,
-        "rate168": 11.73,
-        "rate720": 12.23
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 2.94,
+        "rate720": 24.73
+      }
+    },
+    "zoho": {
+      "virtual28": {
+        "cost": 2.45,
+        "count": 0,
+        "rate": 0
+      },
+      "virtual40": {
+        "cost": 4.3,
+        "count": 43217,
+        "rate": 13.04,
+        "rate1": 13.04,
+        "rate3": 37.25,
+        "rate24": 69.81,
+        "rate72": 68.36,
+        "rate168": 67.91,
+        "rate720": 69.51
+      },
+      "virtual8": {
+        "cost": 4.34,
+        "count": 32600,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 14.29,
+        "rate72": 10.34,
+        "rate168": 7.84,
+        "rate720": 7.78
       }
     },
     "zomato": {
       "virtual40": {
-        "cost": 17.16,
-        "count": 49120,
+        "cost": 14.3,
+        "count": 43574,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -5797,8 +6927,8 @@
     },
     "zupee": {
       "virtual40": {
-        "cost": 12,
-        "count": 49120,
+        "cost": 10,
+        "count": 43575,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,

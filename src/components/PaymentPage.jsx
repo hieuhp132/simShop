@@ -1,10 +1,13 @@
 import React, { useState, useContext, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import axios from 'axios';
+import apiClient from '../apiConfig.js';
 import io from 'socket.io-client';
 import styles from './PaymentPage.module.css';
 import { BalanceContext } from './TopNav';
-import { API_BASE_URL } from '../apiConfig';
+import { API_BASE_URL } from '../apiConfig.js';
+
+import sepayIcon from '../assets/icons/sepay.png';
+import visaIcon from '../assets/icons/visa.png';
 
 const defaultIcon = 'https://cdn-icons-png.flaticon.com/512/1946/1946429.png';
 
@@ -22,6 +25,9 @@ export default function PaymentPage({ user }) {
   const [showQrModal, setShowQrModal] = useState(false);
   const [qrState, setQrState] = useState('enter-amount'); // enter-amount | waiting | success
   const [currentOrderId, setCurrentOrderId] = useState(null);
+  const [qrImageUrl, setQrImageUrl] = useState('');
+  const [bank, setBank] = useState('');
+  const [account, setAccount] = useState('');
 
   const socketRef = useRef(null);
 
@@ -39,7 +45,7 @@ export default function PaymentPage({ user }) {
   const fetchTransactions = async () => {
     try {
       setLoadingTx(true);
-      const res = await axios.get(`${API_BASE_URL}/api/payment/history/${user._id}`);
+      const res = await apiClient.get(`/api/payment/history/${user._id}`);
       if (res.data?.success && res.data?.transactions) {
         setTransactions(res.data.transactions);
       }
@@ -66,31 +72,139 @@ export default function PaymentPage({ user }) {
     }, 3000);
   };
 
+  const generateRandomHex = (length) => {
+    const array = new Uint8Array(length);
+    window.crypto.getRandomValues(array);
+    return Array.from(array, byte => byte.toString(16).padStart(2, '0')).join('');
+  };
+
+  const paymentStateTest = async () => {
+    try {
+      const idTestOrder = '8a3ee20a80458ff1f20bfbcad49fa98f';
+      setQrState('waiting');
+      
+      // Test socket connection first
+      console.log('🔌 Testing socket connection...');
+      if (!socketRef.current) {
+        socketRef.current = io(API_BASE_URL, { transports: ['websocket'] });
+        
+        socketRef.current.on('connect', () => {
+          console.log('✅ Socket connected successfully!');
+          console.log('🔌 Socket ID:', socketRef.current.id);
+          socketRef.current.emit('join_user_room', user._id);
+          console.log('👤 Joined user room:', user._id);
+        });
+
+        socketRef.current.on('payment_success', (data) => {
+          console.log('🎉 Payment success event received:', data);
+          if (data.userId === user._id) {
+            console.log('✅ Payment success confirmed for user:', user._id);
+            handlePaymentSuccess();
+          } else {
+            console.log('⚠️ Payment success for different user:', data.userId);
+          }
+        });
+
+        socketRef.current.on('disconnect', () => {
+          console.log('🔌 Socket disconnected');
+        });
+
+        socketRef.current.on('connect_error', (error) => {
+          console.error('❌ Socket connection error:', error);
+        });
+      } else {
+        console.log('🔌 Socket already connected, ID:', socketRef.current.id);
+      }
+
+      const res = await apiClient.post('/api/payment/sepay/check-payment-status', {
+        orderId: idTestOrder,
+      });
+
+      if(res.data?.success) {
+        console.log("✅ Đơn đã thanh toán, chờ xác nhận từ socket...");
+        console.log("🔍 Socket status:", socketRef.current ? 'Connected' : 'Not connected');
+        console.log("🔍 Socket ID:", socketRef.current?.id);
+      }
+
+    } catch (err) {
+      console.error('❌ paymentStateTest error:', err);
+    }
+  };
+
   // Tạo đơn thanh toán SePay
   const createPayment = async () => {
     try {
-      const newDesc = `NAPTIEN-${Date.now()}-${user._id}`;
+      // 1. Tạo socket connection TRƯỚC khi tạo payment
+      if (!socketRef.current) {
+        console.log('🔌 Creating socket connection for payment...');
+        socketRef.current = io(API_BASE_URL, { transports: ['websocket'] });
+        
+        socketRef.current.on('connect', () => {
+          console.log('✅ Socket connected, joining user room:', user._id);
+          socketRef.current.emit('join_user_room', user._id);
+        });
+
+        socketRef.current.on('payment_success', (data) => {
+          console.log('📡 Received payment_success event:', data);
+          if (data.userId === user._id) {
+            console.log('✅ Payment success confirmed for user:', user._id);
+            handlePaymentSuccess();
+          } else {
+            console.log('⚠️ Payment success for different user:', data.userId);
+          }
+        });
+
+        socketRef.current.on('disconnect', () => {
+          console.log('🔌 Socket disconnected');
+        });
+
+        socketRef.current.on('connect_error', (error) => {
+          console.error('❌ Socket connection error:', error);
+        });
+      } else {
+        console.log('🔌 Socket already connected, ID:', socketRef.current.id);
+      }
+
+      // 2. Đợi socket connect xong (nếu cần)
+      if (socketRef.current && !socketRef.current.connected) {
+        console.log('⏳ Waiting for socket to connect...');
+        await new Promise((resolve) => {
+          socketRef.current.once('connect', resolve);
+          // Timeout sau 5s
+          setTimeout(resolve, 5000);
+        });
+      }
+
+      // 3. Tạo payment
+      const orderId = generateRandomHex(16);
+      const newDesc = `NAPTIEN${orderId}`;
       setDescription(newDesc);
-      const res = await axios.post(`${API_BASE_URL}/api/payment/sepay`, {
+      
+      console.log('📤 Creating payment with orderId:', orderId);
+      const res = await apiClient.post('/api/payment/sepay', {
         userId: user._id,
-        amount,
+        amount: amount,
         description: newDesc,
       });
 
-      if (res.data?.success && res.data?.orderId) {
+      if (res.data?.success && res.data?.orderId && res.data?.qrImageUrl && res.data?.account && res.data?.bank) {
         setCurrentOrderId(res.data.orderId);
+        setQrImageUrl(res.data.qrImageUrl);
+        setAccount(res.data.account);
+        setBank(res.data.bank);
         setQrState('waiting');
 
-        if (!socketRef.current) {
-          socketRef.current = io(API_BASE_URL, { transports: ['websocket'] });
-          socketRef.current.on('connect', () => {
-            socketRef.current.emit('join', user._id);
-          });
-          socketRef.current.on('payment_success', (data) => {
-            if (data.userId === user._id) {
-              handlePaymentSuccess();
-            }
-          });
+        console.log('✅ Payment created successfully, waiting for webhook...');
+        console.log('🔍 Socket status:', socketRef.current?.connected ? 'Connected' : 'Not connected');
+        console.log('🔍 Socket ID:', socketRef.current?.id);
+
+        // 4. Check payment status (optional)
+        const webhooks = await apiClient.post('/api/payment/sepay/check-payment-status', {
+          orderId: res.data.orderId,
+        });
+
+        if(webhooks.data?.success) {
+          console.log("✅ Đơn đã thanh toán, chờ xác nhận từ socket...");
         }
       }
     } catch (err) {
@@ -111,7 +225,7 @@ export default function PaymentPage({ user }) {
   const paymentMethods = [
     {
       key: 'card',
-      icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/visa.svg',
+      icon: visaIcon,
       label: 'Pay using Visa/Mastercard cards',
       desc: 'Visa, Mastercard, MIR',
       detail: () => (
@@ -119,14 +233,14 @@ export default function PaymentPage({ user }) {
           <button disabled={!user} className={styles['disabled-button']}>
             Thanh toán qua thẻ Visa/Mastercard
           </button>
-          {!user && <div className={styles['login-required']}>Bạn cần đăng nhập để thực hiện thanh toán</div>}
+          {!user && <div className={styles['login-required']}>{t('login_required')}</div>}
         </div>
       ),
     },
     {
       key: 'sepay',
-      icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/SePay_logo.svg/120px-SePay_logo.svg.png',
-      label: 'Pay with SePay QR',
+      icon: sepayIcon,
+      label: 'Sepay',
       desc: 'QR chuyển khoản ngân hàng qua SePay',
       detail: () => (
         <div style={{ textAlign: 'center' }}>
@@ -140,7 +254,7 @@ export default function PaymentPage({ user }) {
           >
             Nạp qua SePay QR
           </button>
-          {!user && <div className={styles['login-required']}>Bạn cần đăng nhập để thực hiện thanh toán</div>}
+          {!user && <div className={styles['login-required']}>{t('login_required')}</div>}
         </div>
       ),
     },
@@ -154,7 +268,7 @@ export default function PaymentPage({ user }) {
           <button disabled={!user} className={styles['disabled-button']}>
             Thanh toán bằng Crypto
           </button>
-          {!user && <div className={styles['login-required']}>Bạn cần đăng nhập để thực hiện thanh toán</div>}
+          {!user && <div className={styles['login-required']}>{t('login_required')}</div>}
         </div>
       ),
     },
@@ -168,7 +282,7 @@ export default function PaymentPage({ user }) {
           <button disabled={!user} className={styles['disabled-button']}>
             Liên hệ hỗ trợ
           </button>
-          {!user && <div className={styles['login-required']}>Bạn cần đăng nhập để thực hiện thanh toán</div>}
+          {!user && <div className={styles['login-required']}>{t('login_required')}</div>}
         </div>
       ),
     },
@@ -219,7 +333,7 @@ export default function PaymentPage({ user }) {
 
         {activeTab === 'history' && (
           <div className={styles['history-list']}>
-            {loadingTx ? 'Đang tải...' : transactions.length === 0 ? 'Chưa có giao dịch nào.' : (
+            {loadingTx ? t('loading') : transactions.length === 0 ? t('no_transactions') : (
               transactions.map(tx => (
                 <div key={tx._id} className={styles['history-item']}>
                   <div><b>Ngày:</b> {new Date(tx.transaction_date).toLocaleString()}</div>
@@ -248,48 +362,71 @@ export default function PaymentPage({ user }) {
                   onChange={(e) => setAmount(Number(e.target.value))}
                   className={styles['amount-input']}
                 />
-                <button onClick={createPayment} className={styles['primary-btn']}>Tạo mã QR</button>
-                <button onClick={closeQrModal} className={styles['cancel-btn']}>Hủy</button>
+                <button onClick={createPayment} className={styles['primary-btn']}>{t('test_payment_success')}</button>
+                <button onClick={closeQrModal} className={styles['cancel-btn']}>{t('cancel')}</button>
               </>
             )}
 
             {qrState === 'waiting' && (
               <>
                 <img
-                  src={`https://qr.sepay.vn/img?acc=VQRQADLIA6895&bank=MBBank&amount=${amount}&des=${description}&template=compact`}
+                  src={qrImageUrl}
                   alt="QR"
                   loading="lazy"
                   style={{ maxWidth: 180 }}
                 />
-                <div><b>Ngân hàng:</b> MBBank</div>
-                <div><b>Số tài khoản:</b> VQRQADLIA6895</div>
+                <div><b>Ngân hàng:</b> {bank}</div>
+                <div><b>Số tài khoản:</b> {account}</div>
                 <div><b>Nội dung:</b> {description}</div>
                 <div className={styles['waiting-text']}>
-                  <span className={styles['spinner']} /> Đang chờ thanh toán...
+                  <span className={styles['spinner']} /> {t('waiting_payment')}
                 </div>
 
-                {/* 🧪 Test webhook button - Dev only */}
+                {/* 🧪 Test buttons - Dev only */}
                 {process.env.NODE_ENV === 'development' && currentOrderId && (
-                  <button
-                    onClick={async () => {
-                      try {
-                        const res = await axios.post(`${API_BASE_URL}/api/payment/sepay/test-webhook`, {
-                          orderId: currentOrderId,
-                          amount,
-                        }, { withCredentials: true });
-                        if (res.data?.success) {
-                          alert('Test webhook successful!');
-                          handlePaymentSuccess();
+                  <div style={{ marginTop: '10px' }}>
+                    <button
+                      onClick={async () => {
+                        try {
+                          const response = await apiClient.post('/api/payment/sepay/test-webhook', {
+                            orderId: currentOrderId,
+                            amount,
+                          }, { withCredentials: true });
+                          if (response.data?.success) {
+                            alert(t('alert_test_webhook_success'));
+                            handlePaymentSuccess();
+                          } else {
+                            alert(t('alert_test_webhook_failed'));
+                          }
+                        } catch (err) {
+                          console.error(err);
+                          alert(t('alert_test_webhook_failed'));
                         }
-                      } catch (err) {
-                        console.error(err);
-                        alert('Test webhook failed.');
-                      }
-                    }}
-                    className={styles['test-webhook-btn']}
-                  >
-                    Test Webhook
-                  </button>
+                      }}
+                      className={styles['test-webhook-btn']}
+                      style={{ marginRight: '10px' }}
+                    >
+                      Test Webhook
+                    </button>
+                    
+                    <button
+                      onClick={() => {
+                        console.log('🧪 Manually triggering payment_success event...');
+                        if (socketRef.current) {
+                          socketRef.current.emit('payment_success', {
+                            userId: user._id,
+                            orderId: currentOrderId,
+                          });
+                          console.log('📡 Manual event emitted');
+                        } else {
+                          console.log('❌ Socket not connected');
+                        }
+                      }}
+                      className={styles['test-webhook-btn']}
+                    >
+                      Test Socket Event
+                    </button>
+                  </div>
                 )}
 
                 <button onClick={closeQrModal} className={styles['cancel-btn']}>Hủy</button>
@@ -299,7 +436,7 @@ export default function PaymentPage({ user }) {
             {qrState === 'success' && (
               <>
                 <h3>Thanh toán thành công!</h3>
-                <button onClick={closeQrModal} className={styles['primary-btn']}>Đóng</button>
+                <button onClick={closeQrModal} className={styles['primary-btn']}>{t('close')}</button>
               </>
             )}
           </div>

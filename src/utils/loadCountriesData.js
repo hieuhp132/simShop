@@ -1,4 +1,4 @@
-import { countryDataMap } from '../assets/data/adjusted/countryDataIndex';
+import { countryDataMap } from '../assets/data/adjusted/countryDataIndex.js';
 
 export function loadCountryData(countryName) {
   const key = countryName.toLowerCase();

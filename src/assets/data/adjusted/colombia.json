@@ -1,29 +1,220 @@
 {
   "colombia": {
-    "99app": {
+    "1688": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 0
+      },
       "virtual4": {
-        "cost": 40.08,
-        "count": 892
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "1day": {
+      "claro": {
+        "cost": 80,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 80,
+        "count": 0
+      }
+    },
+    "1kkirana": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "1mg": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "1week": {
+      "claro": {
+        "cost": 500,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 500,
+        "count": 0
+      }
+    },
+    "23red": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "32red": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 0
+      }
+    },
+    "3hours": {
+      "claro": {
+        "cost": 60,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 60,
+        "count": 0
+      }
+    },
+    "888casino": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 0
+      }
+    },
+    "99acres": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "99app": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 25000
+      }
+    },
+    "ace2three": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "adani": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "adda52": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "adidas": {
+      "claro": {
+        "cost": 10,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 10,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 14.6,
+        "count": 0
+      }
+    },
+    "agroinform": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 17.4,
+        "count": 0
       }
     },
     "airbnb": {
+      "claro": {
+        "cost": 15,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 15,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 12,
+        "count": 0,
+        "rate": 66.67
+      },
       "virtual4": {
-        "cost": 64.08,
+        "cost": 53.4,
         "count": 25000,
-        "rate": 34.48,
-        "rate720": 34.48
+        "rate": 40,
+        "rate720": 40
       }
     },
     "aitu": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 40.08,
-        "count": 892
+        "cost": 33.4,
+        "count": 2906
+      }
+    },
+    "akelni": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "alfa": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 0
+      }
+    },
+    "algida": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
       }
     },
     "alibaba": {
+      "claro": {
+        "cost": 4,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 4,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 4,
+        "count": 0,
+        "rate": 14.29
+      },
       "virtual4": {
-        "cost": 33.6,
-        "count": 500,
+        "cost": 28,
+        "count": 25000,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -33,39 +224,136 @@
         "rate720": 0
       }
     },
-    "amazon": {
+    "aliexpress": {
+      "virtual21": {
+        "cost": 1.9,
+        "count": 0,
+        "rate": 0
+      }
+    },
+    "alipay": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 54.55
+      }
+    },
+    "allegro": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 24,
+        "cost": 20,
+        "count": 0
+      }
+    },
+    "amasia": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 0
+      }
+    },
+    "amazon": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 28.57
+      },
+      "virtual4": {
+        "cost": 20,
         "count": 25000,
-        "rate": 33.33,
-        "rate1": 33.33,
-        "rate3": 65.22,
-        "rate24": 52.17,
-        "rate72": 54.55,
-        "rate168": 54.44,
-        "rate720": 48.43
+        "rate": 6.25,
+        "rate1": 6.25,
+        "rate3": 6.25,
+        "rate24": 60.87,
+        "rate72": 63.16,
+        "rate168": 43.64,
+        "rate720": 55.12
       }
     },
     "aol": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 9.52
+      },
       "virtual4": {
-        "cost": 18.6,
+        "cost": 15.5,
         "count": 25000,
         "rate": 0,
         "rate168": 0,
         "rate720": 0
       }
     },
+    "apollo": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
     "apple": {
+      "virtual21": {
+        "cost": 3,
+        "count": 0,
+        "rate": 37.14
+      },
       "virtual4": {
-        "cost": 35.28,
+        "cost": 29.4,
         "count": 25000,
         "rate": 0.99
       }
     },
-    "baidu": {
+    "auchan": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "azino": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "b4ucabs": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 21.96,
-        "count": 3537,
+        "cost": 29.4,
+        "count": 0
+      }
+    },
+    "baidu": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 18.3,
+        "count": 25000,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -75,114 +363,351 @@
         "rate720": 0
       }
     },
+    "bajajfinserv": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
     "banqi": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 40.08,
+        "cost": 33.4,
         "count": 100
       }
     },
-    "bigolive": {
+    "beccric": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "bereal": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "bet365": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "betfair": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 19.2,
+        "cost": 14.7,
+        "count": 0
+      }
+    },
+    "betvet": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "bigbasket": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "bigbazaar": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "bigolive": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
         "count": 25000,
         "rate": 51.22
       }
     },
-    "bitclout": {
+    "billmill": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "bip": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      }
+    },
+    "bisu": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 24,
-        "count": 892
+        "cost": 18.7,
+        "count": 0
+      }
+    },
+    "bitaqaty": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "bitclout": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 25000
+      }
+    },
+    "bitlo": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "bitso": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "bittube": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
       }
     },
     "blablacar": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0,
+        "rate": 61.9
+      },
       "virtual4": {
-        "cost": 56.04,
-        "count": 992
+        "cost": 46.7,
+        "count": 25000
       }
     },
     "blizzard": {
+      "virtual21": {
+        "cost": 24,
+        "count": 0,
+        "rate": 27.27
+      },
       "virtual4": {
-        "cost": 33.6,
+        "cost": 28,
         "count": 25000,
         "rate": 0,
         "rate720": 0
       }
     },
     "blued": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 27.24,
-        "count": 1092,
+        "cost": 22.7,
+        "count": 3206,
         "rate": 0
       }
     },
+    "boddess": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
     "bolt": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 48
+      },
       "virtual4": {
-        "cost": 16.8,
+        "cost": 14,
         "count": 25000,
         "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
         "rate168": 0,
-        "rate720": 0
+        "rate720": 3.23
+      }
+    },
+    "brand20ua": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 0
+      }
+    },
+    "bumble": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0,
+        "rate": 42.86
+      }
+    },
+    "burgerking": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "bykea": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "cadburyperk": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
       }
     },
     "cafebazaar": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 19.2,
-        "count": 892
+        "cost": 16,
+        "count": 2906
       }
     },
     "caixa": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 40.08,
-        "count": 100
+        "cost": 33.4,
+        "count": 25000
+      }
+    },
+    "cardekho": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
       }
     },
     "careem": {
+      "virtual21": {
+        "cost": 13,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 18.6,
+        "cost": 15.5,
         "count": 25000
       }
     },
     "carousell": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 24,
-        "count": 1092
+        "cost": 20,
+        "count": 3206
+      }
+    },
+    "cashkaro": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "cashmine": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "cdkeys": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 21.1,
+        "count": 0
+      }
+    },
+    "cekkazan": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "chaingefinance": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 0
+      }
+    },
+    "citybase": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
       }
     },
     "citymobil": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 14.4,
-        "count": 992
-      }
-    },
-    "clubhouse": {
-      "virtual4": {
-        "cost": 32.04,
-        "count": 1669
-      }
-    },
-    "craigslist": {
-      "virtual4": {
-        "cost": 33.6,
-        "count": 992
-      }
-    },
-    "cupid": {
-      "virtual4": {
-        "cost": 24,
-        "count": 1560,
-        "rate": 27.27
-      }
-    },
-    "deliveroo": {
-      "virtual4": {
-        "cost": 24,
-        "count": 25000
-      }
-    },
-    "delivery": {
-      "virtual4": {
-        "cost": 14.4,
-        "count": 892,
+        "cost": 12,
+        "count": 25000,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
@@ -192,379 +717,1229 @@
         "rate720": 0
       }
     },
-    "didi": {
+    "classicrummy": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "claudeai": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0,
+        "rate": 27.27
+      }
+    },
+    "clickentregas": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 19.2,
+        "cost": 26.7,
+        "count": 0
+      }
+    },
+    "cliqq": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16.8,
+        "count": 0
+      }
+    },
+    "clubhouse": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 26.7,
+        "count": 25000
+      }
+    },
+    "cmtcuzdan": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 21.1,
+        "count": 0
+      }
+    },
+    "cokfiight": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "communitygaming": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 42.31
+      }
+    },
+    "craigslist": {
+      "virtual21": {
+        "cost": 24,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 28,
+        "count": 25000
+      }
+    },
+    "crickpe": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "cupid": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 15451,
+        "rate": 27.27
+      }
+    },
+    "dealshare": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "deliveroo": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 45.45
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 25000
+      }
+    },
+    "delivery": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 2906,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "dent": {
+      "virtual21": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 8.4,
+        "count": 0
+      }
+    },
+    "dhani": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 14,
+        "count": 0
+      }
+    },
+    "didi": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 42.86
+      },
+      "virtual4": {
+        "cost": 16,
         "count": 25000,
         "rate": 0,
         "rate1": 0,
         "rate3": 36.36,
         "rate24": 53.57,
-        "rate72": 35.71,
-        "rate168": 46.97,
-        "rate720": 52.75
+        "rate72": 20,
+        "rate168": 23.26,
+        "rate720": 44.27
+      }
+    },
+    "digikala": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 26.7,
+        "count": 0
       }
     },
     "discord": {
+      "claro": {
+        "cost": 4,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 4,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 7,
+        "count": 0,
+        "rate": 61.9
+      },
       "virtual4": {
-        "cost": 19.2,
+        "cost": 16,
         "count": 25000,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0.2,
-        "rate168": 6.89,
-        "rate720": 12.82
+        "rate168": 0.19,
+        "rate720": 7.28
+      }
+    },
+    "disneyhotstar": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "divar": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "dixy": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 5,
+        "count": 0
       }
     },
     "dodopizza": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 40.08,
-        "count": 1389
+        "cost": 33.4,
+        "count": 3162
+      }
+    },
+    "domdara": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "dominate11": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
       }
     },
     "dominospizza": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 25.32,
-        "count": 892
+        "cost": 21.1,
+        "count": 2906
+      }
+    },
+    "dostavista": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 0
+      }
+    },
+    "douyu": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 40,
+        "count": 0
       }
     },
     "dream11": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 16.08,
-        "count": 992
+        "cost": 13.4,
+        "count": 25000
+      }
+    },
+    "drom": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 13.4,
+        "count": 0
+      }
+    },
+    "drugvokrug": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 0
+      }
+    },
+    "dukascopy": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 7,
+        "count": 0
       }
     },
     "dundle": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 25.68,
-        "count": 1376
+        "cost": 21.4,
+        "count": 3464
+      }
+    },
+    "dunzo": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "earneasy": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
       }
     },
     "ebay": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 47.62
+      },
       "virtual4": {
-        "cost": 42.12,
+        "cost": 35.1,
         "count": 25000,
         "rate": 76.19,
         "rate3": 76.19,
         "rate24": 76.19,
         "rate72": 72.73,
         "rate168": 72.73,
-        "rate720": 68.18
+        "rate720": 72.88
+      }
+    },
+    "ebikegewinnspiel": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "edgeless": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "edufund": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "egopensooq": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 18.7,
+        "count": 0
+      }
+    },
+    "elante": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "electroneum": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 7,
+        "count": 0
       }
     },
     "eneba": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0,
+        "rate": 42.86
+      },
       "virtual4": {
-        "cost": 48,
+        "cost": 40,
         "count": 25000
       }
     },
-    "faceit": {
+    "ewargames": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "ezbuy": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 48,
-        "count": 892
+        "cost": 26.7,
+        "count": 0
+      }
+    },
+    "ezmall": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "facebook": {
+      "claro": {
+        "cost": 10,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 10,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 6,
+        "count": 0,
+        "rate": 9.09
+      }
+    },
+    "faceit": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 33.33
+      },
+      "virtual4": {
+        "cost": 40,
+        "count": 25000
+      }
+    },
+    "fan2play": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "farmcare": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "fiegame": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "fiqsy": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
       }
     },
     "fiverr": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 8,
+        "count": 0,
+        "rate": 28.57
+      },
       "virtual4": {
-        "cost": 46.44,
+        "cost": 38.7,
         "count": 25000,
         "rate": 33.33,
         "rate72": 33.33,
         "rate168": 42.86,
-        "rate720": 20
+        "rate720": 31.43
+      }
+    },
+    "flam": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "flexpay": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "flipkart": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "foodora": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
       }
     },
     "foodpanda": {
+      "virtual21": {
+        "cost": 12,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 30.24,
+        "cost": 25.2,
         "count": 25000
       }
     },
-    "getir": {
+    "foody": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 25.32,
-        "count": 1287
+        "cost": 33.4,
+        "count": 0
+      }
+    },
+    "forwarding": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "frizza": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "gabi": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 26.7,
+        "count": 0
+      }
+    },
+    "galaxy": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "galaxywin": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 38.4,
+        "count": 0
+      }
+    },
+    "gamearena": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 17.4,
+        "count": 0
+      }
+    },
+    "gameflip": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "gamekit": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 0
+      }
+    },
+    "gamer": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "gamerji": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "gamezy": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "gemini": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "get": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "getir": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 21.1,
+        "count": 25000
       }
     },
     "gett": {
+      "claro": {
+        "cost": 1,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 1,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 1,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 22.32,
-        "count": 1002
+        "cost": 18.6,
+        "count": 25000,
+        "rate": 0,
+        "rate720": 0
+      }
+    },
+    "gg": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 0
+      }
+    },
+    "gghasia": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "gittigidiyor": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "global24": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
       }
     },
     "globus": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 12.84,
-        "count": 892
+        "cost": 10.7,
+        "count": 2806
+      }
+    },
+    "glovo": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 50
+      },
+      "virtual4": {
+        "cost": 40,
+        "count": 0
+      }
+    },
+    "glowroad": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "gmngjourney": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "gofundme": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 53.4,
+        "count": 0
       }
     },
     "gojek": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 15.24,
-        "count": 992
+        "cost": 12.7,
+        "count": 25000
+      }
+    },
+    "golos": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
       }
     },
     "goods": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 19.2,
-        "count": 892
+        "cost": 16,
+        "count": 2806
       }
     },
     "google": {
+      "claro": {
+        "cost": 7,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 20,
+        "count": 0,
+        "rate": 0
+      },
       "virtual4": {
-        "cost": 20.64,
+        "cost": 17.2,
         "count": 25000,
-        "rate": 16.05,
-        "rate1": 16.05,
-        "rate3": 19.13,
-        "rate24": 25.53,
-        "rate72": 34.37,
-        "rate168": 36.07,
-        "rate720": 42.09
+        "rate": 49.06,
+        "rate1": 49.06,
+        "rate3": 35,
+        "rate24": 19.31,
+        "rate72": 22.66,
+        "rate168": 24.49,
+        "rate720": 32.88
+      }
+    },
+    "googlevoice": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
       }
     },
     "grabtaxi": {
+      "claro": {
+        "cost": 3,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 3,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 3,
+        "count": 0,
+        "rate": 21.74
+      },
       "virtual4": {
-        "cost": 24,
-        "count": 1092,
+        "cost": 20,
+        "count": 19089,
         "rate": 72.73,
         "rate72": 72.73,
         "rate168": 75,
         "rate720": 80
       }
     },
+    "green": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
     "grindr": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 14,
+        "count": 25000
+      }
+    },
+    "grofers": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "groupme": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "gyftr": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "hamrahaval": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "happn": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
         "cost": 16.8,
         "count": 25000
       }
     },
-    "happn": {
-      "virtual4": {
-        "cost": 20.16,
-        "count": 892
+    "healthandglow": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
       }
     },
     "hepsiburadacom": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0,
+        "rate": 36.36
+      },
       "virtual4": {
-        "cost": 33.6,
-        "count": 892
+        "cost": 28,
+        "count": 25000
+      }
+    },
+    "hermes": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "hezzl": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 0
       }
     },
     "hily": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 25.32,
-        "count": 1092
+        "cost": 21.1,
+        "count": 25000
+      }
+    },
+    "hinge": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 38.1
+      }
+    },
+    "hirect": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
       }
     },
     "hopi": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 19.2,
-        "count": 992
+        "cost": 16,
+        "count": 2906
+      }
+    },
+    "hopper": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 68.18
+      }
+    },
+    "hotline": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "howzat": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "hqtrivia": {
+      "claro": {
+        "cost": 4,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 4,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 1,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 14,
+        "count": 0
+      }
+    },
+    "humblebundle": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 17.4,
+        "count": 0
+      }
+    },
+    "humta": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 10.7,
+        "count": 0
+      }
+    },
+    "huya": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0,
+        "rate": 44
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 0
+      }
+    },
+    "icicidirect": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "ifood": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 25.2,
+        "count": 0
+      }
+    },
+    "immowelt": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 0
       }
     },
     "imo": {
+      "virtual21": {
+        "cost": 15,
+        "count": 0,
+        "rate": 0
+      },
       "virtual4": {
-        "cost": 14.4,
+        "cost": 12,
         "count": 25000,
         "rate": 45.83,
         "rate72": 45.83,
         "rate168": 45.83,
-        "rate720": 22.73
+        "rate720": 13.89
+      }
+    },
+    "inboxlv": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 9.4,
+        "count": 0
+      }
+    },
+    "indianoil": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0,
+        "rate": 0
+      }
+    },
+    "indiaplays": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "indriver": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 10.7,
+        "count": 0
       }
     },
     "instagram": {
+      "claro": {
+        "cost": 8,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual21": {
-        "cost": 12.36,
-        "count": 2321,
+        "cost": 10.3,
+        "count": 0,
         "rate": 0
       },
       "virtual4": {
-        "cost": 15.84,
+        "cost": 13.2,
         "count": 25000,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0,
         "rate72": 0,
-        "rate168": 1.3,
-        "rate720": 23.95
+        "rate168": 0,
+        "rate720": 20
+      }
+    },
+    "iost": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
       }
     },
     "iqiyi": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 40.08,
-        "count": 300
+        "cost": 33.4,
+        "count": 4200
+      }
+    },
+    "iqos": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 13.4,
+        "count": 0
+      }
+    },
+    "irctc": {
+      "virtual21": {
+        "cost": 9.3,
+        "count": 0
+      }
+    },
+    "iwplay": {
+      "virtual4": {
+        "cost": 20,
+        "count": 0
+      }
+    },
+    "jamesdelivery": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
       }
     },
     "jd": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 25.32,
-        "count": 25000
-      }
-    },
-    "justdating": {
-      "virtual4": {
-        "cost": 19.2,
-        "count": 1092
-      }
-    },
-    "kaggle": {
-      "virtual4": {
-        "cost": 24,
-        "count": 200
-      }
-    },
-    "kaidee": {
-      "virtual4": {
-        "cost": 24,
-        "count": 892
-      }
-    },
-    "kakaotalk": {
-      "virtual4": {
-        "cost": 25.32,
-        "count": 25000,
-        "rate": 62.5,
-        "rate1": 62.5,
-        "rate3": 62.5,
-        "rate24": 66.67,
-        "rate72": 68.75,
-        "rate168": 60.53,
-        "rate720": 52.38
-      }
-    },
-    "kolesakz": {
-      "virtual4": {
-        "cost": 14.4,
-        "count": 892
-      }
-    },
-    "kwai": {
-      "virtual4": {
-        "cost": 48,
-        "count": 23602
-      }
-    },
-    "lazada": {
-      "virtual4": {
-        "cost": 32.04,
-        "count": 1476
-      }
-    },
-    "likee": {
-      "virtual4": {
-        "cost": 12.84,
-        "count": 100
-      }
-    },
-    "line": {
-      "virtual4": {
-        "cost": 25.32,
-        "count": 25000,
-        "rate": 0
-      }
-    },
-    "linkedin": {
-      "virtual4": {
-        "cost": 24,
-        "count": 25000,
-        "rate": 47.62
-      }
-    },
-    "livescore": {
-      "virtual4": {
-        "cost": 14.4,
-        "count": 892
-      }
-    },
-    "mailru": {
-      "virtual4": {
-        "cost": 16.32,
-        "count": 8602
-      }
-    },
-    "mamba": {
-      "virtual4": {
-        "cost": 14.4,
-        "count": 1461
-      }
-    },
-    "mercado": {
-      "virtual4": {
-        "cost": 25.32,
-        "count": 3337,
-        "rate": 3.57
-      }
-    },
-    "michat": {
-      "virtual4": {
-        "cost": 23.52,
-        "count": 25000
-      }
-    },
-    "microsoft": {
-      "virtual4": {
-        "cost": 15.24,
-        "count": 25000,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 1.21,
-        "rate72": 1.59,
-        "rate168": 6.29,
-        "rate720": 12.91
-      }
-    },
-    "monese": {
-      "virtual4": {
-        "cost": 40.08,
-        "count": 892
-      }
-    },
-    "mpl": {
-      "virtual4": {
-        "cost": 20.88,
-        "count": 892
-      }
-    },
-    "mrgreen": {
-      "virtual4": {
-        "cost": 40.08,
-        "count": 100
-      }
-    },
-    "naver": {
-      "virtual4": {
-        "cost": 14.4,
-        "count": 25000,
-        "rate": 4.76,
-        "rate1": 4.76,
-        "rate3": 19.44,
-        "rate24": 17.35,
-        "rate72": 18.72,
-        "rate168": 19.4,
-        "rate720": 13.49
-      }
-    },
-    "netflix": {
-      "virtual4": {
-        "cost": 18.6,
-        "count": 25000,
-        "rate": 84,
-        "rate1": 84,
-        "rate3": 80,
-        "rate24": 71.68,
-        "rate72": 71.07,
-        "rate168": 56.67,
-        "rate720": 66.31
-      }
-    },
-    "nike": {
-      "virtual4": {
-        "cost": 16.08,
+        "cost": 21.1,
         "count": 25000,
         "rate": 0,
         "rate1": 0,
@@ -575,152 +1950,1694 @@
         "rate720": 0
       }
     },
-    "odnoklassniki": {
+    "jeet11": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "jiomart": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "jkf": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      }
+    },
+    "joymall": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "joyride": {
+      "virtual21": {
+        "cost": 3,
+        "count": 0
+      }
+    },
+    "jungleerummy": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "justdating": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 32.04,
+        "cost": 16,
+        "count": 3006
+      }
+    },
+    "kaggle": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 38.1
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 8800
+      }
+    },
+    "kaidee": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 2806
+      }
+    },
+    "kakaotalk": {
+      "claro": {
+        "cost": 15,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 15,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 14,
+        "count": 0,
+        "rate": 28
+      },
+      "virtual4": {
+        "cost": 21.1,
+        "count": 25000,
+        "rate": 62.5,
+        "rate1": 62.5,
+        "rate3": 30.43,
+        "rate24": 38.46,
+        "rate72": 38.46,
+        "rate168": 38.46,
+        "rate720": 43.64
+      }
+    },
+    "karusel": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 0
+      }
+    },
+    "kazandirio": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "keybase": {
+      "virtual21": {
+        "cost": 14,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16.8,
+        "count": 0
+      }
+    },
+    "keypay": {
+      "virtual4": {
+        "cost": 13.4,
+        "count": 0
+      }
+    },
+    "khelraja": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "khl": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      }
+    },
+    "kisma": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "kolesakz": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 2806
+      }
+    },
+    "kucoinplay": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "kufarby": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "kvartplata": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "kwai": {
+      "virtual21": {
+        "cost": 3,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 40,
         "count": 25000
       }
     },
-    "offgamers": {
+    "lakme": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "lazada": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 21.96,
+        "cost": 26.7,
+        "count": 25000
+      }
+    },
+    "lbry": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "lenta": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 10.7,
+        "count": 0
+      }
+    },
+    "lianxin": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "lightchat": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 10.7,
+        "count": 0
+      }
+    },
+    "likee": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 10.7,
+        "count": 2100
+      }
+    },
+    "line": {
+      "claro": {
+        "cost": 1,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 1,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 21.1,
         "count": 25000,
         "rate": 0
       }
     },
-    "olx": {
+    "linkedin": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 19.05
+      },
       "virtual4": {
-        "cost": 16.8,
-        "count": 25000
+        "cost": 20,
+        "count": 25000,
+        "rate": 47.62
       }
     },
-    "other": {
+    "livescore": {
+      "claro": {
+        "cost": 33,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 33,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 27,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 80.04,
-        "count": 153,
-        "rate": 0,
-        "rate1": 0,
-        "rate3": 0,
-        "rate24": 1.59,
-        "rate72": 5.13,
-        "rate168": 8.42,
-        "rate720": 16.74
+        "cost": 12,
+        "count": 2906
       }
     },
-    "papara": {
-      "virtual4": {
-        "cost": 36.96,
-        "count": 1056
+    "locoff": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
       }
     },
-    "paxful": {
-      "virtual4": {
-        "cost": 27.24,
-        "count": 992
+    "locogg": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
       }
     },
-    "payberry": {
-      "virtual4": {
-        "cost": 12.84,
-        "count": 892
+    "lovelocal": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
       }
     },
-    "paypal": {
+    "lybrate": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "lyka": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 24,
+        "cost": 10.7,
+        "count": 0
+      }
+    },
+    "magicbricks": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "magicpin": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "mailru": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 3,
+        "count": 0,
+        "rate": 0
+      },
+      "virtual4": {
+        "cost": 13.6,
+        "count": 11013
+      }
+    },
+    "mamba": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 0
+      },
+      "virtual4": {
+        "cost": 12,
         "count": 25000,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
-        "rate24": 4.35,
-        "rate72": 8.64,
-        "rate168": 14.95,
-        "rate720": 30.16
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "mantrimall": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      }
+    },
+    "maplesea": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 39.8,
+        "count": 0
+      }
+    },
+    "mcdonalds": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 29.4,
+        "count": 0
+      }
+    },
+    "medibuddy": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "meesho": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "meetme": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "mega": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "mercado": {
+      "virtual21": {
+        "cost": 18,
+        "count": 0,
+        "rate": 31.82
+      },
+      "virtual4": {
+        "cost": 21.1,
+        "count": 25000,
+        "rate": 3.57
+      }
+    },
+    "meta": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "metro": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 0
+      }
+    },
+    "mewt": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "michat": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 19.6,
+        "count": 25000
+      }
+    },
+    "microsoft": {
+      "claro": {
+        "cost": 3,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 3,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 19.05
+      },
+      "virtual4": {
+        "cost": 12.7,
+        "count": 25000,
+        "rate": 35.29,
+        "rate1": 35.29,
+        "rate3": 41.86,
+        "rate24": 48.65,
+        "rate72": 40.79,
+        "rate168": 37.38,
+        "rate720": 14.41
+      }
+    },
+    "mobikwik": {
+      "virtual21": {
+        "cost": 10,
+        "count": 0
+      }
+    },
+    "mobile01": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      }
+    },
+    "mocospace": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "monese": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 25000
+      }
+    },
+    "more": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "mosru": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "mpl": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 17.4,
+        "count": 2906
+      }
+    },
+    "mrgreen": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 300
+      }
+    },
+    "mrsool": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "my11circle": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "myfab11": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "myfishka": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 13.4,
+        "count": 0
+      }
+    },
+    "myglo": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 0
+      }
+    },
+    "myjar": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "mylove": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 38.7,
+        "count": 0
+      }
+    },
+    "mymusictaste": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 29.4,
+        "count": 0
+      }
+    },
+    "myntra": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 9.4,
+        "count": 2906
+      }
+    },
+    "mzadqatar": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "nana": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 25.4,
+        "count": 0
+      }
+    },
+    "naver": {
+      "claro": {
+        "cost": 5,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 44
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 25000,
+        "rate": 12.9,
+        "rate1": 12.9,
+        "rate3": 26.09,
+        "rate24": 46.43,
+        "rate72": 29.69,
+        "rate168": 18.83,
+        "rate720": 17.24
+      }
+    },
+    "ncsoft": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 0
+      }
+    },
+    "netflix": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 31.82
+      },
+      "virtual4": {
+        "cost": 15.5,
+        "count": 25000,
+        "rate": 77.27,
+        "rate1": 77.27,
+        "rate3": 74.19,
+        "rate24": 64.29,
+        "rate72": 46.88,
+        "rate168": 67.21,
+        "rate720": 63.2
+      }
+    },
+    "nhseven": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "nifty": {
+      "claro": {
+        "cost": 10,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 10,
+        "count": 0
+      }
+    },
+    "nike": {
+      "claro": {
+        "cost": 10,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 10,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 13.4,
+        "count": 25000,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "nimses": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "nobroker": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "noon": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 12.6,
+        "count": 0
+      }
+    },
+    "nrjmusicawards": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "nttgame": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 4.35
+      },
+      "virtual4": {
+        "cost": 21.1,
+        "count": 0
+      }
+    },
+    "nykaa": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "odnoklassniki": {
+      "claro": {
+        "cost": 2.5,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2.5,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 0
+      },
+      "virtual4": {
+        "cost": 26.7,
+        "count": 25000
+      }
+    },
+    "offerup": {
+      "virtual21": {
+        "cost": 18,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 21.1,
+        "count": 0
+      }
+    },
+    "offgamers": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0,
+        "rate": 37.04
+      },
+      "virtual4": {
+        "cost": 18.3,
+        "count": 25000,
+        "rate": 0
+      }
+    },
+    "okey": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "okta": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "olacabs": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 28,
+        "count": 0
+      }
+    },
+    "olx": {
+      "claro": {
+        "cost": 1,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 1,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 1,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 14,
+        "count": 25000
+      }
+    },
+    "onet": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "onlinerby": {
+      "virtual4": {
+        "cost": 29.4,
+        "count": 0
+      }
+    },
+    "ontaxi": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 40,
+        "count": 0
+      }
+    },
+    "openai": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0,
+        "rate": 24
+      }
+    },
+    "openpoint": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "oraclecloud": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "oriflame": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 22.7,
+        "count": 0
+      }
+    },
+    "other": {
+      "claro": {
+        "cost": 20,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 20,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 83.4,
+        "count": 0,
+        "rate": 4.55
+      },
+      "virtual4": {
+        "cost": 66.7,
+        "count": 25000,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 23.81,
+        "rate72": 4.76,
+        "rate168": 5.88,
+        "rate720": 10.36
+      }
+    },
+    "otipy": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "otovinn": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "oyo": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "ozon": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 0
+      }
+    },
+    "paddypower": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 13.4,
+        "count": 0
+      }
+    },
+    "pairs": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 22.7,
+        "count": 0
+      }
+    },
+    "panelstation": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "papara": {
+      "virtual21": {
+        "cost": 26,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 30.8,
+        "count": 25000
+      }
+    },
+    "parimatch": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "paxful": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 22.7,
+        "count": 3106
+      }
+    },
+    "payberry": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 10.7,
+        "count": 2906
+      }
+    },
+    "paycell": {
+      "virtual21": {
+        "cost": 18,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 21.1,
+        "count": 0
+      }
+    },
+    "paypal": {
+      "virtual21": {
+        "cost": 30,
+        "count": 0,
+        "rate": 42.86
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 25000,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 14.29,
+        "rate72": 22.73,
+        "rate168": 30,
+        "rate720": 21.17
       }
     },
     "paysend": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 40.08,
-        "count": 200
+        "cost": 33.4,
+        "count": 400
+      }
+    },
+    "payzapp": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 40,
+        "count": 0
+      }
+    },
+    "peoplecom": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 26.7,
+        "count": 0
+      }
+    },
+    "perekrestok": {
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      }
+    },
+    "pgbonus": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "phable": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "pharmeasy": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
       }
     },
     "picpay": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 46.44,
-        "count": 892
+        "cost": 38.7,
+        "count": 2906
+      }
+    },
+    "playerzpot": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "playship": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "pochtabank": {
+      "claro": {
+        "cost": 30,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 30,
+        "count": 0
       }
     },
     "pof": {
+      "virtual21": {
+        "cost": 14,
+        "count": 0,
+        "rate": 42.86
+      },
       "virtual4": {
-        "cost": 20.16,
+        "cost": 16.8,
         "count": 25000,
         "rate": 68.18,
         "rate720": 68.18
       }
     },
     "pokec": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 20.88,
-        "count": 892
+        "cost": 17.4,
+        "count": 2806
+      }
+    },
+    "pokermaster": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "poshmark": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
       }
     },
     "potato": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 30.48,
-        "count": 992
+        "cost": 25.4,
+        "count": 3106
+      }
+    },
+    "powerkredite": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 0
+      }
+    },
+    "prajmeriz2020": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 0
+      }
+    },
+    "premiumone": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 29.4,
+        "count": 0
+      }
+    },
+    "probo": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "prom": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 13.4,
+        "count": 0
+      }
+    },
+    "proton": {
+      "claro": {
+        "cost": 1,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 1,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 5,
+        "count": 0
       }
     },
     "protonmail": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0,
+        "rate": 34.62
+      },
       "virtual4": {
-        "cost": 46.44,
+        "cost": 38.7,
         "count": 25000
       }
     },
-    "quikr": {
-      "virtual4": {
-        "cost": 24,
-        "count": 892
+    "pubg": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
       }
     },
-    "rambler": {
+    "pureplatfrom": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 16.08,
+        "cost": 20,
         "count": 100
       }
     },
-    "redbook": {
+    "pyaterochka": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 15.6,
-        "count": 584
+        "cost": 12,
+        "count": 0
+      }
+    },
+    "pyromusic": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "q12trivia": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 28,
+        "count": 0
+      }
+    },
+    "quack": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 38.4,
+        "count": 0
+      }
+    },
+    "quikr": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 2806
+      }
+    },
+    "quipp": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 35.1,
+        "count": 0
+      }
+    },
+    "rainmaker": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "rambler": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 13.4,
+        "count": 12563
+      }
+    },
+    "rapido": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "realresearcher": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "redbook": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 13,
+        "count": 483
       }
     },
     "rediffmail": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 22.44,
-        "count": 200
+        "cost": 18.7,
+        "count": 300
+      }
+    },
+    "reuse": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "ripkord": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "roposo": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "rosakhutor": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "royalwin": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 14.7,
+        "count": 0
+      }
+    },
+    "rozetka": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "rummycircle": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "rummyculture": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "rummywealth": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "sahicoin": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "samsungshop": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "sendinblue": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "seosprint": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 0
+      }
+    },
+    "sheerid": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 0
+      }
+    },
+    "shellbox": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 21.4,
+        "count": 0
       }
     },
     "shopee": {
+      "virtual21": {
+        "cost": 20,
+        "count": 0,
+        "rate": 8.33
+      },
       "virtual4": {
-        "cost": 28.68,
+        "cost": 23.9,
         "count": 25000
       }
     },
+    "signal": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0,
+        "rate": 45.45
+      }
+    },
     "sikayetvar": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 19.2,
-        "count": 24099
+        "cost": 16,
+        "count": 25000,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "sikka": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "siply": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "sipnet": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
       }
     },
     "skout": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 11.88,
+        "cost": 9.9,
         "count": 25000
       }
     },
     "snapchat": {
+      "virtual21": {
+        "cost": 19,
+        "count": 0,
+        "rate": 34.62
+      },
       "virtual4": {
-        "cost": 26.88,
+        "cost": 22.4,
         "count": 25000,
         "rate": 3.7,
         "rate1": 3.7,
@@ -731,145 +3648,561 @@
         "rate720": 0
       }
     },
-    "socios": {
+    "snappfood": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 19.2,
-        "count": 100
+        "cost": 16,
+        "count": 0
+      }
+    },
+    "sneakerboy": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "sneakersnstuff": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 46.7,
+        "count": 0
+      }
+    },
+    "socios": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 200
+      }
+    },
+    "spartanpoker": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
       }
     },
     "sportgully": {
       "virtual4": {
-        "cost": 17.64,
-        "count": 100
+        "cost": 14.7,
+        "count": 200
+      }
+    },
+    "spothit": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 0
+      }
+    },
+    "ssoidnet": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 38.7,
+        "count": 0
+      }
+    },
+    "starchatsite": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 16,
+        "count": 0
       }
     },
     "steam": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 57.14
+      },
       "virtual4": {
-        "cost": 28.8,
+        "cost": 24,
         "count": 25000,
         "rate": 42.86
       }
     },
+    "steemit": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "stoloto": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "suprdaily": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
     "surveytime": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 32.04,
-        "count": 892
+        "cost": 26.7,
+        "count": 2906
+      }
+    },
+    "swagbucks": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "swiggy": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "switips": {
+      "virtual21": {
+        "cost": 10,
+        "count": 0
+      }
+    },
+    "swvl": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 20,
+        "count": 0
+      }
+    },
+    "taksheel": {
+      "virtual21": {
+        "cost": 36,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 42,
+        "count": 0
+      }
+    },
+    "talabat": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
       }
     },
     "tango": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 40.08,
-        "count": 1722
+        "cost": 33.4,
+        "count": 25000
       }
     },
     "tantan": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 29.17
+      },
       "virtual4": {
-        "cost": 19.2,
-        "count": 1192,
-        "rate": 0
+        "cost": 16,
+        "count": 25000,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
       }
     },
     "taobao": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0,
+        "rate": 27.27
+      },
       "virtual4": {
-        "cost": 25.32,
-        "count": 1092,
+        "cost": 21.1,
+        "count": 25000,
         "rate": 0
       }
     },
-    "tencentqq": {
+    "taskdealsin": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "tatacliq": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "tataneu": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "tatneft": {
       "virtual4": {
-        "cost": 28.8,
+        "cost": 10.7,
+        "count": 0
+      }
+    },
+    "telegram": {
+      "claro": {
+        "cost": 8,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "tencentqq": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0,
+        "rate": 36.36
+      },
+      "virtual4": {
+        "cost": 24,
         "count": 25000,
         "rate": 7.41
       }
     },
     "ticketmaster": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0,
+        "rate": 30.43
+      },
       "virtual4": {
-        "cost": 19.2,
+        "cost": 16,
         "count": 25000,
-        "rate": 0
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
       }
     },
     "tiktok": {
+      "claro": {
+        "cost": 1,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 1,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 1,
+        "count": 0,
+        "rate": 27.27
+      },
       "virtual4": {
-        "cost": 24,
+        "cost": 20,
         "count": 25000,
-        "rate": 3.45,
-        "rate1": 3.45,
-        "rate3": 3.33,
-        "rate24": 3.23,
-        "rate72": 5,
-        "rate168": 4.28,
-        "rate720": 6.65
+        "rate": 16.67,
+        "rate1": 16.67,
+        "rate3": 9.09,
+        "rate24": 8.9,
+        "rate72": 11.62,
+        "rate168": 12.14,
+        "rate720": 7.26
+      }
+    },
+    "timesprime": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
       }
     },
     "tinder": {
+      "claro": {
+        "cost": 11,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 11,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 10,
+        "count": 0,
+        "rate": 22.73
+      },
       "virtual4": {
-        "cost": 33.6,
+        "cost": 28,
         "count": 25000,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 0.3,
-        "rate72": 1.84,
-        "rate168": 1.36,
-        "rate720": 10.11
+        "rate72": 44,
+        "rate168": 50,
+        "rate720": 11.52
+      }
+    },
+    "toprun": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
       }
     },
     "tosla": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 48,
-        "count": 892
+        "cost": 40,
+        "count": 2906
+      }
+    },
+    "totalcoin": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "touchance": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 33.4,
+        "count": 0
       }
     },
     "tradingview": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 48,
-        "count": 300
+        "cost": 40,
+        "count": 6200
       }
     },
     "trendyol": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 40.08,
-        "count": 892
+        "cost": 33.4,
+        "count": 25000
+      }
+    },
+    "trip": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
       }
     },
     "truecaller": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 17.39
+      },
       "virtual4": {
-        "cost": 21.96,
-        "count": 992
+        "cost": 18.3,
+        "count": 25000,
+        "rate": 0,
+        "rate720": 0
+      }
+    },
+    "truefan": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "twelfthman": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
       }
     },
     "twitch": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0,
+        "rate": 57.14
+      },
       "virtual4": {
-        "cost": 48,
-        "count": 300
+        "cost": 40,
+        "count": 25000
       }
     },
     "twitter": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 38.1
+      },
       "virtual4": {
-        "cost": 16.8,
+        "cost": 14,
         "count": 25000,
         "rate": 6.9,
         "rate720": 6.9
       }
     },
     "uber": {
+      "claro": {
+        "cost": 4,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 4,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 4,
+        "count": 0,
+        "rate": 33.33
+      },
       "virtual4": {
-        "cost": 16.8,
+        "cost": 14,
         "count": 25000,
         "rate": 0,
         "rate1": 0,
         "rate3": 0,
         "rate24": 4.55,
-        "rate72": 8.45,
-        "rate168": 10.67,
-        "rate720": 20.19
+        "rate72": 59.09,
+        "rate168": 70.37,
+        "rate720": 32.35
+      }
+    },
+    "uklon": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "ukrnet": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 13.2,
+        "count": 0
+      }
+    },
+    "unacademy": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 9.4,
+        "count": 0
+      }
+    },
+    "uploaded": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "vedantu": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "vernyj": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "verse": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
       }
     },
     "viber": {
+      "claro": {
+        "cost": 4,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 4,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 4,
+        "count": 0,
+        "rate": 0
+      },
       "virtual4": {
-        "cost": 15.24,
+        "cost": 12.7,
         "count": 25000,
         "rate": 0,
         "rate1": 0,
@@ -880,15 +4213,54 @@
         "rate720": 0
       }
     },
+    "viberate": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      }
+    },
+    "vinota": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
     "vinted": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 48,
-        "count": 4830
+        "cost": 40,
+        "count": 25000
+      }
+    },
+    "vitajekspress": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
       }
     },
     "vkontakte": {
+      "claro": {
+        "cost": 12,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 12,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 11,
+        "count": 0,
+        "rate": 0
+      },
       "virtual4": {
-        "cost": 14.4,
+        "cost": 12,
         "count": 25000,
         "rate": 0,
         "rate1": 0,
@@ -899,52 +4271,59 @@
         "rate720": 0
       }
     },
+    "voopee": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      }
+    },
+    "vscric": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "webmoney": {
+      "claro": {
+        "cost": 7,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 7,
+        "count": 0
+      }
+    },
     "wechat": {
+      "claro": {
+        "cost": 5,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 5,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 30,
+        "count": 0,
+        "rate": 19.05
+      },
       "virtual4": {
-        "cost": 72,
+        "cost": 60,
         "count": 25000,
-        "rate": 32,
-        "rate24": 32,
-        "rate72": 9.09,
-        "rate168": 0,
-        "rate720": 4.76
+        "rate": 21.74,
+        "rate1": 21.74,
+        "rate3": 25,
+        "rate24": 31.25,
+        "rate72": 25.86,
+        "rate168": 38.07,
+        "rate720": 49.73
       }
     },
     "weibo": {
-      "virtual4": {
-        "cost": 20.16,
-        "count": 25000
-      }
-    },
-    "weststein": {
-      "virtual4": {
-        "cost": 24,
-        "count": 25000
-      }
-    },
-    "whatsapp": {
-      "virtual4": {
-        "cost": 25.32,
-        "count": 25000,
-        "rate": 9.09
-      }
-    },
-    "wolt": {
-      "virtual4": {
-        "cost": 25.32,
-        "count": 25000
-      }
-    },
-    "yahoo": {
-      "virtual4": {
-        "cost": 14.4,
-        "count": 25000,
-        "rate": 0,
-        "rate168": 0,
-        "rate720": 0
-      }
-    },
-    "yandex": {
+      "virtual21": {
+        "cost": 14,
+        "count": 0
+      },
       "virtual4": {
         "cost": 16.8,
         "count": 25000,
@@ -957,35 +4336,309 @@
         "rate720": 0
       }
     },
-    "yemeksepeti": {
+    "weku": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 5,
+        "count": 0
+      }
+    },
+    "weststein": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 27.24,
-        "count": 992
+        "cost": 20,
+        "count": 25000,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "whatsapp": {
+      "claro": {
+        "cost": 8,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 50,
+        "count": 0,
+        "rate": 9.52
+      },
+      "virtual4": {
+        "cost": 21.1,
+        "count": 25000,
+        "rate": 9.09
+      }
+    },
+    "winston": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "winzo": {
+      "virtual21": {
+        "cost": 9.3,
+        "count": 0
+      }
+    },
+    "wish": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 14,
+        "count": 0
+      }
+    },
+    "wizely": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "wmaraci": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 26.7,
+        "count": 0
+      }
+    },
+    "wolt": {
+      "virtual21": {
+        "cost": 9,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 21.1,
+        "count": 25000
+      }
+    },
+    "wondermart": {
+      "virtual21": {
+        "cost": 3.5,
+        "count": 0
+      }
+    },
+    "xiaomi": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "yaay": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0,
+        "rate": 0
+      },
+      "virtual4": {
+        "cost": 17.4,
+        "count": 0,
+        "rate": 0
+      }
+    },
+    "yahoo": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 57.14
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 25000,
+        "rate": 0,
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "yalla": {
+      "virtual21": {
+        "cost": 17,
+        "count": 0,
+        "rate": 0
+      }
+    },
+    "yandex": {
+      "claro": {
+        "cost": 2,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 2,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 2,
+        "count": 0,
+        "rate": 0
+      },
+      "virtual4": {
+        "cost": 14,
+        "count": 25000,
+        "rate": 0,
+        "rate1": 0,
+        "rate3": 0,
+        "rate24": 0,
+        "rate72": 0,
+        "rate168": 0,
+        "rate720": 0
+      }
+    },
+    "yandexmoney": {
+      "claro": {
+        "cost": 4,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 4,
+        "count": 0
+      }
+    },
+    "yango": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "yemeksepeti": {
+      "virtual21": {
+        "cost": 15,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 22.7,
+        "count": 25000
+      }
+    },
+    "yougotagift": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      }
+    },
+    "youla": {
+      "claro": {
+        "cost": 1,
+        "count": 0
+      },
+      "tigo": {
+        "cost": 1,
+        "count": 0
+      },
+      "virtual21": {
+        "cost": 1,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 12,
+        "count": 0
+      }
+    },
+    "youstar": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
       }
     },
     "yubo": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 48,
-        "count": 1092
+        "cost": 40,
+        "count": 3106
       }
     },
     "zalo": {
+      "virtual21": {
+        "cost": 3,
+        "count": 0,
+        "rate": 23.81
+      },
       "virtual4": {
-        "cost": 24,
-        "count": 400,
-        "rate": 13.64
+        "cost": 20,
+        "count": 25000,
+        "rate": 0,
+        "rate720": 0
+      }
+    },
+    "zcity": {
+      "virtual21": {
+        "cost": 7,
+        "count": 0
+      },
+      "virtual4": {
+        "cost": 26.7,
+        "count": 0
+      }
+    },
+    "zepto": {
+      "virtual21": {
+        "cost": 6,
+        "count": 0
+      }
+    },
+    "ziglu": {
+      "virtual21": {
+        "cost": 5,
+        "count": 0
       }
     },
     "zoho": {
+      "virtual21": {
+        "cost": 13,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 20.16,
+        "cost": 16.8,
         "count": 25000
       }
     },
     "zomato": {
+      "virtual21": {
+        "cost": 8,
+        "count": 0
+      },
       "virtual4": {
-        "cost": 34.56,
-        "count": 892
+        "cost": 28.8,
+        "count": 25000
+      }
+    },
+    "zupee": {
+      "virtual21": {
+        "cost": 4,
+        "count": 0
       }
     }
   }

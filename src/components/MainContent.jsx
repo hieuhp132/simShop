@@ -1,15 +1,17 @@
-import React, { useState, useMemo, useContext, useEffect } from 'react';
+import React, { useState, useMemo, useContext, useEffect, useRef, useImperativeHandle, forwardRef } from 'react';
 import styles from './MainContent.module.css';
 import { useTranslation } from 'react-i18next';
-import { countryDataMap } from '../assets/data/adjusted/countryDataIndex';
+import { countryDataMap } from '../assets/data/adjusted/countryDataIndex.js';
 import { BalanceContext } from './TopNav';
 import LoginForm from './LoginForm';
 import { FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa';
 import axios from 'axios';
 import PaymentPage from './PaymentPage';
-import { API_BASE_URL } from '../apiConfig';
+import PurchasePage from './PurchasePage';
+import Settings from './Settings';
+import { API_BASE_URL } from '../apiConfig.js';
 
-function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab, setPriceTab }) {
+const MainContent = forwardRef(({ activePage, setActivePage, onLoginSuccess, user, priceTab, setPriceTab }, ref) => {
   const [priceSortBy, setPriceSortBy] = useState('rate');
   const [priceSortOrder, setPriceSortOrder] = useState('desc');
   const [filterService, setFilterService] = useState('all');
@@ -21,6 +23,22 @@ function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab
   const { t } = useTranslation();
   const { balance, currency } = useContext(BalanceContext);
   const RUB_TO_VND = 330;
+
+  // Ref để truy cập PurchasePage
+  const purchasePageRef = useRef();
+
+  // Callback để refresh đơn hàng khi có đơn hàng mới được tạo
+  const handleOrderCreated = (orderData) => {
+    console.log('🔄 Order created, refreshing purchase page...', orderData);
+    if (purchasePageRef.current) {
+      purchasePageRef.current.refreshOrders();
+    }
+  };
+
+  // Expose handleOrderCreated method to parent component
+  useImperativeHandle(ref, () => ({
+    handleOrderCreated
+  }));
 
   // Mapping flag cho các quốc gia
   const countryFlagMap = {
@@ -69,12 +87,13 @@ function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab
         { withCredentials: true }
       );
       if (response.data.success) {
-        onLoginSuccess && onLoginSuccess(response.data);
+        onLoginSuccess(response.data.user);
       } else {
-        setError("Đăng nhập thất bại!");
+        setError(t("login_failed"));
       }
-    } catch (err) {
-      setError("Sai tài khoản hoặc mật khẩu!");
+    } catch (error) {
+      console.error('Login error:', error);
+      setError(t("wrong_credentials"));
     }
     setLoading(false);
   };
@@ -293,6 +312,12 @@ function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab
     setFaqDetail(null);
   };
 
+  const handleGoogleLogin = () => {
+    // Redirect to Google OAuth
+    const googleAuthUrl = `${API_BASE_URL}/api/auth/google`;
+    window.location.href = googleAuthUrl;
+  };
+
   const [page, setPage] = useState(1);
   const PAGE_SIZE = 20; // Giảm từ 50 xuống 20 để tăng performance
   const pagedPriceData = useMemo(() => {
@@ -310,22 +335,63 @@ function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab
     }
   }, [activePage, priceTab]);
 
+  // Scroll to main content when activePage changes
+  useEffect(() => {
+    if (activePage && activePage !== 'nav_home') {
+      setTimeout(() => {
+        const mainContent = document.querySelector('[data-main-content]');
+        if (mainContent) {
+          mainContent.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+          });
+        }
+      }, 100);
+    }
+  }, [activePage]);
+
   if (activePage === 'login') {
     return (
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',minHeight:'70vh',width:'100%'}}>
-        <div style={{maxWidth:420,width:'100%',margin:'0 auto',padding:'2.5rem 2.2rem',boxShadow:'0 4px 32px #0002',borderRadius:20,background:'#fff'}}>
-          <h2 style={{textAlign:'center',marginBottom:18,fontWeight:700,fontSize:'1.7rem'}}>Log in with the help</h2>
-          <button style={{width:'100%',display:'flex',alignItems:'center',justifyContent:'center',gap:10,padding:'10px 0',background:'#fff',border:'1.5px solid #e5e7eb',borderRadius:10,fontWeight:600,fontSize:'1rem',marginBottom:18,cursor:'pointer'}}>
-            <FaGoogle style={{fontSize:20}}/> Sign in with Google
-          </button>
-          <div style={{display:'flex',alignItems:'center',gap:10,margin:'18px 0'}}>
-            <div style={{flex:1,height:1,background:'#e5e7eb'}}></div>
-            <span style={{color:'#888',fontWeight:500}}>OR</span>
-            <div style={{flex:1,height:1,background:'#e5e7eb'}}></div>
-          </div>
-          <LoginForm onLoginSuccess={onLoginSuccess} onClose={() => setActivePage('nav_home')} />
-          <div style={{marginTop:18,textAlign:'center',fontSize:'0.97rem',color:'#444'}}>
-            Do not have account? <a href="#" style={{color:'#2563eb',fontWeight:600,textDecoration:'none'}}>Registration</a>
+      <div className={styles.homepage} data-main-content>
+        <div className={styles.loginContainer}>
+          <div className={styles.loginCard}>
+            <div className={styles.loginHeader}>
+              <div className={styles.loginLogo}>
+                
+                <h1 className={styles.loginTitle}>{t('login_welcome_title')}</h1>
+              </div>
+              <p className={styles.loginSubtitle}>{t('login_access_service')}</p>
+            </div>
+
+            <div className={styles.loginForm}>
+              <button 
+                onClick={handleGoogleLogin}
+                className={styles.googleLoginBtn}
+                type="button"
+              >
+                <img 
+                  src="https://developers.google.com/identity/images/g-logo.png" 
+                  alt="Google"
+                  className={styles.googleIcon}
+                />
+                <span>{t('login_google_button')}</span>
+              </button>
+              
+              <div className={styles.divider}>
+                <div className={styles.dividerLine}></div>
+                <span className={styles.dividerText}>{t('login_or')}</span>
+                <div className={styles.dividerLine}></div>
+              </div>
+
+              <LoginForm onLoginSuccess={onLoginSuccess} onClose={() => setActivePage('nav_home')} />
+              
+              <div className={styles.loginFooter}>
+                <p className={styles.registerText}>
+                  {t('login_no_account')} 
+                  <a href="#" className={styles.registerLink}> {t('login_register_now')}</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -333,35 +399,25 @@ function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab
   }
 
   if (activePage === 'nav_payment') {
-    return <PaymentPage user={user} />;
+    return (
+      <div className={styles.homepage} data-main-content>
+        <PaymentPage user={user} />
+      </div>
+    );
   }
 
   if (activePage === 'purchase') {
     return (
-      <div className={styles.purchaseCard}>
-        <div className={styles.purchaseTabs}>
-          <button className={purchaseTab === 'active' ? styles.purchaseTabActive : styles.purchaseTab} onClick={() => setPurchaseTab('active')}>Active orders</button>
-          <button className={purchaseTab === 'history' ? styles.purchaseTabActive : styles.purchaseTab} onClick={() => setPurchaseTab('history')}>Order history</button>
-        </div>
-        <div className={styles.purchaseContent}>
-          {purchaseTab === 'active' ? (
-            <div className={styles.purchaseEmpty}>
-              <div style={{fontWeight: 600, fontSize: 20, marginBottom: 8}}>No active orders</div>
-              <div style={{color: '#888', marginBottom: 24}}>You have not purchased any numbers yet.</div>
-              <ol style={{textAlign:'left', color:'#444', maxWidth:420}}>
-                <li><b>Top Up your Balance:</b> Add funds to your balance via any of the payment methods offered by our website.</li>
-                <li><b>Select a Service:</b> In the left panel you can choose the service you need.</li>
-                <li><b>Select a Country:</b> Choose the country and operator you need.</li>
-                <li><b>Apply the Phone Number:</b> Press the cart button to buy the number, then paste the number where required.</li>
-              </ol>
-            </div>
-          ) : (
-            <div className={styles.purchaseEmpty}>
-              <div style={{fontWeight: 600, fontSize: 20, marginBottom: 8}}>No orders found</div>
-              <div style={{color: '#888'}}>You have not purchased any numbers yet.</div>
-            </div>
-          )}
-        </div>
+      <div className={styles.homepage} data-main-content>
+        <PurchasePage ref={purchasePageRef} user={user} setActivePage={setActivePage} />
+      </div>
+    );
+  }
+
+  if (activePage === 'settings') {
+    return (
+      <div className={styles.homepage} data-main-content>
+        <Settings user={user} />
       </div>
     );
   }
@@ -371,7 +427,7 @@ function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab
   const statsMaxPrice = statsDisplayData.length > 0 ? Math.max(...statsDisplayData.map(r => r.price)) : 1;
 
   return (
-    <div className={styles.homepage}>
+    <div className={styles.homepage} data-main-content>
       <div className={styles.card}>
         {/* Trang chủ */}
         {activePage === 'nav_home' && (
@@ -754,6 +810,6 @@ function MainContent({ activePage, setActivePage, onLoginSuccess, user, priceTab
       </div>
     </div>
   );
-}
+});
 
 export default MainContent;

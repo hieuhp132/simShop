@@ -18,6 +18,7 @@
   display: flex;
   border-bottom: 1px solid #e5e7eb;
   margin-bottom: 24px;
+  width: 100%;
 }
 
 .tab-active {
@@ -30,6 +31,8 @@
   padding: 0.75rem 0;
   border-radius: 12px 12px 0 0;
   transition: background 0.2s;
+  flex: 1;
+  text-align: center;
 }
 
 .tab-inactive {
@@ -42,6 +45,8 @@
   padding: 0.75rem 0;
   border-radius: 12px 12px 0 0;
   transition: background 0.2s;
+  flex: 1;
+  text-align: center;
 }
 
 .tab-active:hover,

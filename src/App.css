@@ -2,11 +2,11 @@ body.theme-light {
   --color-bg: #f1f5f9;
   --color-card: #fff;
   --color-text: #1e293b;
-  --color-primary: #2563eb;
-  --color-link: #2563eb;
-  --color-link-hover: #1e40af;
+  --color-primary: #667eea;
+  --color-link: #667eea;
+  --color-link-hover: #5a67d8;
   --color-border: #ddd;
-  --color-nav-bg: #1e293b;
+  --color-nav-bg: linear-gradient(135deg, #1e293b 0%, #334155 100%);
   --color-nav-link: #d1d5db;
   --color-nav-link-active: #fff;
   --color-footer-bg: #e5f2ff;
@@ -16,11 +16,11 @@ body.theme-dark {
   --color-bg: #181f2a;
   --color-card: #232c3a;
   --color-text: #e5e7eb;
-  --color-primary: #60a5fa;
-  --color-link: #60a5fa;
-  --color-link-hover: #93c5fd;
+  --color-primary: #667eea;
+  --color-link: #667eea;
+  --color-link-hover: #5a67d8;
   --color-border: #334155;
-  --color-nav-bg: #232c3a;
+  --color-nav-bg: linear-gradient(135deg, #232c3a 0%, #374151 100%);
   --color-nav-link: #cbd5e1;
   --color-nav-link-active: #fff;
   --color-footer-bg: #1e293b;
@@ -153,18 +153,18 @@ body.theme-dark {
   color: #fff;
 }
 .priceTable th.sorted {
-  color: #2563eb;
+  color: #667eea;
   background: #e0f2fe;
 }
 .priceTable th.sorted-asc::after {
   content: '▲';
-  color: #2563eb;
+  color: #667eea;
   font-size: 0.9em;
   margin-left: 0.3em;
 }
 .priceTable th.sorted-desc::after {
   content: '▼';
-  color: #2563eb;
+  color: #667eea;
   font-size: 0.9em;
   margin-left: 0.3em;
 }
